@@ -1,0 +1,16 @@
+User-agent: *
+Allow: /
+Sitemap: https://wndwappliancerepair.com/sitemap.xml
+
+# AI search crawlers — allow access for AI citation visibility
+User-agent: GPTBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
