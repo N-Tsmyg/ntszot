@@ -14,7 +14,7 @@ const TRUST_ITEMS = [
   },
   {
     icon: Calendar,
-    label: "7 Days a Week",
+    label: "6 Days a Week",
     sublabel: "Mon–Fri 9AM–6PM, Sat 10AM–5PM",
   },
   {

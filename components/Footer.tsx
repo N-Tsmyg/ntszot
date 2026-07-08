@@ -100,8 +100,6 @@ export default function Footer() {
               <li><Link href="/faq/" className="hover:text-white transition-colors">FAQ</Link></li>
               <li><Link href="/specials/" className="hover:text-white transition-colors">Specials</Link></li>
               <li><Link href="/emergency-appliance-repair/" className="hover:text-white transition-colors">Emergency Repair</Link></li>
-              <li><Link href="/property-management-appliance-repair/" className="hover:text-white transition-colors">Property Managers</Link></li>
-              <li><Link href="/vacation-rental-appliance-repair/" className="hover:text-white transition-colors">Vacation Rentals</Link></li>
             </ul>
           </div>
 

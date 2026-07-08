@@ -192,8 +192,7 @@ export default async function CityPage({
           </h1>
           <p className="text-lg sm:text-xl text-white/80 mb-6 max-w-2xl mx-auto">
             In-home repair across {location.name}. {DIAGNOSTIC_FEE} service call fee
-            waived if we fix it. {WARRANTY_DAYS}-day warranty. All major brands. 7 days
-            a week.
+            waived if we fix it. {WARRANTY_DAYS}-day warranty. All major brands. Mon–Fri &amp; Saturday.
           </p>
           <a
             href={COMPANY_PHONE_TEL}

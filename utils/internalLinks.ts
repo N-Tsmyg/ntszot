@@ -3,83 +3,45 @@
 
 // Which services cross-link to which
 export const RELATED_SERVICES_MAP: Record<string, string[]> = {
-  "washer-repair": ["dryer-repair", "dishwasher-repair", "annual-maintenance-plan"],
-  "dryer-repair": ["washer-repair", "range-hood-repair", "annual-maintenance-plan"],
+  "washer-repair": ["dryer-repair", "dishwasher-repair", "appliance-installation"],
+  "dryer-repair": ["washer-repair", "range-hood-repair", "appliance-installation"],
   "oven-range-stove-repair": ["microwave-repair", "range-hood-repair", "appliance-installation"],
-  "dishwasher-repair": ["washer-repair", "refrigerator-repair", "annual-maintenance-plan"],
-  "refrigerator-repair": ["freezer-repair", "ice-maker-repair", "annual-maintenance-plan"],
-  "freezer-repair": ["refrigerator-repair", "ice-maker-repair", "annual-maintenance-plan"],
-  "ice-maker-repair": ["refrigerator-repair", "freezer-repair", "annual-maintenance-plan"],
+  "dishwasher-repair": ["washer-repair", "refrigerator-repair", "appliance-installation"],
+  "refrigerator-repair": ["freezer-repair", "ice-maker-repair", "appliance-installation"],
+  "freezer-repair": ["refrigerator-repair", "ice-maker-repair", "appliance-installation"],
+  "ice-maker-repair": ["refrigerator-repair", "freezer-repair", "appliance-installation"],
   "microwave-repair": ["oven-range-stove-repair", "range-hood-repair", "appliance-installation"],
-  "range-hood-repair": ["oven-range-stove-repair", "microwave-repair", "annual-maintenance-plan"],
+  "range-hood-repair": ["oven-range-stove-repair", "microwave-repair", "appliance-installation"],
   "appliance-installation": ["washer-repair", "refrigerator-repair", "oven-range-stove-repair"],
-  "annual-maintenance-plan": ["washer-repair", "refrigerator-repair", "dryer-repair"],
 }
 
 // Service slug → relevant blog post slugs (populated as posts are written)
 export const SERVICE_BLOG_MAP: Record<string, string[]> = {
-  "refrigerator-repair": ["refrigerator-not-cooling-san-diego", "samsung-appliance-repair-san-diego"],
-  "dishwasher-repair": ["dishwasher-not-draining-san-diego"],
-  "washer-repair": ["washer-needs-repair-signs-san-diego", "samsung-appliance-repair-san-diego"],
-  "dryer-repair": ["dryer-taking-too-long-san-diego"],
-  "oven-range-stove-repair": ["oven-not-heating-evenly-san-diego"],
-  "annual-maintenance-plan": ["spring-appliance-maintenance-checklist-san-diego"],
+  "refrigerator-repair": ["refrigerator-not-cooling-san-diego"],
+  "washer-repair": ["washer-needs-repair-signs-san-diego"],
 }
 
 // Blog post slug → related blog post slugs (for RelatedArticles cross-linking)
 export const RELATED_POSTS_MAP: Record<string, string[]> = {
   "how-much-does-appliance-repair-cost-in-san-diego": [
-    "dishwasher-not-draining-san-diego",
-    "refrigerator-not-cooling-san-diego",
-    "washer-needs-repair-signs-san-diego",
-  ],
-  "dishwasher-not-draining-san-diego": [
-    "how-much-does-appliance-repair-cost-in-san-diego",
     "refrigerator-not-cooling-san-diego",
     "washer-needs-repair-signs-san-diego",
   ],
   "refrigerator-not-cooling-san-diego": [
     "how-much-does-appliance-repair-cost-in-san-diego",
-    "dishwasher-not-draining-san-diego",
-    "samsung-appliance-repair-san-diego",
+    "washer-needs-repair-signs-san-diego",
   ],
   "washer-needs-repair-signs-san-diego": [
-    "dryer-taking-too-long-san-diego",
-    "spring-appliance-maintenance-checklist-san-diego",
-    "samsung-appliance-repair-san-diego",
-  ],
-  "samsung-appliance-repair-san-diego": [
-    "refrigerator-not-cooling-san-diego",
-    "washer-needs-repair-signs-san-diego",
-    "repair-vs-replace-appliance-san-diego",
-  ],
-  "dryer-taking-too-long-san-diego": [
-    "washer-needs-repair-signs-san-diego",
-    "spring-appliance-maintenance-checklist-san-diego",
-    "refrigerator-not-cooling-san-diego",
-  ],
-  "repair-vs-replace-appliance-san-diego": [
     "how-much-does-appliance-repair-cost-in-san-diego",
-    "washer-needs-repair-signs-san-diego",
-    "spring-appliance-maintenance-checklist-san-diego",
-  ],
-  "oven-not-heating-evenly-san-diego": [
-    "how-much-does-appliance-repair-cost-in-san-diego",
-    "repair-vs-replace-appliance-san-diego",
     "refrigerator-not-cooling-san-diego",
-  ],
-  "spring-appliance-maintenance-checklist-san-diego": [
-    "repair-vs-replace-appliance-san-diego",
-    "dryer-taking-too-long-san-diego",
-    "washer-needs-repair-signs-san-diego",
   ],
 }
 
 // City slug → featured services to highlight on that page
 export const CITY_SERVICE_MAP: Record<string, string[]> = {
-  "la-jolla-appliance-repair": ["refrigerator-repair", "dishwasher-repair", "annual-maintenance-plan"],
-  "del-mar-appliance-repair": ["refrigerator-repair", "dishwasher-repair", "annual-maintenance-plan"],
-  "rancho-bernardo-appliance-repair": ["washer-repair", "refrigerator-repair", "annual-maintenance-plan"],
+  "la-jolla-appliance-repair": ["refrigerator-repair", "dishwasher-repair", "appliance-installation"],
+  "del-mar-appliance-repair": ["refrigerator-repair", "dishwasher-repair", "appliance-installation"],
+  "rancho-bernardo-appliance-repair": ["washer-repair", "refrigerator-repair", "appliance-installation"],
   "chula-vista-appliance-repair": ["washer-repair", "dishwasher-repair", "refrigerator-repair"],
   // Default: washer, dryer, refrigerator for all others
 }
@@ -133,7 +95,7 @@ export const BRAND_SERVICE_MAP: Record<string, string[]> = {
   "miele-appliance-repair-san-diego": ["dishwasher-repair", "washer-repair", "dryer-repair", "refrigerator-repair"],
   "sub-zero-appliance-repair-san-diego": ["refrigerator-repair", "freezer-repair", "ice-maker-repair"],
   "thermador-appliance-repair-san-diego": ["oven-range-stove-repair", "dishwasher-repair", "refrigerator-repair"],
-  "speed-queen-appliance-repair-san-diego": ["washer-repair", "dryer-repair", "annual-maintenance-plan"],
+  "speed-queen-appliance-repair-san-diego": ["washer-repair", "dryer-repair", "appliance-installation"],
 }
 
 // Related brands (cross-link between brand pages)

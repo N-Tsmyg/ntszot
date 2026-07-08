@@ -204,12 +204,6 @@ export default function AboutPage() {
             <Link href="/faq/" className="rounded-lg border border-gray-200 bg-gray-50 px-4 py-2 text-sm text-brand-slate hover:border-brand-blue transition-colors">
               Full FAQ
             </Link>
-            <Link href="/vacation-rental-appliance-repair/" className="rounded-lg border border-gray-200 bg-gray-50 px-4 py-2 text-sm text-brand-slate hover:border-brand-blue transition-colors">
-              Vacation Rental Repairs
-            </Link>
-            <Link href="/property-management-appliance-repair/" className="rounded-lg border border-gray-200 bg-gray-50 px-4 py-2 text-sm text-brand-slate hover:border-brand-blue transition-colors">
-              Property Management
-            </Link>
             <Link href="/contact/" className="rounded-lg border border-brand-blue bg-blue-50 px-4 py-2 text-sm font-medium text-brand-blue hover:bg-brand-blue hover:text-white transition-colors">
               Contact Us →
             </Link>
