@@ -42,7 +42,7 @@ export default function Header() {
             ))}
           </nav>
 
-          {/* Right side: hamburger (mobile only) + call CTA */}
+          {/* Right side: hamburger (mobile only) + call CTA (desktop only) */}
           <div className="flex items-center gap-3">
             <button
               className="md:hidden rounded-md p-2 text-gray-600 hover:text-brand-blue hover:bg-gray-100 transition-colors"
@@ -60,7 +60,7 @@ export default function Header() {
 
             <a
               href={COMPANY_PHONE_TEL}
-              className="flex items-center gap-2 rounded-full bg-brand-blue px-4 py-2.5 text-sm font-bold text-white hover:bg-brand-blue-dark transition-colors"
+              className="hidden md:flex items-center gap-2 rounded-full bg-brand-blue px-4 py-2.5 text-sm font-bold text-white hover:bg-brand-blue-dark transition-colors"
             >
               <Phone className="h-4 w-4" aria-hidden="true" />
               <span>{COMPANY_PHONE_DISPLAY}</span>
