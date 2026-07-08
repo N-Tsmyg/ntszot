@@ -410,6 +410,12 @@ export default async function ServicePage({
                 </Link>
               ))}
               <Link
+                href="/specials/"
+                className="rounded-lg border border-gray-200 bg-gray-50 px-4 py-2 text-sm font-medium text-brand-slate hover:border-brand-blue hover:text-brand-blue transition-colors"
+              >
+                Current Specials
+              </Link>
+              <Link
                 href="/contact/"
                 className="rounded-lg border border-brand-blue bg-blue-50 px-4 py-2 text-sm font-medium text-brand-blue hover:bg-brand-blue hover:text-white transition-colors"
               >

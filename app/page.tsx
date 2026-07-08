@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import Link from "next/link"
 import Hero from "@/components/Hero"
 import TrustBar from "@/components/TrustBar"
 import ServiceGrid from "@/components/ServiceGrid"
@@ -90,6 +91,32 @@ export default function HomePage() {
       <CityGrid />
 
       <FAQSection faqs={HOME_FAQS} heading="Appliance Repair FAQ — San Diego" />
+
+      {/* Quick links hub */}
+      <section className="py-8 bg-gray-50 border-t border-gray-200">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-wrap gap-3 justify-center">
+            <Link href="/faq/" className="rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-brand-slate hover:border-brand-blue hover:text-brand-blue transition-colors">
+              Full FAQ
+            </Link>
+            <Link href="/specials/" className="rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-brand-slate hover:border-brand-blue hover:text-brand-blue transition-colors">
+              Current Specials
+            </Link>
+            <Link href="/emergency-appliance-repair/" className="rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-brand-slate hover:border-brand-blue hover:text-brand-blue transition-colors">
+              Emergency Repair
+            </Link>
+            <Link href="/about/" className="rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-brand-slate hover:border-brand-blue hover:text-brand-blue transition-colors">
+              About NTSZOT
+            </Link>
+            <Link href="/locations/" className="rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-brand-slate hover:border-brand-blue hover:text-brand-blue transition-colors">
+              All Service Areas
+            </Link>
+            <Link href="/brands/" className="rounded-lg border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-brand-slate hover:border-brand-blue hover:text-brand-blue transition-colors">
+              All Brands We Repair
+            </Link>
+          </div>
+        </div>
+      </section>
 
       {/* Final CTA */}
       <section className="bg-brand-slate py-16 text-center text-white">
