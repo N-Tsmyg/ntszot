@@ -222,7 +222,7 @@ export default async function ServicePage({
   const faqs: FAQ[] = [
     {
       question: `How much does ${service.name.toLowerCase()} cost in San Diego?`,
-      answer: `${service.name} in San Diego typically costs ${service.priceRange} including parts and labor. The exact cost depends on the appliance brand, model, and part required — your technician provides an upfront quote after diagnosis.${isInstallation ? "" : " The $85 diagnostic fee is waived completely if you proceed with the repair."}`,
+      answer: `${service.name} in San Diego typically costs ${service.priceRange} including parts and labor. The exact cost depends on the appliance brand, model, and part required — your technician provides an upfront quote after diagnosis.${isInstallation ? "" : " The $80 service call fee is waived completely if you proceed with the repair."}`,
     },
     {
       question: `How long does ${service.name.toLowerCase()} take?`,
@@ -259,7 +259,7 @@ export default async function ServicePage({
         headline={service.h1}
         subheadline={isInstallation
           ? `${WARRANTY_DAYS}-day parts & labor warranty. All major brands. San Diego County.`
-          : `${DIAGNOSTIC_FEE} diagnostic fee waived if we fix it. ${WARRANTY_DAYS}-day parts & labor warranty. All major brands. San Diego County.`
+          : `${DIAGNOSTIC_FEE} service call fee waived if we fix it. ${WARRANTY_DAYS}-day parts & labor warranty. All major brands. San Diego County.`
         }
         hideDiagnosticNote={isInstallation}
         urgencyNote={`${HOURS_WEEKDAY} · ${HOURS_SUNDAY}`}
@@ -271,13 +271,13 @@ export default async function ServicePage({
       {/* 3. Quick Answer Box */}
       <section className="bg-white py-8">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-          <div className="quick-answer rounded-xl border-l-4 border-brand-red bg-red-50 p-6">
-            <p className="font-semibold text-brand-navy text-base leading-relaxed">
+          <div className="quick-answer rounded-xl border-l-4 border-brand-blue bg-red-50 p-6">
+            <p className="font-semibold text-brand-slate text-base leading-relaxed">
               {isMaintenance
-                ? `The Annual Appliance Maintenance Plan costs $350 per year plus parts — two scheduled in-home visits included. The $85 diagnostic fee is waived on any repair identified during a maintenance visit.`
+                ? `The Annual Appliance Maintenance Plan costs $350 per year plus parts — two scheduled in-home visits included. The $80 service call fee is waived on any repair identified during a maintenance visit.`
                 : isInstallation
-                ? `Appliance installation in San Diego costs ${service.priceRange} depending on the appliance type and connection complexity. The $85 diagnostic fee does not apply to installation — the installation rate is the flat service cost.`
-                : `${service.name} in San Diego costs ${service.priceRange} in most cases, including parts and labor. The $85 diagnostic fee is waived completely when you proceed with the repair.`}
+                ? `Appliance installation in San Diego costs ${service.priceRange} depending on the appliance type and connection complexity. The $80 service call fee does not apply to installation — the installation rate is the flat service cost.`
+                : `${service.name} in San Diego costs ${service.priceRange} in most cases, including parts and labor. The $80 service call fee is waived completely when you proceed with the repair.`}
             </p>
           </div>
         </div>
@@ -287,7 +287,7 @@ export default async function ServicePage({
       {subServices.length > 0 && (
         <section className="py-10 bg-white border-b border-gray-100">
           <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-            <h2 className="text-2xl font-bold text-brand-navy mb-6">
+            <h2 className="text-2xl font-bold text-brand-slate mb-6">
               Specific {service.name} We Handle
             </h2>
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -295,21 +295,21 @@ export default async function ServicePage({
                 <Link
                   key={sub.slug}
                   href={`/services/${service.slug}/${sub.slug}/`}
-                  className="flex flex-col gap-2 rounded-xl border border-gray-200 bg-gray-50 p-5 hover:border-brand-red hover:shadow-sm transition-all"
+                  className="flex flex-col gap-2 rounded-xl border border-gray-200 bg-gray-50 p-5 hover:border-brand-blue hover:shadow-sm transition-all"
                 >
-                  <p className="font-semibold text-brand-navy text-sm leading-snug">{sub.name}</p>
+                  <p className="font-semibold text-brand-slate text-sm leading-snug">{sub.name}</p>
                   <p className="text-xs text-gray-500 leading-relaxed flex-1">{sub.shortDesc}</p>
-                  <span className="text-xs font-semibold text-brand-red">Learn more →</span>
+                  <span className="text-xs font-semibold text-brand-blue">Learn more →</span>
                 </Link>
               ))}
               {service.slug === "refrigerator-repair" && (
                 <Link
                   href="/services/ice-maker-repair/"
-                  className="flex flex-col gap-2 rounded-xl border border-gray-200 bg-gray-50 p-5 hover:border-brand-red hover:shadow-sm transition-all"
+                  className="flex flex-col gap-2 rounded-xl border border-gray-200 bg-gray-50 p-5 hover:border-brand-blue hover:shadow-sm transition-all"
                 >
-                  <p className="font-semibold text-brand-navy text-sm leading-snug">Ice Maker Repair</p>
+                  <p className="font-semibold text-brand-slate text-sm leading-snug">Ice Maker Repair</p>
                   <p className="text-xs text-gray-500 leading-relaxed flex-1">No ice or slow production — ice maker module, inlet valve, or frozen fill tube.</p>
-                  <span className="text-xs font-semibold text-brand-red">Learn more →</span>
+                  <span className="text-xs font-semibold text-brand-blue">Learn more →</span>
                 </Link>
               )}
             </div>
@@ -320,7 +320,7 @@ export default async function ServicePage({
       {/* 5. What We Fix */}
       <section className="py-10 bg-white">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-brand-navy mb-6">
+          <h2 className="text-2xl font-bold text-brand-slate mb-6">
             {isInstallation
               ? "Appliances We Install in San Diego"
               : isMaintenance
@@ -331,11 +331,11 @@ export default async function ServicePage({
             {service.topSymptoms.map((symptom) => (
               <li key={symptom} className="flex gap-4">
                 <CheckCircle2
-                  className="mt-0.5 h-5 w-5 shrink-0 text-brand-red"
+                  className="mt-0.5 h-5 w-5 shrink-0 text-brand-blue"
                   aria-hidden="true"
                 />
                 <div>
-                  <p className="font-semibold text-brand-navy text-sm">{symptom}</p>
+                  <p className="font-semibold text-brand-slate text-sm">{symptom}</p>
                   <p className="mt-0.5 text-sm text-gray-600 leading-relaxed">
                     {getSymptomDescription(symptom)}
                   </p>
@@ -354,7 +354,7 @@ export default async function ServicePage({
       {/* 5. Brands We Service */}
       <section className="py-10 bg-gray-50 border-y border-gray-200">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-brand-navy mb-4">
+          <h2 className="text-2xl font-bold text-brand-slate mb-4">
             All Major Brands — No Restrictions
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed mb-6">
@@ -368,7 +368,7 @@ export default async function ServicePage({
             ].map((brand) => (
               <span
                 key={brand}
-                className="rounded-full border border-gray-200 bg-white px-3 py-1 text-xs font-medium text-brand-navy"
+                className="rounded-full border border-gray-200 bg-white px-3 py-1 text-xs font-medium text-brand-slate"
               >
                 {brand}
               </span>
@@ -383,7 +383,7 @@ export default async function ServicePage({
       {/* 6. Pricing */}
       <section className="py-10 bg-white">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-brand-navy mb-4">
+          <h2 className="text-2xl font-bold text-brand-slate mb-4">
             {`How Much Does ${service.name} Cost in San Diego?`}
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed mb-4">
@@ -391,23 +391,23 @@ export default async function ServicePage({
           </p>
           <div className="rounded-xl border border-gray-200 bg-gray-50 p-6 space-y-3">
             <div className="flex justify-between items-center border-b border-gray-200 pb-3">
-              <span className="text-sm font-medium text-brand-navy">
+              <span className="text-sm font-medium text-brand-slate">
                 {service.slug === "appliance-installation" ? "Typical installation cost" : "Typical repair cost"}
               </span>
-              <span className="text-sm font-bold text-brand-navy">{service.priceRange}</span>
+              <span className="text-sm font-bold text-brand-slate">{service.priceRange}</span>
             </div>
             {service.slug !== "appliance-installation" && (
               <div className="flex justify-between items-center border-b border-gray-200 pb-3">
-                <span className="text-sm font-medium text-brand-navy">Diagnostic fee</span>
-                <span className="text-sm font-bold text-brand-navy">{DIAGNOSTIC_FEE} (waived if repaired)</span>
+                <span className="text-sm font-medium text-brand-slate">Diagnostic fee</span>
+                <span className="text-sm font-bold text-brand-slate">{DIAGNOSTIC_FEE} (waived if repaired)</span>
               </div>
             )}
             <div className="flex justify-between items-center border-b border-gray-200 pb-3">
-              <span className="text-sm font-medium text-brand-navy">Warranty</span>
-              <span className="text-sm font-bold text-brand-navy">{WARRANTY_DAYS}-day parts & labor</span>
+              <span className="text-sm font-medium text-brand-slate">Warranty</span>
+              <span className="text-sm font-bold text-brand-slate">{WARRANTY_DAYS}-day parts & labor</span>
             </div>
             <div className="flex justify-between items-center">
-              <span className="text-sm font-medium text-brand-navy">Payment methods</span>
+              <span className="text-sm font-medium text-brand-slate">Payment methods</span>
               <span className="text-sm text-gray-600">Cash · Check · Zelle · Venmo (no fee)<br />Card accepted ({CARD_FEE_PERCENT}% fee)</span>
             </div>
           </div>
@@ -421,7 +421,7 @@ export default async function ServicePage({
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
         <MidPageCTA
           heading={`Ready to schedule your ${service.name.toLowerCase()}?`}
-          subtext={`${DIAGNOSTIC_FEE} diagnostic fee — waived if we fix it. ${WARRANTY_DAYS}-day warranty on every repair.`}
+          subtext={`${DIAGNOSTIC_FEE} service call fee — waived if we fix it. ${WARRANTY_DAYS}-day warranty on every repair.`}
         />
       </div>
 
@@ -435,11 +435,11 @@ export default async function ServicePage({
       {relatedServices.length > 0 && (
         <section className="py-10 bg-white border-t border-gray-100">
           <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-            <h2 className="text-lg font-bold text-brand-navy mb-4">Related Services</h2>
+            <h2 className="text-lg font-bold text-brand-slate mb-4">Related Services</h2>
             <div className="flex flex-wrap gap-3">
               <Link
                 href="/services/"
-                className="rounded-lg border border-gray-200 bg-gray-50 px-4 py-2 text-sm font-medium text-brand-navy hover:border-brand-red hover:text-brand-red transition-colors"
+                className="rounded-lg border border-gray-200 bg-gray-50 px-4 py-2 text-sm font-medium text-brand-slate hover:border-brand-blue hover:text-brand-blue transition-colors"
               >
                 ← All Services
               </Link>
@@ -447,14 +447,14 @@ export default async function ServicePage({
                 <Link
                   key={rs.slug}
                   href={`/services/${rs.slug}/`}
-                  className="rounded-lg border border-gray-200 bg-gray-50 px-4 py-2 text-sm font-medium text-brand-navy hover:border-brand-red hover:text-brand-red transition-colors"
+                  className="rounded-lg border border-gray-200 bg-gray-50 px-4 py-2 text-sm font-medium text-brand-slate hover:border-brand-blue hover:text-brand-blue transition-colors"
                 >
                   {rs.name}
                 </Link>
               ))}
               <Link
                 href="/contact/"
-                className="rounded-lg border border-brand-red bg-red-50 px-4 py-2 text-sm font-medium text-brand-red hover:bg-brand-red hover:text-white transition-colors"
+                className="rounded-lg border border-brand-blue bg-red-50 px-4 py-2 text-sm font-medium text-brand-blue hover:bg-brand-blue hover:text-white transition-colors"
               >
                 Schedule Repair →
               </Link>
@@ -464,19 +464,19 @@ export default async function ServicePage({
       )}
 
       {/* 10. Final CTA */}
-      <section className="bg-brand-navy py-16 text-center text-white">
+      <section className="bg-brand-slate py-16 text-center text-white">
         <div className="mx-auto max-w-2xl px-4">
           <h2 className="text-3xl font-extrabold mb-3">
             Call to schedule your {service.name.toLowerCase()}
           </h2>
           <p className="text-white/70 mb-6">
-            {DIAGNOSTIC_FEE} diagnostic fee waived if we fix it. {WARRANTY_DAYS}-day parts &amp; labor warranty.
+            {DIAGNOSTIC_FEE} service call fee waived if we fix it. {WARRANTY_DAYS}-day parts &amp; labor warranty.
             <br />
             {HOURS_WEEKDAY} · {HOURS_SUNDAY}
           </p>
           <a
             href={COMPANY_PHONE_TEL}
-            className="inline-flex items-center gap-3 rounded-lg bg-brand-red px-8 py-4 text-xl font-extrabold text-white hover:bg-brand-red-dark transition-colors shadow-lg"
+            className="inline-flex items-center gap-3 rounded-lg bg-brand-blue px-8 py-4 text-xl font-extrabold text-white hover:bg-brand-blue-dark transition-colors shadow-lg"
           >
             <Phone className="h-6 w-6" aria-hidden="true" />
             {COMPANY_PHONE_DISPLAY}

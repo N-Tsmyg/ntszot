@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
-Sitemap: https://wndwappliancerepair.com/sitemap.xml
+Sitemap: https://ntszotservice.com/sitemap.xml
 
 # AI search crawlers — allow access for AI citation visibility
 User-agent: GPTBot

@@ -12,13 +12,13 @@ const STEPS = [
     icon: Search,
     number: "2",
     title: "We Diagnose",
-    description: `Full inspection of the reported problem. The ${DIAGNOSTIC_FEE} diagnostic fee covers this visit entirely.`,
+    description: `Full inspection of the reported problem. The ${DIAGNOSTIC_FEE} service call fee covers this visit entirely.`,
   },
   {
     icon: FileText,
     number: "3",
     title: "We Quote",
-    description: `Upfront itemized quote before any work begins. You approve or walk — no pressure, no charge beyond the diagnostic fee.`,
+    description: `Upfront itemized quote before any work begins. You approve or walk — no pressure, no charge beyond the service call fee.`,
   },
   {
     icon: Wrench,
@@ -32,7 +32,7 @@ export default function RepairProcess() {
   return (
     <section className="py-14 bg-white border-y border-gray-100">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <h2 className="text-2xl font-bold text-brand-navy text-center mb-10">
+        <h2 className="text-2xl font-bold text-brand-slate text-center mb-10">
           How It Works
         </h2>
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
@@ -45,13 +45,13 @@ export default function RepairProcess() {
                   aria-hidden="true"
                 />
               )}
-              <div className="relative z-10 mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-brand-navy shadow-md">
+              <div className="relative z-10 mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-brand-slate shadow-md">
                 <step.icon className="h-7 w-7 text-white" aria-hidden="true" />
-                <span className="absolute -top-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full bg-brand-red text-[10px] font-extrabold text-white">
+                <span className="absolute -top-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full bg-brand-blue text-[10px] font-extrabold text-white">
                   {step.number}
                 </span>
               </div>
-              <h3 className="text-base font-bold text-brand-navy mb-2">{step.title}</h3>
+              <h3 className="text-base font-bold text-brand-slate mb-2">{step.title}</h3>
               <p className="text-sm text-gray-600 leading-relaxed">{step.description}</p>
             </div>
           ))}

@@ -19,7 +19,7 @@ import {
 export const metadata: Metadata = {
   title: "Appliance Repair FAQ — San Diego",
   description:
-    "Frequently asked questions about appliance repair in San Diego — pricing, scheduling, warranty, brands, payment, and service area. WNDW Appliance Repair. Call (858) 264-3138.",
+    "Frequently asked questions about appliance repair in San Diego — pricing, scheduling, warranty, brands, payment, and service area. NTSZOT Appliance Repair. Call (619) 488-4477.",
   alternates: { canonical: `${COMPANY_WEBSITE}/faq/` },
   openGraph: {
     title: `Appliance Repair FAQ — San Diego | ${COMPANY_NAME}`,
@@ -32,15 +32,15 @@ export const metadata: Metadata = {
 const PRICING_FAQS = [
   {
     question: "How much does appliance repair cost in San Diego?",
-    answer: `Most appliance repairs in San Diego — washers, dryers, dishwashers, ovens, microwaves, and range hoods — cost $250–$350 including parts and labor. Refrigerator, freezer, and ice maker repairs typically run $350–$900 depending on the component and brand. The ${DIAGNOSTIC_FEE} diagnostic fee is waived completely when you proceed with the repair.`,
+    answer: `Most appliance repairs in San Diego — washers, dryers, dishwashers, ovens, microwaves, and range hoods — cost $250–$350 including parts and labor. Refrigerator, freezer, and ice maker repairs typically run $350–$900 depending on the component and brand. The ${DIAGNOSTIC_FEE} service call fee is waived completely when you proceed with the repair.`,
   },
   {
-    question: "What is the $85 diagnostic fee?",
+    question: "What is the $80 service call fee?",
     answer: `The ${DIAGNOSTIC_FEE} fee covers your technician's visit and a full diagnosis of the reported problem. After diagnosis, you receive an upfront quote for the repair. If you approve the repair, the ${DIAGNOSTIC_FEE} is waived entirely — you pay only parts and labor. If you decide not to repair, you owe ${DIAGNOSTIC_FEE} and nothing more.`,
   },
   {
-    question: "Does the diagnostic fee apply to installations?",
-    answer: `No. The ${DIAGNOSTIC_FEE} diagnostic fee applies to repair calls. Appliance installation is priced at $220–$350 depending on the appliance type and connection complexity. The installation rate is the flat service cost — there is no separate diagnostic fee for installation.`,
+    question: "Does the service call fee apply to installations?",
+    answer: `No. The ${DIAGNOSTIC_FEE} service call fee applies to repair calls. Appliance installation is priced at $220–$350 depending on the appliance type and connection complexity. The installation rate is the flat service cost — there is no separate diagnostic fee for installation.`,
   },
   {
     question: "What does the Annual Maintenance Plan cost?",
@@ -59,7 +59,7 @@ const SCHEDULING_FAQS = [
   },
   {
     question: "What areas of San Diego do you serve?",
-    answer: `We serve all of San Diego County — including San Diego, Chula Vista, La Mesa, El Cajon, Santee, La Jolla, Del Mar, Poway, Rancho Bernardo, National City, Ramona, Fallbrook, Oceanside, San Marcos, Encinitas, Escondido, Valley Center, Lemon Grove, Carlsbad, and Vista. Coverage is the same 7 days a week.`,
+    answer: `We serve all of San Diego County — including San Diego, Chula Vista, La Mesa, El Cajon, Santee, La Jolla, Del Mar, Poway, Rancho Bernardo, National City, Ramona, Fallbrook, Oceanside, San Marcos, Encinitas, Escondido, Valley Center, Lemon Grove, Carlsbad, and Vista. Coverage is the same 6 days a week.`,
   },
   {
     question: "What are your hours?",
@@ -82,7 +82,7 @@ const WARRANTY_FAQS = [
   },
   {
     question: "What if the same problem comes back after the warranty period?",
-    answer: `If a problem recurs after the ${WARRANTY_DAYS}-day warranty period, we treat it as a new service call with a new ${DIAGNOSTIC_FEE} diagnostic fee. Our technician re-diagnoses the issue and provides a new upfront quote. A recurring failure after the warranty period often indicates a different underlying cause.`,
+    answer: `If a problem recurs after the ${WARRANTY_DAYS}-day warranty period, we treat it as a new service call with a new ${DIAGNOSTIC_FEE} service call fee. Our technician re-diagnoses the issue and provides a new upfront quote. A recurring failure after the warranty period often indicates a different underlying cause.`,
   },
 ]
 
@@ -123,7 +123,7 @@ export default function FAQPage() {
       />
 
       {/* Header */}
-      <section className="bg-brand-navy text-white py-14 sm:py-20">
+      <section className="bg-brand-slate text-white py-14 sm:py-20">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight tracking-tight mb-4">
             Appliance Repair FAQ — San Diego
@@ -139,7 +139,7 @@ export default function FAQPage() {
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-4">
         <p className="text-sm text-gray-500 text-center">
           Use the sections below to find answers. If your question isn&apos;t here, call{" "}
-          <a href={COMPANY_PHONE_TEL} className="text-brand-red font-semibold hover:underline">
+          <a href={COMPANY_PHONE_TEL} className="text-brand-blue font-semibold hover:underline">
             {COMPANY_PHONE_DISPLAY}
           </a>
           .
@@ -156,16 +156,16 @@ export default function FAQPage() {
       <section className="py-10 bg-white border-t border-gray-100">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <div className="flex flex-wrap gap-3">
-            <Link href="/services/" className="rounded-lg border border-gray-200 bg-gray-50 px-4 py-2 text-sm text-brand-navy hover:border-brand-red transition-colors">
+            <Link href="/services/" className="rounded-lg border border-gray-200 bg-gray-50 px-4 py-2 text-sm text-brand-slate hover:border-brand-blue transition-colors">
               All Services
             </Link>
-            <Link href="/brands/" className="rounded-lg border border-gray-200 bg-gray-50 px-4 py-2 text-sm text-brand-navy hover:border-brand-red transition-colors">
+            <Link href="/brands/" className="rounded-lg border border-gray-200 bg-gray-50 px-4 py-2 text-sm text-brand-slate hover:border-brand-blue transition-colors">
               Brands We Service
             </Link>
-            <Link href="/about/" className="rounded-lg border border-gray-200 bg-gray-50 px-4 py-2 text-sm text-brand-navy hover:border-brand-red transition-colors">
+            <Link href="/about/" className="rounded-lg border border-gray-200 bg-gray-50 px-4 py-2 text-sm text-brand-slate hover:border-brand-blue transition-colors">
               About Us
             </Link>
-            <Link href="/contact/" className="rounded-lg border border-brand-red bg-red-50 px-4 py-2 text-sm font-medium text-brand-red hover:bg-brand-red hover:text-white transition-colors">
+            <Link href="/contact/" className="rounded-lg border border-brand-blue bg-red-50 px-4 py-2 text-sm font-medium text-brand-blue hover:bg-brand-blue hover:text-white transition-colors">
               Contact Us →
             </Link>
           </div>
@@ -173,17 +173,17 @@ export default function FAQPage() {
       </section>
 
       {/* Final CTA */}
-      <section className="bg-brand-navy py-16 text-center text-white">
+      <section className="bg-brand-slate py-16 text-center text-white">
         <div className="mx-auto max-w-2xl px-4">
           <h2 className="text-3xl font-extrabold mb-3">
             Ready to schedule your repair?
           </h2>
           <p className="text-white/70 mb-6">
-            {DIAGNOSTIC_FEE} diagnostic fee waived if we fix it. {WARRANTY_DAYS}-day parts &amp; labor warranty.
+            {DIAGNOSTIC_FEE} service call fee waived if we fix it. {WARRANTY_DAYS}-day parts &amp; labor warranty.
           </p>
           <a
             href={COMPANY_PHONE_TEL}
-            className="inline-flex items-center gap-3 rounded-lg bg-brand-red px-8 py-4 text-xl font-extrabold text-white hover:bg-brand-red-dark transition-colors shadow-lg"
+            className="inline-flex items-center gap-3 rounded-lg bg-brand-blue px-8 py-4 text-xl font-extrabold text-white hover:bg-brand-blue-dark transition-colors shadow-lg"
           >
             <Phone className="h-6 w-6" aria-hidden="true" />
             {COMPANY_PHONE_DISPLAY}

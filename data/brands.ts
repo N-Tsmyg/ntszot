@@ -20,10 +20,10 @@ export const BRANDS: Brand[] = [
     name: "Samsung",
     slug: "samsung-appliance-repair-san-diego",
     tier: "mainstream",
-    h1: "Samsung Appliance Repair in San Diego, CA — WNDW Appliance Repair",
+    h1: "Samsung Appliance Repair in San Diego, CA — NTSZOT Appliance Repair",
     metaTitle: "Samsung Appliance Repair San Diego",
     metaDescription:
-      "Samsung appliance repair in San Diego — $85 diagnostic fee waived if we fix it. 90-day warranty. Refrigerators, washers, dryers & more. Call (858) 264-3138.",
+      "Samsung appliance repair in San Diego — $80 service call fee waived if we fix it. 60-day warranty. Refrigerators, washers, dryers & more. Call (619) 488-4477.",
     primaryKeyword: "samsung appliance repair san diego",
     appliancesServiced: ["Refrigerators", "Washers", "Dryers", "Dishwashers", "Ovens & Ranges", "Microwaves"],
     topSymptoms: [
@@ -41,10 +41,10 @@ export const BRANDS: Brand[] = [
     name: "LG",
     slug: "lg-appliance-repair-san-diego",
     tier: "mainstream",
-    h1: "LG Appliance Repair in San Diego, CA — WNDW Appliance Repair",
+    h1: "LG Appliance Repair in San Diego, CA — NTSZOT Appliance Repair",
     metaTitle: "LG Appliance Repair San Diego",
     metaDescription:
-      "LG appliance repair in San Diego — $85 diagnostic fee waived if we fix it. 90-day warranty. Washers, refrigerators & more. Call (858) 264-3138.",
+      "LG appliance repair in San Diego — $80 service call fee waived if we fix it. 60-day warranty. Washers, refrigerators & more. Call (619) 488-4477.",
     primaryKeyword: "lg appliance repair san diego",
     appliancesServiced: ["Washers", "Dryers", "Refrigerators", "Dishwashers", "Ovens & Ranges", "Microwaves"],
     topSymptoms: [
@@ -62,10 +62,10 @@ export const BRANDS: Brand[] = [
     name: "Whirlpool",
     slug: "whirlpool-appliance-repair-san-diego",
     tier: "mainstream",
-    h1: "Whirlpool Appliance Repair in San Diego, CA — WNDW Appliance Repair",
+    h1: "Whirlpool Appliance Repair in San Diego, CA — NTSZOT Appliance Repair",
     metaTitle: "Whirlpool Appliance Repair San Diego",
     metaDescription:
-      "Whirlpool appliance repair in San Diego — $85 diagnostic fee waived if we fix it. 90-day warranty. All Whirlpool appliances. Call (858) 264-3138.",
+      "Whirlpool appliance repair in San Diego — $80 service call fee waived if we fix it. 60-day warranty. All Whirlpool appliances. Call (619) 488-4477.",
     primaryKeyword: "whirlpool appliance repair san diego",
     appliancesServiced: ["Washers", "Dryers", "Refrigerators", "Dishwashers", "Ovens & Ranges", "Microwaves"],
     topSymptoms: [
@@ -83,10 +83,10 @@ export const BRANDS: Brand[] = [
     name: "GE",
     slug: "ge-appliance-repair-san-diego",
     tier: "mainstream",
-    h1: "GE Appliance Repair in San Diego, CA — WNDW Appliance Repair",
+    h1: "GE Appliance Repair in San Diego, CA — NTSZOT Appliance Repair",
     metaTitle: "GE Appliance Repair San Diego",
     metaDescription:
-      "GE appliance repair in San Diego — $85 diagnostic fee waived if we fix it. 90-day warranty. GE & GE Profile appliances. Call (858) 264-3138.",
+      "GE appliance repair in San Diego — $80 service call fee waived if we fix it. 60-day warranty. GE & GE Profile appliances. Call (619) 488-4477.",
     primaryKeyword: "ge appliance repair san diego",
     appliancesServiced: ["Refrigerators", "Washers", "Dryers", "Dishwashers", "Ovens & Ranges", "Microwaves"],
     topSymptoms: [
@@ -103,10 +103,10 @@ export const BRANDS: Brand[] = [
     name: "KitchenAid",
     slug: "kitchenaid-appliance-repair-san-diego",
     tier: "mainstream",
-    h1: "KitchenAid Appliance Repair in San Diego, CA — WNDW Appliance Repair",
+    h1: "KitchenAid Appliance Repair in San Diego, CA — NTSZOT Appliance Repair",
     metaTitle: "KitchenAid Appliance Repair San Diego",
     metaDescription:
-      "KitchenAid appliance repair in San Diego — $85 diagnostic fee waived if we fix it. 90-day warranty. Dishwashers, refrigerators & more. Call (858) 264-3138.",
+      "KitchenAid appliance repair in San Diego — $80 service call fee waived if we fix it. 60-day warranty. Dishwashers, refrigerators & more. Call (619) 488-4477.",
     primaryKeyword: "kitchenaid appliance repair san diego",
     appliancesServiced: ["Dishwashers", "Refrigerators", "Washers", "Dryers", "Ovens & Ranges"],
     topSymptoms: [
@@ -124,10 +124,10 @@ export const BRANDS: Brand[] = [
     name: "Kenmore",
     slug: "kenmore-appliance-repair-san-diego",
     tier: "mainstream",
-    h1: "Kenmore Appliance Repair in San Diego, CA — WNDW Appliance Repair",
+    h1: "Kenmore Appliance Repair in San Diego, CA — NTSZOT Appliance Repair",
     metaTitle: "Kenmore Appliance Repair San Diego",
     metaDescription:
-      "Kenmore appliance repair in San Diego — $85 diagnostic fee waived if we fix it. 90-day warranty. All Kenmore models. Call (858) 264-3138.",
+      "Kenmore appliance repair in San Diego — $80 service call fee waived if we fix it. 60-day warranty. All Kenmore models. Call (619) 488-4477.",
     primaryKeyword: "kenmore appliance repair san diego",
     appliancesServiced: ["Washers", "Dryers", "Refrigerators", "Dishwashers", "Ovens & Ranges"],
     topSymptoms: [
@@ -145,10 +145,10 @@ export const BRANDS: Brand[] = [
     name: "Bosch",
     slug: "bosch-appliance-repair-san-diego",
     tier: "mainstream",
-    h1: "Bosch Appliance Repair in San Diego, CA — WNDW Appliance Repair",
+    h1: "Bosch Appliance Repair in San Diego, CA — NTSZOT Appliance Repair",
     metaTitle: "Bosch Appliance Repair San Diego",
     metaDescription:
-      "Bosch appliance repair in San Diego — $85 diagnostic fee waived if we fix it. 90-day warranty. Dishwashers, refrigerators & more. Call (858) 264-3138.",
+      "Bosch appliance repair in San Diego — $80 service call fee waived if we fix it. 60-day warranty. Dishwashers, refrigerators & more. Call (619) 488-4477.",
     primaryKeyword: "bosch appliance repair san diego",
     appliancesServiced: ["Dishwashers", "Refrigerators", "Ovens & Ranges", "Washers"],
     topSymptoms: [
@@ -166,10 +166,10 @@ export const BRANDS: Brand[] = [
     name: "Electrolux",
     slug: "electrolux-appliance-repair-san-diego",
     tier: "mainstream",
-    h1: "Electrolux Appliance Repair in San Diego, CA — WNDW Appliance Repair",
+    h1: "Electrolux Appliance Repair in San Diego, CA — NTSZOT Appliance Repair",
     metaTitle: "Electrolux Appliance Repair San Diego",
     metaDescription:
-      "Electrolux appliance repair in San Diego — $85 diagnostic fee waived if we fix it. 90-day warranty. Washers, dryers & more. Call (858) 264-3138.",
+      "Electrolux appliance repair in San Diego — $80 service call fee waived if we fix it. 60-day warranty. Washers, dryers & more. Call (619) 488-4477.",
     primaryKeyword: "electrolux appliance repair san diego",
     appliancesServiced: ["Washers", "Dryers", "Refrigerators", "Dishwashers", "Ovens & Ranges"],
     topSymptoms: [
@@ -186,10 +186,10 @@ export const BRANDS: Brand[] = [
     name: "Miele",
     slug: "miele-appliance-repair-san-diego",
     tier: "premium",
-    h1: "Miele Appliance Repair in San Diego, CA — WNDW Appliance Repair",
+    h1: "Miele Appliance Repair in San Diego, CA — NTSZOT Appliance Repair",
     metaTitle: "Miele Appliance Repair San Diego",
     metaDescription:
-      "Miele appliance repair in San Diego — $85 diagnostic fee waived if we fix it. 90-day warranty. Dishwashers, washers & more. Call (858) 264-3138.",
+      "Miele appliance repair in San Diego — $80 service call fee waived if we fix it. 60-day warranty. Dishwashers, washers & more. Call (619) 488-4477.",
     primaryKeyword: "miele appliance repair san diego",
     appliancesServiced: ["Dishwashers", "Washers", "Dryers", "Refrigerators"],
     topSymptoms: [
@@ -200,17 +200,17 @@ export const BRANDS: Brand[] = [
       "Miele refrigerator not cooling",
     ],
     contentNote:
-      "Miele users value quality above price. Tone should reflect the premium nature — emphasize 90-day warranty and technician experience. Do NOT claim factory-certified.",
+      "Miele users value quality above price. Tone should reflect the premium nature — emphasize 60-day warranty and technician experience. Do NOT claim factory-certified.",
   },
   {
     id: "sub-zero",
     name: "Sub-Zero",
     slug: "sub-zero-appliance-repair-san-diego",
     tier: "premium",
-    h1: "Sub-Zero Appliance Repair in San Diego, CA — WNDW Appliance Repair",
+    h1: "Sub-Zero Appliance Repair in San Diego, CA — NTSZOT Appliance Repair",
     metaTitle: "Sub-Zero Appliance Repair San Diego",
     metaDescription:
-      "Sub-Zero refrigerator repair in San Diego — $85 diagnostic fee waived if we fix it. 90-day warranty. All Sub-Zero models. Call (858) 264-3138.",
+      "Sub-Zero refrigerator repair in San Diego — $80 service call fee waived if we fix it. 60-day warranty. All Sub-Zero models. Call (619) 488-4477.",
     primaryKeyword: "sub-zero appliance repair san diego",
     appliancesServiced: ["Refrigerators", "Wine Coolers", "Freezers", "Ice Makers"],
     topSymptoms: [
@@ -221,17 +221,17 @@ export const BRANDS: Brand[] = [
       "Sub-Zero wine cooler not cooling",
     ],
     contentNote:
-      "Sub-Zero owners have $5,000–$12,000+ invested in their appliance. Lead with 90-day warranty and upfront quote. Emphasize confidence over price.",
+      "Sub-Zero owners have $5,000–$12,000+ invested in their appliance. Lead with 60-day warranty and upfront quote. Emphasize confidence over price.",
   },
   {
     id: "thermador",
     name: "Thermador",
     slug: "thermador-appliance-repair-san-diego",
     tier: "premium",
-    h1: "Thermador Appliance Repair in San Diego, CA — WNDW Appliance Repair",
+    h1: "Thermador Appliance Repair in San Diego, CA — NTSZOT Appliance Repair",
     metaTitle: "Thermador Appliance Repair San Diego",
     metaDescription:
-      "Thermador appliance repair in San Diego — $85 diagnostic fee waived if we fix it. 90-day warranty. Ranges, dishwashers & more. Call (858) 264-3138.",
+      "Thermador appliance repair in San Diego — $80 service call fee waived if we fix it. 60-day warranty. Ranges, dishwashers & more. Call (619) 488-4477.",
     primaryKeyword: "thermador appliance repair san diego",
     appliancesServiced: ["Ranges & Cooktops", "Ovens", "Dishwashers", "Refrigerators"],
     topSymptoms: [
@@ -249,10 +249,10 @@ export const BRANDS: Brand[] = [
     name: "Speed Queen",
     slug: "speed-queen-appliance-repair-san-diego",
     tier: "specialty",
-    h1: "Speed Queen Appliance Repair in San Diego, CA — WNDW Appliance Repair",
+    h1: "Speed Queen Appliance Repair in San Diego, CA — NTSZOT Appliance Repair",
     metaTitle: "Speed Queen Appliance Repair San Diego",
     metaDescription:
-      "Speed Queen washer & dryer repair in San Diego — $85 diagnostic fee waived if we fix it. 90-day warranty. All models. Call (858) 264-3138.",
+      "Speed Queen washer & dryer repair in San Diego — $80 service call fee waived if we fix it. 60-day warranty. All models. Call (619) 488-4477.",
     primaryKeyword: "speed queen appliance repair san diego",
     appliancesServiced: ["Washers", "Dryers"],
     topSymptoms: [

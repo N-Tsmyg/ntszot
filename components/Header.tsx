@@ -19,7 +19,7 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 z-50 bg-brand-navy shadow-md">
+    <header className="sticky top-0 z-50 bg-brand-slate shadow-md">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
@@ -60,7 +60,7 @@ export default function Header() {
 
             <a
               href={COMPANY_PHONE_TEL}
-              className="flex items-center gap-2 rounded-md bg-brand-red px-4 py-2.5 text-sm font-bold text-white hover:bg-brand-red-dark transition-colors"
+              className="flex items-center gap-2 rounded-md bg-brand-blue px-4 py-2.5 text-sm font-bold text-white hover:bg-brand-blue-dark transition-colors"
             >
               <Phone className="h-4 w-4" aria-hidden="true" />
               <span className="hidden sm:inline">{COMPANY_PHONE_DISPLAY}</span>
@@ -72,7 +72,7 @@ export default function Header() {
 
       {/* Mobile dropdown menu */}
       {menuOpen && (
-        <nav id="mobile-nav" className="md:hidden border-t border-white/10 bg-brand-navy">
+        <nav id="mobile-nav" className="md:hidden border-t border-white/10 bg-brand-slate">
           <div className="mx-auto max-w-7xl px-4 py-3 flex flex-col">
             {NAV_LINKS.map((link) => (
               <Link

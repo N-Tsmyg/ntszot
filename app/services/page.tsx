@@ -17,12 +17,12 @@ import {
 export const metadata: Metadata = {
   title: "Appliance Repair Services in San Diego",
   description:
-    "All appliance repair services in San Diego — washers, dryers, refrigerators, dishwashers, ovens & more. $85 diagnostic fee waived if we fix it. 90-day warranty. Call (858) 264-3138.",
+    "All appliance repair services in San Diego — washers, dryers, refrigerators, dishwashers, ovens & more. $80 service call fee waived if we fix it. 60-day warranty. Call (619) 488-4477.",
   alternates: { canonical: `${COMPANY_WEBSITE}/services/` },
   openGraph: {
     title: `Appliance Repair Services in San Diego | ${COMPANY_NAME}`,
     description:
-      "11 appliance repair services in San Diego County. $85 diagnostic fee waived if we fix it. 90-day parts & labor warranty. All major brands.",
+      "11 appliance repair services in San Diego County. $80 service call fee waived if we fix it. 60-day parts & labor warranty. All major brands.",
     url: `${COMPANY_WEBSITE}/services/`,
   },
 }
@@ -30,12 +30,12 @@ export const metadata: Metadata = {
 const SERVICES_FAQS = [
   {
     question: "How much does appliance repair cost in San Diego?",
-    answer: `Most repairs — washers, dryers, dishwashers, ovens, microwaves, and range hoods — fall in the $250–$350 range including parts and labor. Refrigerator, freezer, and ice maker repairs typically run $350–$900 depending on the component and brand. The $85 diagnostic fee is waived completely if you proceed with the repair.`,
+    answer: `Most repairs — washers, dryers, dishwashers, ovens, microwaves, and range hoods — fall in the $250–$350 range including parts and labor. Refrigerator, freezer, and ice maker repairs typically run $350–$900 depending on the component and brand. The $80 service call fee is waived completely if you proceed with the repair.`,
   },
   {
     question: "How quickly can you come out for a repair?",
     answer:
-      "In most cases our technician can arrive same day. Our goal is a 3-hour arrival window. We're available Mon–Sat 7:00 AM–11:00 PM and Sun 8:00 AM–10:00 PM — 7 days a week including most holidays.",
+      "In most cases our technician can arrive same day. Our goal is a 3-hour arrival window. We're available Mon–Fri 9:00 AM–6:00 PM and Sat 10:00 AM–5:00 PM including most holidays.",
   },
   {
     question: "Do you service all appliance brands?",
@@ -59,23 +59,23 @@ export default function ServicesHubPage() {
       />
 
       {/* Page header */}
-      <section className="bg-brand-navy text-white py-14 sm:py-20">
+      <section className="bg-brand-slate text-white py-14 sm:py-20">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight tracking-tight mb-4">
-            Appliance Repair Services in San Diego — WNDW Appliance Repair
+            Appliance Repair Services in San Diego — NTSZOT Appliance Repair
           </h1>
           <p className="text-lg sm:text-xl text-white/80 mb-6 max-w-2xl mx-auto">
             In-home repair across San Diego County. {DIAGNOSTIC_FEE} diagnostic fee waived if we fix it. {WARRANTY_DAYS}-day warranty on every repair. All major brands.
           </p>
           <a
             href={COMPANY_PHONE_TEL}
-            className="inline-flex items-center gap-3 rounded-lg bg-brand-red px-8 py-4 text-xl font-extrabold text-white hover:bg-brand-red-dark transition-colors shadow-lg"
+            className="inline-flex items-center gap-3 rounded-lg bg-brand-blue px-8 py-4 text-xl font-extrabold text-white hover:bg-brand-blue-dark transition-colors shadow-lg"
           >
             <Phone className="h-6 w-6" aria-hidden="true" />
             {COMPANY_PHONE_DISPLAY}
           </a>
           <p className="mt-4 text-sm text-white/50">
-            Mon–Sat 7:00 AM–11:00 PM · Sun 8:00 AM–10:00 PM
+            Mon–Fri 9:00 AM–6:00 PM · Sat 10:00 AM–5:00 PM · Sun closed
           </p>
         </div>
       </section>
@@ -86,7 +86,7 @@ export default function ServicesHubPage() {
       <section className="py-10 bg-white">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <p className="text-gray-600 text-base leading-relaxed text-center">
-            WNDW Appliance Repair services all major home appliances in San Diego County. Whether your refrigerator stopped cooling, your washer won&apos;t drain, or your oven won&apos;t light, our technician comes to your home, diagnoses the problem, and completes the repair — in most cases same visit. Browse all 11 services below.
+            NTSZOT Appliance Repair services all major home appliances in San Diego County. Whether your refrigerator stopped cooling, your washer won&apos;t drain, or your oven won&apos;t light, our technician comes to your home, diagnoses the problem, and completes the repair — in most cases same visit. Browse all 11 services below.
           </p>
         </div>
       </section>
@@ -99,17 +99,17 @@ export default function ServicesHubPage() {
               <Link
                 key={s.slug}
                 href={`/services/${s.slug}/`}
-                className="group flex flex-col items-center gap-3 rounded-xl border border-gray-200 bg-gray-50 p-5 text-center hover:border-brand-red hover:bg-red-50 transition-colors"
+                className="group flex flex-col items-center gap-3 rounded-xl border border-gray-200 bg-gray-50 p-5 text-center hover:border-brand-blue hover:bg-red-50 transition-colors"
               >
-                <div className="rounded-full bg-brand-red/10 p-3 group-hover:bg-brand-red/20 transition-colors">
-                  <Wrench className="h-6 w-6 text-brand-red" aria-hidden="true" />
+                <div className="rounded-full bg-brand-blue/10 p-3 group-hover:bg-brand-blue/20 transition-colors">
+                  <Wrench className="h-6 w-6 text-brand-blue" aria-hidden="true" />
                 </div>
                 <div>
-                  <p className="text-sm font-semibold text-brand-navy">{s.name}</p>
+                  <p className="text-sm font-semibold text-brand-slate">{s.name}</p>
                   <p className="mt-0.5 text-xs text-gray-500">{s.priceRange}</p>
                   <p className="mt-1 text-xs text-gray-400 leading-snug hidden sm:block">{s.shortDesc}</p>
                 </div>
-                <span className="text-xs font-medium text-brand-red group-hover:underline">Learn more →</span>
+                <span className="text-xs font-medium text-brand-blue group-hover:underline">Learn more →</span>
               </Link>
             ))}
           </div>
@@ -119,25 +119,25 @@ export default function ServicesHubPage() {
       {/* Specialty services */}
       <section className="py-8 bg-white border-t border-gray-100">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <p className="text-sm font-semibold text-brand-navy mb-4 uppercase tracking-wide">
+          <p className="text-sm font-semibold text-brand-slate mb-4 uppercase tracking-wide">
             Specialty Services
           </p>
           <div className="flex flex-wrap gap-3">
             <Link
               href="/emergency-appliance-repair/"
-              className="rounded-lg border border-gray-200 bg-gray-50 px-4 py-2 text-sm text-brand-navy hover:border-brand-red transition-colors"
+              className="rounded-lg border border-gray-200 bg-gray-50 px-4 py-2 text-sm text-brand-slate hover:border-brand-blue transition-colors"
             >
               Emergency Appliance Repair
             </Link>
             <Link
               href="/property-management-appliance-repair/"
-              className="rounded-lg border border-gray-200 bg-gray-50 px-4 py-2 text-sm text-brand-navy hover:border-brand-red transition-colors"
+              className="rounded-lg border border-gray-200 bg-gray-50 px-4 py-2 text-sm text-brand-slate hover:border-brand-blue transition-colors"
             >
               Property Management
             </Link>
             <Link
               href="/vacation-rental-appliance-repair/"
-              className="rounded-lg border border-gray-200 bg-gray-50 px-4 py-2 text-sm text-brand-navy hover:border-brand-red transition-colors"
+              className="rounded-lg border border-gray-200 bg-gray-50 px-4 py-2 text-sm text-brand-slate hover:border-brand-blue transition-colors"
             >
               Vacation Rental Repairs
             </Link>
@@ -145,14 +145,14 @@ export default function ServicesHubPage() {
         </div>
       </section>
 
-      {/* Why WNDW blurb */}
+      {/* Why NTSZOT blurb */}
       <section className="py-10 bg-gray-50 border-y border-gray-200">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-2xl font-bold text-brand-navy mb-4">
-            Why San Diego Homeowners Call WNDW
+          <h2 className="text-2xl font-bold text-brand-slate mb-4">
+            Why San Diego Homeowners Call NTSZOT
           </h2>
           <p className="text-gray-600 text-sm leading-relaxed mb-6">
-            Every service call starts with a flat {DIAGNOSTIC_FEE} diagnostic fee — waived completely if you proceed with the repair. Every completed repair is backed by a {WARRANTY_DAYS}-day parts and labor warranty. Our technician arrives in a stocked service vehicle, so most repairs are done in a single visit. We serve all of San Diego County, 7 days a week.
+            Every service call starts with a flat {DIAGNOSTIC_FEE} diagnostic fee — waived completely if you proceed with the repair. Every completed repair is backed by a {WARRANTY_DAYS}-day parts and labor warranty. Our technician arrives in a stocked service vehicle, so most repairs are done in a single visit. We serve all of San Diego County, 6 days a week.
           </p>
           <p className="text-sm text-gray-500">
             Card payments accepted with a 3.5% processing fee. No fee on cash, check, Zelle, or Venmo.
@@ -166,7 +166,7 @@ export default function ServicesHubPage() {
       />
 
       {/* Final CTA */}
-      <section className="bg-brand-navy py-16 text-center text-white">
+      <section className="bg-brand-slate py-16 text-center text-white">
         <div className="mx-auto max-w-2xl px-4">
           <h2 className="text-3xl font-extrabold mb-3">
             Ready to schedule your appliance repair?
@@ -176,13 +176,13 @@ export default function ServicesHubPage() {
           </p>
           <a
             href={COMPANY_PHONE_TEL}
-            className="inline-flex items-center gap-3 rounded-lg bg-brand-red px-8 py-4 text-xl font-extrabold text-white hover:bg-brand-red-dark transition-colors shadow-lg"
+            className="inline-flex items-center gap-3 rounded-lg bg-brand-blue px-8 py-4 text-xl font-extrabold text-white hover:bg-brand-blue-dark transition-colors shadow-lg"
           >
             <Phone className="h-6 w-6" aria-hidden="true" />
             {COMPANY_PHONE_DISPLAY}
           </a>
           <p className="mt-4 text-sm text-white/60">
-            Mon–Sat 7:00 AM–11:00 PM · Sun 8:00 AM–10:00 PM
+            Mon–Fri 9:00 AM–6:00 PM · Sat 10:00 AM–5:00 PM · Sun closed
           </p>
         </div>
       </section>

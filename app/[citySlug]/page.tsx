@@ -62,8 +62,8 @@ function getOpeningParagraph(location: Location): string {
     return (
       `Living with ${localVernacular} means your appliances face wear that homeowners in other parts of California simply do not see. ` +
       `In ${name}, every refrigerator, washer, and dishwasher works harder than the manufacturer's warranty table assumes. ` +
-      `WNDW Appliance Repair sends a technician directly to your ${name} home — no hauling appliances to a shop, no waiting weeks for a service window. ` +
-      `We charge a flat ${DIAGNOSTIC_FEE} diagnostic fee that is waived entirely if you proceed with the repair. ` +
+      `NTSZOT Appliance Repair sends a technician directly to your ${name} home — no hauling appliances to a shop, no waiting weeks for a service window. ` +
+      `We charge a flat ${DIAGNOSTIC_FEE} service call fee that is waived entirely if you proceed with the repair. ` +
       `Every completed repair carries a ${WARRANTY_DAYS}-day parts and labor warranty, and we are available seven days a week: ` +
       `${HOURS_WEEKDAY} and ${HOURS_SUNDAY}. ` +
       `From homes near ${landmark1} to neighborhoods around ${landmark2}, we cover all of ${name}.`
@@ -74,8 +74,8 @@ function getOpeningParagraph(location: Location): string {
     return (
       `A broken appliance in ${name} does not wait for a convenient time. ` +
       `When the washer stops mid-cycle or the refrigerator quits overnight, every hour matters — laundry piles up, food spoils, and your day falls apart. ` +
-      `WNDW Appliance Repair is available seven days a week so ${name} residents do not have to wait for Monday morning. ` +
-      `Our technician arrives at your home with a flat ${DIAGNOSTIC_FEE} diagnostic fee that is waived entirely when you proceed with the repair. ` +
+      `NTSZOT Appliance Repair is available seven days a week so ${name} residents do not have to wait for Monday morning. ` +
+      `Our technician arrives at your home with a flat ${DIAGNOSTIC_FEE} service call fee that is waived entirely when you proceed with the repair. ` +
       `Every repair is backed by a ${WARRANTY_DAYS}-day parts and labor warranty. ` +
       `We service all major brands and handle the full range of home appliances — from washers and dryers to refrigerators, ovens, and dishwashers. ` +
       `Whether you live near ${landmark1} or closer to ${landmark2}, our technician comes to you.`
@@ -86,7 +86,7 @@ function getOpeningParagraph(location: Location): string {
   return (
     `Your ${name} home deserves appliances that perform as well as the property itself. ` +
     `Whether you own near ${landmark1} or close to ${landmark2}, well-maintained appliances protect your home's value and prevent the costly emergency replacements that cut into your investment. ` +
-    `WNDW Appliance Repair serves ${name} with in-home service, a flat ${DIAGNOSTIC_FEE} diagnostic fee waived if we repair it, and a ${WARRANTY_DAYS}-day parts and labor warranty on every completed job. ` +
+    `NTSZOT Appliance Repair serves ${name} with in-home service, a flat ${DIAGNOSTIC_FEE} service call fee waived if we repair it, and a ${WARRANTY_DAYS}-day parts and labor warranty on every completed job. ` +
     `We are available ${HOURS_WEEKDAY} and ${HOURS_SUNDAY} — seven days a week, no weekend markup. ` +
     `All major brands are covered: Samsung, LG, Whirlpool, GE, KitchenAid, Bosch, Sub-Zero, Thermador, and more. ` +
     `One call handles it, and your technician works in your kitchen rather than asking you to haul a 300-pound refrigerator anywhere.`
@@ -99,7 +99,7 @@ function getCitySpecificParagraph(location: Location): string {
     `${name} (ZIP ${zip}) sits in a part of San Diego County where ${localVernacular}. ` +
     `Homes near ${landmark1} and in the neighborhoods around ${landmark2} share this common thread: appliances here wear differently than the national average suggests. ` +
     `Refrigerator condenser coils collect grime faster, washing machine drums accumulate mineral buildup, and dryer vents fill with lint and dust more quickly. ` +
-    `Understanding these local conditions is part of why ${name} homeowners call WNDW rather than waiting for a manufacturer warranty call center to connect them to someone two counties away. ` +
+    `Understanding these local conditions is part of why ${name} homeowners call NTSZOT rather than waiting for a manufacturer warranty call center to connect them to someone two counties away. ` +
     `Our technician knows San Diego County, arrives prepared for what local conditions cause, and carries common parts on the service vehicle to complete most repairs in a single visit.`
   )
 }
@@ -109,7 +109,7 @@ function getCityFAQs(location: Location): FAQ[] {
   return [
     {
       question: `How much does appliance repair cost in ${name}?`,
-      answer: `Most appliance repairs in ${name} cost $250–$350 including parts and labor — that covers washers, dryers, dishwashers, ovens, microwaves, and range hoods. Refrigerator, freezer, and ice maker repairs typically run $350–$900 depending on the component and brand. The ${DIAGNOSTIC_FEE} diagnostic fee is waived completely when you proceed with the repair. A ${CARD_FEE_PERCENT}% processing fee applies to card payments; no fee on cash, check, Zelle, or Venmo.`,
+      answer: `Most appliance repairs in ${name} cost $250–$350 including parts and labor — that covers washers, dryers, dishwashers, ovens, microwaves, and range hoods. Refrigerator, freezer, and ice maker repairs typically run $350–$900 depending on the component and brand. The ${DIAGNOSTIC_FEE} service call fee is waived completely when you proceed with the repair. A ${CARD_FEE_PERCENT}% processing fee applies to card payments; no fee on cash, check, Zelle, or Venmo.`,
     },
     {
       question: `Do you offer same-day appliance repair in ${name}?`,
@@ -142,9 +142,9 @@ const PRICING_ROWS = [
 ]
 
 const WHY_CHOOSE = [
-  `${DIAGNOSTIC_FEE} diagnostic fee — waived entirely if we repair it`,
+  `${DIAGNOSTIC_FEE} service call fee — waived entirely if we repair it`,
   `${WARRANTY_DAYS}-day parts and labor warranty on every completed repair`,
-  "Available 7 days a week — no weekend surcharge",
+  "Available 6 days a week — no weekend surcharge",
   "Upfront quote before any work begins — no surprises",
   "All major brands: Samsung, LG, Whirlpool, GE, KitchenAid, Bosch, Sub-Zero, Thermador, and more",
 ]
@@ -186,19 +186,19 @@ export default async function CityPage({
       />
 
       {/* ── Hero ── */}
-      <section className="bg-brand-navy text-white py-14 sm:py-20">
+      <section className="bg-brand-slate text-white py-14 sm:py-20">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight tracking-tight mb-4">
             Appliance Repair in {location.name}, CA — {COMPANY_NAME}
           </h1>
           <p className="text-lg sm:text-xl text-white/80 mb-6 max-w-2xl mx-auto">
-            In-home repair across {location.name}. {DIAGNOSTIC_FEE} diagnostic fee
+            In-home repair across {location.name}. {DIAGNOSTIC_FEE} service call fee
             waived if we fix it. {WARRANTY_DAYS}-day warranty. All major brands. 7 days
             a week.
           </p>
           <a
             href={COMPANY_PHONE_TEL}
-            className="inline-flex items-center gap-3 rounded-lg bg-brand-red px-8 py-4 text-xl font-extrabold text-white hover:bg-brand-red-dark transition-colors shadow-lg"
+            className="inline-flex items-center gap-3 rounded-lg bg-brand-blue px-8 py-4 text-xl font-extrabold text-white hover:bg-brand-blue-dark transition-colors shadow-lg"
           >
             <Phone className="h-6 w-6" aria-hidden="true" />
             {COMPANY_PHONE_DISPLAY}
@@ -208,7 +208,7 @@ export default async function CityPage({
           </p>
           <div className="mt-5 inline-flex items-center gap-2 rounded-full bg-white/10 border border-white/20 px-4 py-2 text-sm text-white/90">
             <ShieldCheck className="h-4 w-4 text-white/70 shrink-0" aria-hidden="true" />
-            90-Day Parts &amp; Labor Warranty — Technician returns free if anything goes wrong
+            60-Day Parts &amp; Labor Warranty — Technician returns free if anything goes wrong
           </div>
         </div>
       </section>
@@ -225,7 +225,7 @@ export default async function CityPage({
       {/* ── Services section ── */}
       <section className="py-10 pb-14 bg-gray-50 border-y border-gray-200">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-brand-navy mb-2 text-center">
+          <h2 className="text-2xl font-bold text-brand-slate mb-2 text-center">
             Appliance Repair Services in {location.name}
           </h2>
           <p className="text-sm text-gray-500 text-center mb-8">
@@ -238,14 +238,14 @@ export default async function CityPage({
                 className="rounded-xl border border-gray-200 bg-white p-5"
               >
                 <div className="flex items-start gap-3">
-                  <div className="rounded-full bg-brand-red/10 p-2 shrink-0 mt-0.5">
-                    <Wrench className="h-4 w-4 text-brand-red" aria-hidden="true" />
+                  <div className="rounded-full bg-brand-blue/10 p-2 shrink-0 mt-0.5">
+                    <Wrench className="h-4 w-4 text-brand-blue" aria-hidden="true" />
                   </div>
                   <div>
-                    <h3 className="text-sm font-semibold text-brand-navy mb-1">
+                    <h3 className="text-sm font-semibold text-brand-slate mb-1">
                       <Link
                         href={`/services/${service.slug}/`}
-                        className="hover:text-brand-red transition-colors"
+                        className="hover:text-brand-blue transition-colors"
                       >
                         {service.name} in {location.name}
                       </Link>
@@ -255,7 +255,7 @@ export default async function CityPage({
                     </p>
                     <p className="text-xs text-gray-400">
                       Typical cost:{" "}
-                      <span className="font-medium text-brand-navy">
+                      <span className="font-medium text-brand-slate">
                         {service.priceRange}
                       </span>
                     </p>
@@ -265,7 +265,7 @@ export default async function CityPage({
             ))}
           </div>
           <p className="mt-6 text-center text-xs text-gray-400">
-            All repairs include the {DIAGNOSTIC_FEE} diagnostic fee (waived if we
+            All repairs include the {DIAGNOSTIC_FEE} service call fee (waived if we
             repair it) and a {WARRANTY_DAYS}-day parts &amp; labor warranty.
           </p>
         </div>
@@ -274,7 +274,7 @@ export default async function CityPage({
       {/* ── City-specific paragraph ── */}
       <section className="py-10 bg-white">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-          <h2 className="text-xl font-bold text-brand-navy mb-4">
+          <h2 className="text-xl font-bold text-brand-slate mb-4">
             Appliance Repair Specific to {location.name}
           </h2>
           <p className="text-gray-700 text-base leading-relaxed">{cityParagraph}</p>
@@ -283,20 +283,20 @@ export default async function CityPage({
 
       <MidPageCTA
         heading={`Schedule your ${location.name} appliance repair today.`}
-        subtext={`${DIAGNOSTIC_FEE} diagnostic fee — waived completely if we fix it. ${WARRANTY_DAYS}-day parts & labor warranty.`}
+        subtext={`${DIAGNOSTIC_FEE} service call fee — waived completely if we fix it. ${WARRANTY_DAYS}-day parts & labor warranty.`}
       />
 
-      {/* ── Why Choose WNDW ── */}
+      {/* ── Why Choose NTSZOT ── */}
       <section className="py-12 bg-gray-50 border-y border-gray-200">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-brand-navy mb-8 text-center">
-            Why {location.name} Homeowners Call WNDW
+          <h2 className="text-2xl font-bold text-brand-slate mb-8 text-center">
+            Why {location.name} Homeowners Call NTSZOT
           </h2>
           <ul className="space-y-4">
             {WHY_CHOOSE.map((item, i) => (
               <li key={i} className="flex items-start gap-3">
                 <CheckCircle2
-                  className="h-5 w-5 text-brand-red shrink-0 mt-0.5"
+                  className="h-5 w-5 text-brand-blue shrink-0 mt-0.5"
                   aria-hidden="true"
                 />
                 <span className="text-gray-700 text-sm leading-relaxed">{item}</span>
@@ -309,16 +309,16 @@ export default async function CityPage({
       {/* ── Pricing section ── */}
       <section className="py-12 bg-white">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-brand-navy mb-2 text-center">
+          <h2 className="text-2xl font-bold text-brand-slate mb-2 text-center">
             Appliance Repair Pricing in {location.name}
           </h2>
           <p className="text-sm text-gray-500 text-center mb-6">
-            Flat {DIAGNOSTIC_FEE} diagnostic fee — waived when we repair it. Upfront
+            Flat {DIAGNOSTIC_FEE} service call fee — waived when we repair it. Upfront
             quote before any work begins.
           </p>
           <div className="overflow-hidden rounded-xl border border-gray-200">
             <table className="w-full text-sm">
-              <thead className="bg-brand-navy text-white">
+              <thead className="bg-brand-slate text-white">
                 <tr>
                   <th className="text-left px-4 py-3 font-semibold">Appliance Type</th>
                   <th className="text-left px-4 py-3 font-semibold">Typical Range</th>
@@ -333,7 +333,7 @@ export default async function CityPage({
                     key={row.type}
                     className={i % 2 === 0 ? "bg-white" : "bg-gray-50"}
                   >
-                    <td className="px-4 py-3 font-medium text-brand-navy">
+                    <td className="px-4 py-3 font-medium text-brand-slate">
                       {row.type}
                     </td>
                     <td className="px-4 py-3 text-gray-700">{row.range}</td>
@@ -357,7 +357,7 @@ export default async function CityPage({
       <section className="py-8 bg-gray-50">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <GMBEmbed
-            title={`WNDW Appliance Repair — ${location.name}`}
+            title={`NTSZOT Appliance Repair — ${location.name}`}
             height={300}
           />
         </div>
@@ -370,19 +370,19 @@ export default async function CityPage({
       />
 
       {/* ── Booking CTA ── */}
-      <section className="bg-brand-navy py-16 text-center text-white">
+      <section className="bg-brand-slate py-16 text-center text-white">
         <div className="mx-auto max-w-2xl px-4">
           <h2 className="text-3xl font-extrabold mb-3">
             Book Your {location.name} Appliance Repair
           </h2>
           <p className="text-white/70 mb-6">
-            {DIAGNOSTIC_FEE} diagnostic fee waived if we fix it. {WARRANTY_DAYS}-day
+            {DIAGNOSTIC_FEE} service call fee waived if we fix it. {WARRANTY_DAYS}-day
             parts &amp; labor warranty on every repair. Available{" "}
             {HOURS_WEEKDAY.toLowerCase()} and {HOURS_SUNDAY.toLowerCase()}.
           </p>
           <a
             href={COMPANY_PHONE_TEL}
-            className="inline-flex items-center gap-3 rounded-lg bg-brand-red px-8 py-4 text-xl font-extrabold text-white hover:bg-brand-red-dark transition-colors shadow-lg"
+            className="inline-flex items-center gap-3 rounded-lg bg-brand-blue px-8 py-4 text-xl font-extrabold text-white hover:bg-brand-blue-dark transition-colors shadow-lg"
           >
             <Phone className="h-6 w-6" aria-hidden="true" />
             {COMPANY_PHONE_DISPLAY}
@@ -401,7 +401,7 @@ export default async function CityPage({
             {/* Adjacent cities */}
             {relatedCityLocations.length > 0 && (
               <div>
-                <h3 className="text-sm font-semibold text-brand-navy mb-3 uppercase tracking-wide">
+                <h3 className="text-sm font-semibold text-brand-slate mb-3 uppercase tracking-wide">
                   Nearby Service Areas
                 </h3>
                 <ul className="space-y-2">
@@ -409,7 +409,7 @@ export default async function CityPage({
                     <li key={city.slug}>
                       <Link
                         href={`/${city.slug}/`}
-                        className="text-sm text-brand-red hover:underline"
+                        className="text-sm text-brand-blue hover:underline"
                       >
                         Appliance Repair in {city.name} →
                       </Link>
@@ -421,14 +421,14 @@ export default async function CityPage({
 
             {/* Featured services */}
             <div>
-              <h3 className="text-sm font-semibold text-brand-navy mb-3 uppercase tracking-wide">
+              <h3 className="text-sm font-semibold text-brand-slate mb-3 uppercase tracking-wide">
                 Popular Services
               </h3>
               <ul className="space-y-2">
                 <li>
                   <Link
                     href="/services/refrigerator-repair/"
-                    className="text-sm text-brand-red hover:underline"
+                    className="text-sm text-brand-blue hover:underline"
                   >
                     Refrigerator Repair →
                   </Link>
@@ -436,7 +436,7 @@ export default async function CityPage({
                 <li>
                   <Link
                     href="/services/washer-repair/"
-                    className="text-sm text-brand-red hover:underline"
+                    className="text-sm text-brand-blue hover:underline"
                   >
                     Washer Repair →
                   </Link>
@@ -444,7 +444,7 @@ export default async function CityPage({
                 <li>
                   <Link
                     href="/services/dryer-repair/"
-                    className="text-sm text-brand-red hover:underline"
+                    className="text-sm text-brand-blue hover:underline"
                   >
                     Dryer Repair →
                   </Link>
@@ -452,7 +452,7 @@ export default async function CityPage({
                 <li>
                   <Link
                     href="/services/dishwasher-repair/"
-                    className="text-sm text-brand-red hover:underline"
+                    className="text-sm text-brand-blue hover:underline"
                   >
                     Dishwasher Repair →
                   </Link>
@@ -462,22 +462,22 @@ export default async function CityPage({
 
             {/* Site links */}
             <div>
-              <h3 className="text-sm font-semibold text-brand-navy mb-3 uppercase tracking-wide">
+              <h3 className="text-sm font-semibold text-brand-slate mb-3 uppercase tracking-wide">
                 More
               </h3>
               <ul className="space-y-2">
                 <li>
                   <Link
                     href="/"
-                    className="text-sm text-brand-red hover:underline"
+                    className="text-sm text-brand-blue hover:underline"
                   >
-                    WNDW Appliance Repair — Home →
+                    NTSZOT Appliance Repair — Home →
                   </Link>
                 </li>
                 <li>
                   <Link
                     href="/services/"
-                    className="text-sm text-brand-red hover:underline"
+                    className="text-sm text-brand-blue hover:underline"
                   >
                     All Services →
                   </Link>
@@ -485,7 +485,7 @@ export default async function CityPage({
                 <li>
                   <Link
                     href="/locations/"
-                    className="text-sm text-brand-red hover:underline"
+                    className="text-sm text-brand-blue hover:underline"
                   >
                     All Service Areas →
                   </Link>

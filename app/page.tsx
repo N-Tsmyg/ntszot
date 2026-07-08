@@ -23,12 +23,12 @@ import { Phone } from "lucide-react"
 export const metadata: Metadata = {
   title: "Appliance Repair San Diego",
   description:
-    "San Diego appliance repair — $85 diagnostic fee waived if we fix it. 90-day warranty on parts & labor. All brands. 7 days a week. Call (858) 264-3138.",
+    "San Diego appliance repair — $80 service call fee waived if we fix it. 60-day warranty on parts & labor. All brands. 7 days a week. Call (619) 488-4477.",
   alternates: { canonical: `${COMPANY_WEBSITE}/` },
   openGraph: {
     title: `Appliance Repair San Diego | ${COMPANY_NAME}`,
     description:
-      "In-home appliance repair across San Diego County. $85 diagnostic fee waived if we fix it. 90-day warranty. All brands.",
+      "In-home appliance repair across San Diego County. $80 service call fee waived if we fix it. 60-day warranty. All brands.",
     url: `${COMPANY_WEBSITE}/`,
   },
 }
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 const HOME_FAQS = [
   {
     question: "How much does appliance repair cost in San Diego?",
-    answer: `Most appliance repairs in San Diego cost $250–$350, including parts and labor. Refrigerator, freezer, and ice maker repairs typically run $350–$900 depending on the part and brand. ${COMPANY_NAME} charges an $85 diagnostic fee — waived completely when you proceed with the repair.`,
+    answer: `Most appliance repairs in San Diego cost $250–$350, including parts and labor. Refrigerator, freezer, and ice maker repairs typically run $350–$900 depending on the part and brand. ${COMPANY_NAME} charges an $80 service call fee — waived completely when you proceed with the repair.`,
   },
   {
     question: "Do you offer same-day appliance repair in San Diego?",
@@ -49,13 +49,13 @@ const HOME_FAQS = [
       "We service all major appliance brands — Samsung, LG, Whirlpool, GE, KitchenAid, Kenmore, Bosch, Miele, Sub-Zero, Thermador, Electrolux, Speed Queen, and more. No brand runaround. One call, one technician.",
   },
   {
-    question: "What is the $85 diagnostic fee?",
-    answer: `The $85 fee covers your technician's visit and a full diagnosis of the reported problem. If you approve the repair, the $85 is waived — you only pay for parts and labor. If you decide not to repair, you owe the $85 and nothing more.`,
+    question: "What is the $80 service call fee?",
+    answer: `The $80 fee covers your technician's visit and a full diagnosis of the reported problem. If you approve the repair, the $80 is waived — you only pay for parts and labor. If you decide not to repair, you owe the $80 and nothing more.`,
   },
   {
     question: "What areas of San Diego do you serve?",
     answer:
-      "We serve all of San Diego County — including San Diego, Chula Vista, La Mesa, El Cajon, La Jolla, Del Mar, Poway, Encinitas, Escondido, Carlsbad, Oceanside, and 10 more cities. Available Mon–Sat 7:00 AM–11:00 PM and Sun 8:00 AM–10:00 PM.",
+      "We serve all of San Diego County — including San Diego, Chula Vista, La Mesa, El Cajon, La Jolla, Del Mar, Poway, Encinitas, Escondido, Carlsbad, Oceanside, and 10 more cities. Available Mon–Fri 9:00 AM–6:00 PM, Sat 10:00 AM–5:00 PM.",
   },
 ]
 
@@ -66,8 +66,8 @@ export default function HomePage() {
 
       <Hero
         headline={`Appliance Repair in San Diego — We Come to You`}
-        subheadline={`In-home repair across San Diego County. ${DIAGNOSTIC_FEE} diagnostic fee waived if we fix it. 90-day warranty on every repair.`}
-        urgencyNote="Mon–Sat 7:00 AM–11:00 PM · Sun 8:00 AM–10:00 PM · All major brands"
+        subheadline={`In-home repair across San Diego County. ${DIAGNOSTIC_FEE} diagnostic fee waived if we fix it. 60-day warranty on every repair.`}
+        urgencyNote="Mon–Fri 9:00 AM–6:00 PM · Sat 10:00 AM–5:00 PM · Sun closed · All major brands"
       />
 
       <TrustBar />
@@ -78,7 +78,7 @@ export default function HomePage() {
 
       <MidPageCTA
         heading="Appliance broken? We can be there today."
-        subtext={`${DIAGNOSTIC_FEE} diagnostic fee — waived if we repair it. 90-day warranty on every repair.`}
+        subtext={`${DIAGNOSTIC_FEE} diagnostic fee — waived if we repair it. 60-day warranty on every repair.`}
       />
 
       <BrandGrid />
@@ -92,7 +92,7 @@ export default function HomePage() {
       <FAQSection faqs={HOME_FAQS} heading="Appliance Repair FAQ — San Diego" />
 
       {/* Final CTA */}
-      <section className="bg-brand-navy py-16 text-center text-white">
+      <section className="bg-brand-slate py-16 text-center text-white">
         <div className="mx-auto max-w-2xl px-4">
           <h2 className="text-3xl font-extrabold mb-3">
             Ready to schedule your repair?
@@ -102,13 +102,13 @@ export default function HomePage() {
           </p>
           <a
             href={COMPANY_PHONE_TEL}
-            className="inline-flex items-center gap-3 rounded-lg bg-brand-red px-8 py-4 text-xl font-extrabold text-white hover:bg-brand-red-dark transition-colors shadow-lg"
+            className="inline-flex items-center gap-3 rounded-lg bg-brand-blue px-8 py-4 text-xl font-extrabold text-white hover:bg-brand-blue-dark transition-colors shadow-lg"
           >
             <Phone className="h-6 w-6" aria-hidden="true" />
             {COMPANY_PHONE_DISPLAY}
           </a>
           <p className="mt-4 text-sm text-white/60">
-            Mon–Sat 7:00 AM–11:00 PM · Sun 8:00 AM–10:00 PM
+            Mon–Fri 9:00 AM–6:00 PM · Sat 10:00 AM–5:00 PM · Sun closed
           </p>
         </div>
       </section>

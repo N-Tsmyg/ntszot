@@ -17,7 +17,7 @@ import {
 export const metadata: Metadata = {
   title: "Appliance Repair Blog — San Diego Tips & Guides",
   description:
-    "Appliance repair guides, cost breakdowns, and troubleshooting tips for San Diego homeowners. Written by the technician at WNDW Appliance Repair.",
+    "Appliance repair guides, cost breakdowns, and troubleshooting tips for San Diego homeowners. Written by the technician at NTSZOT Appliance Repair.",
   alternates: { canonical: `${COMPANY_WEBSITE}/blog/` },
   openGraph: {
     title: `Appliance Repair Blog — San Diego | ${COMPANY_NAME}`,
@@ -46,7 +46,7 @@ export default function BlogHubPage() {
       />
 
       {/* Header */}
-      <section className="bg-brand-navy text-white py-14 sm:py-20">
+      <section className="bg-brand-slate text-white py-14 sm:py-20">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight tracking-tight mb-4">
             Appliance Repair Blog — San Diego
@@ -65,7 +65,7 @@ export default function BlogHubPage() {
           {BLOG_POSTS.length === 0 ? (
             <p className="text-center text-gray-500 py-12">
               Blog posts coming soon. In the meantime, call{" "}
-              <a href={COMPANY_PHONE_TEL} className="text-brand-red font-semibold hover:underline">
+              <a href={COMPANY_PHONE_TEL} className="text-brand-blue font-semibold hover:underline">
                 {COMPANY_PHONE_DISPLAY}
               </a>{" "}
               to speak directly with our technician.
@@ -95,10 +95,10 @@ export default function BlogHubPage() {
                         {formatDate(post.datePublished)}
                       </time>
                     </div>
-                    <h2 className="text-base font-bold text-brand-navy leading-snug">
+                    <h2 className="text-base font-bold text-brand-slate leading-snug">
                       <Link
                         href={`/blog/${post.slug}/`}
-                        className="hover:text-brand-red transition-colors"
+                        className="hover:text-brand-blue transition-colors"
                       >
                         {post.title}
                       </Link>
@@ -106,7 +106,7 @@ export default function BlogHubPage() {
                     <p className="text-sm text-gray-600 leading-relaxed flex-1">{post.excerpt}</p>
                     <Link
                       href={`/blog/${post.slug}/`}
-                      className="text-sm font-semibold text-brand-red hover:underline"
+                      className="text-sm font-semibold text-brand-blue hover:underline"
                     >
                       Read more →
                     </Link>
@@ -119,7 +119,7 @@ export default function BlogHubPage() {
       </section>
 
       {/* CTA */}
-      <section className="bg-brand-navy py-16 text-center text-white">
+      <section className="bg-brand-slate py-16 text-center text-white">
         <div className="mx-auto max-w-2xl px-4">
           <h2 className="text-3xl font-extrabold mb-3">
             Appliance not working? Call now.
@@ -129,13 +129,13 @@ export default function BlogHubPage() {
           </p>
           <a
             href={COMPANY_PHONE_TEL}
-            className="inline-flex items-center gap-3 rounded-lg bg-brand-red px-8 py-4 text-xl font-extrabold text-white hover:bg-brand-red-dark transition-colors shadow-lg"
+            className="inline-flex items-center gap-3 rounded-lg bg-brand-blue px-8 py-4 text-xl font-extrabold text-white hover:bg-brand-blue-dark transition-colors shadow-lg"
           >
             <Phone className="h-6 w-6" aria-hidden="true" />
             {COMPANY_PHONE_DISPLAY}
           </a>
           <p className="mt-4 text-sm text-white/60">
-            Mon–Sat 7:00 AM–11:00 PM · Sun 8:00 AM–10:00 PM
+            Mon–Fri 9:00 AM–6:00 PM · Sat 10:00 AM–5:00 PM · Sun closed
           </p>
         </div>
       </section>

@@ -15,7 +15,7 @@ const TRUST_ITEMS = [
   {
     icon: Calendar,
     label: "7 Days a Week",
-    sublabel: "Mon–Sat 7AM–11PM · Sun 8AM–10PM",
+    sublabel: "Mon–Fri 9AM–6PM, Sat 10AM–5PM",
   },
   {
     icon: Star,
@@ -41,11 +41,11 @@ export default function TrustBar() {
         <div className="grid grid-cols-2 gap-4 py-4 sm:grid-cols-3 lg:grid-cols-6">
           {TRUST_ITEMS.map((item) => (
             <div key={item.label} className="flex items-center gap-3">
-              <div className="shrink-0 rounded-full bg-brand-red/10 p-2">
-                <item.icon className="h-5 w-5 text-brand-red" aria-hidden="true" />
+              <div className="shrink-0 rounded-full bg-brand-blue/10 p-2">
+                <item.icon className="h-5 w-5 text-brand-blue" aria-hidden="true" />
               </div>
               <div>
-                <p className="text-sm font-semibold text-brand-navy">{item.label}</p>
+                <p className="text-sm font-semibold text-brand-slate">{item.label}</p>
                 <p className="text-xs text-gray-500">{item.sublabel}</p>
               </div>
             </div>

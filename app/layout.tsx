@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     template: `%s | ${COMPANY_NAME}`,
   },
   description:
-    "San Diego appliance repair — $85 diagnostic fee waived if we fix it. 90-day warranty. All brands. 7 days a week. Call (858) 264-3138.",
+    "San Diego appliance repair — $80 service call fee waived if we fix it. 60-day warranty. All brands. 6 days a week. Call (619) 488-4477.",
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -63,7 +63,7 @@ export default function RootLayout({
       <body className="min-h-screen flex flex-col">
         <a
           href="#main-content"
-          className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:rounded focus:bg-white focus:px-4 focus:py-2 focus:text-sm focus:font-bold focus:text-brand-navy"
+          className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:rounded focus:bg-white focus:px-4 focus:py-2 focus:text-sm focus:font-bold focus:text-brand-slate"
         >
           Skip to main content
         </a>

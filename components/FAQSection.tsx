@@ -32,13 +32,13 @@ export default function FAQSection({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-        <h2 className="text-2xl font-bold text-brand-navy mb-8 text-center">
+        <h2 className="text-2xl font-bold text-brand-slate mb-8 text-center">
           {heading}
         </h2>
         <div className="space-y-6">
           {faqs.map((faq, i) => (
             <div key={i} className="bg-white rounded-lg border border-gray-200 p-6">
-              <h3 className="text-base font-semibold text-brand-navy mb-2">
+              <h3 className="text-base font-semibold text-brand-slate mb-2">
                 {faq.question}
               </h3>
               <p className="text-gray-600 text-sm leading-relaxed">{faq.answer}</p>

@@ -4,19 +4,19 @@ const PLACEHOLDER_REVIEWS = [
   {
     name: "Maria T.",
     location: "San Diego, CA",
-    text: "Our refrigerator stopped cooling on a Friday night. WNDW came out Saturday morning, diagnosed the problem, and fixed it the same visit. The $85 diagnostic fee was waived since we did the repair. Honest and fast.",
+    text: "Our refrigerator stopped cooling on a Friday night. NTSZOT came out Saturday morning, diagnosed the problem, and fixed it the same visit. The $80 service call fee was waived since we did the repair. Honest and fast.",
     rating: 5,
   },
   {
     name: "James R.",
     location: "La Jolla, CA",
-    text: "Called about our Bosch dishwasher not draining. Technician arrived within the 3-hour window, explained exactly what was wrong before touching anything, and had it running in under an hour. 90-day warranty gives real peace of mind.",
+    text: "Called about our Bosch dishwasher not draining. Technician arrived within the 3-hour window, explained exactly what was wrong before touching anything, and had it running in under an hour. 60-day warranty gives real peace of mind.",
     rating: 5,
   },
   {
     name: "Sandra M.",
     location: "Chula Vista, CA",
-    text: "I manage several rental units and WNDW is my go-to for appliance issues. They work around my schedule, show up when they say they will, and the upfront pricing makes authorizing repairs easy.",
+    text: "I manage several rental units and NTSZOT is my go-to for appliance issues. They work around my schedule, show up when they say they will, and the upfront pricing makes authorizing repairs easy.",
     rating: 5,
   },
 ]
@@ -36,7 +36,7 @@ export default function ReviewsSection() {
     <section className="py-12 bg-gray-50">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-8">
-          <h2 className="text-2xl font-bold text-brand-navy mb-1">
+          <h2 className="text-2xl font-bold text-brand-slate mb-1">
             What San Diego Homeowners Say
           </h2>
           <p className="text-sm text-gray-500">
@@ -52,7 +52,7 @@ export default function ReviewsSection() {
               <Stars count={r.rating} />
               <p className="text-sm text-gray-700 leading-relaxed flex-1">&ldquo;{r.text}&rdquo;</p>
               <div>
-                <p className="text-sm font-semibold text-brand-navy">{r.name}</p>
+                <p className="text-sm font-semibold text-brand-slate">{r.name}</p>
                 <p className="text-xs text-gray-500">{r.location}</p>
               </div>
             </div>

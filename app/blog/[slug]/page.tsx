@@ -173,14 +173,14 @@ export default async function BlogPostPage({
             sizes="100vw"
             quality={85}
           />
-          <div className="absolute inset-0 bg-brand-navy/50" />
+          <div className="absolute inset-0 bg-brand-slate/50" />
         </div>
       )}
 
       {/* Article header */}
       <section className="bg-white py-10 border-b border-gray-100">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-brand-navy leading-tight mb-4">
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-brand-slate leading-tight mb-4">
             {post.title}
           </h1>
           <div className="flex flex-wrap items-center gap-4 text-xs text-gray-400">
@@ -207,11 +207,11 @@ export default async function BlogPostPage({
       <section className="py-8 bg-gray-50 border-y border-gray-200">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <div className="flex items-start gap-4">
-            <div className="rounded-full bg-brand-navy/10 p-3 shrink-0">
-              <User className="h-6 w-6 text-brand-navy" aria-hidden="true" />
+            <div className="rounded-full bg-brand-slate/10 p-3 shrink-0">
+              <User className="h-6 w-6 text-brand-slate" aria-hidden="true" />
             </div>
             <div>
-              <p className="font-semibold text-brand-navy text-sm">{post.authorName}</p>
+              <p className="font-semibold text-brand-slate text-sm">{post.authorName}</p>
               <p className="text-xs text-gray-500 mb-2">{post.authorJobTitle} · {COMPANY_NAME}</p>
               <p className="text-xs text-gray-600 leading-relaxed">
                 {DEFAULT_AUTHOR.bio}
@@ -225,7 +225,7 @@ export default async function BlogPostPage({
       {getRelatedPosts(post.slug).length > 0 && (
         <section className="py-10 bg-gray-50 border-y border-gray-200">
           <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-            <p className="text-sm font-semibold text-brand-navy mb-4 uppercase tracking-wide">
+            <p className="text-sm font-semibold text-brand-slate mb-4 uppercase tracking-wide">
               Related Articles
             </p>
             <div className="grid gap-4 sm:grid-cols-3">
@@ -236,9 +236,9 @@ export default async function BlogPostPage({
                   <Link
                     key={related!.slug}
                     href={`/blog/${related!.slug}/`}
-                    className="rounded-lg border border-gray-200 bg-white p-4 hover:border-brand-red hover:shadow-sm transition-all"
+                    className="rounded-lg border border-gray-200 bg-white p-4 hover:border-brand-blue hover:shadow-sm transition-all"
                   >
-                    <p className="text-sm font-semibold text-brand-navy mb-1 leading-snug">{related!.title}</p>
+                    <p className="text-sm font-semibold text-brand-slate mb-1 leading-snug">{related!.title}</p>
                     <p className="text-xs text-gray-500 leading-relaxed line-clamp-2">{related!.excerpt}</p>
                   </Link>
                 ))}
@@ -251,7 +251,7 @@ export default async function BlogPostPage({
       {relatedServices.length > 0 && (
         <section className="py-10 bg-white">
           <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-            <p className="text-sm font-semibold text-brand-navy mb-4 uppercase tracking-wide">
+            <p className="text-sm font-semibold text-brand-slate mb-4 uppercase tracking-wide">
               Related Services
             </p>
             <div className="flex flex-wrap gap-3">
@@ -259,14 +259,14 @@ export default async function BlogPostPage({
                 <Link
                   key={svc.slug}
                   href={`/services/${svc.slug}/`}
-                  className="rounded-lg border border-gray-200 bg-gray-50 px-4 py-2 text-sm text-brand-navy hover:border-brand-red transition-colors"
+                  className="rounded-lg border border-gray-200 bg-gray-50 px-4 py-2 text-sm text-brand-slate hover:border-brand-blue transition-colors"
                 >
                   {svc.name} →
                 </Link>
               ))}
               <Link
                 href="/blog/"
-                className="rounded-lg border border-gray-200 bg-gray-50 px-4 py-2 text-sm text-brand-navy hover:border-brand-red transition-colors"
+                className="rounded-lg border border-gray-200 bg-gray-50 px-4 py-2 text-sm text-brand-slate hover:border-brand-blue transition-colors"
               >
                 ← All Posts
               </Link>
@@ -276,7 +276,7 @@ export default async function BlogPostPage({
       )}
 
       {/* Final CTA */}
-      <section className="bg-brand-navy py-16 text-center text-white">
+      <section className="bg-brand-slate py-16 text-center text-white">
         <div className="mx-auto max-w-2xl px-4">
           <h2 className="text-3xl font-extrabold mb-3">
             Appliance not working? Call now.
@@ -288,7 +288,7 @@ export default async function BlogPostPage({
           </p>
           <a
             href={COMPANY_PHONE_TEL}
-            className="inline-flex items-center gap-3 rounded-lg bg-brand-red px-8 py-4 text-xl font-extrabold text-white hover:bg-brand-red-dark transition-colors shadow-lg"
+            className="inline-flex items-center gap-3 rounded-lg bg-brand-blue px-8 py-4 text-xl font-extrabold text-white hover:bg-brand-blue-dark transition-colors shadow-lg"
           >
             <Phone className="h-6 w-6" aria-hidden="true" />
             {COMPANY_PHONE_DISPLAY}

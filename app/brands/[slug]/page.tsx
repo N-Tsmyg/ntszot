@@ -193,7 +193,7 @@ export default async function BrandPage({
   const faqs: FAQ[] = [
     {
       question: `How much does ${brand.name} appliance repair cost in San Diego?`,
-      answer: `Most ${brand.name} appliance repairs in San Diego cost ${standardPrice}, including parts and labor.${isRefrigeration ? ` ${brand.name} refrigerator and refrigeration repairs typically run ${refrigerationPrice} depending on the part needed.` : ""} WNDW Appliance Repair charges an ${DIAGNOSTIC_FEE} diagnostic fee — waived completely when you proceed with the repair. If you decide not to repair, you owe the ${DIAGNOSTIC_FEE} and nothing else.`,
+      answer: `Most ${brand.name} appliance repairs in San Diego cost ${standardPrice}, including parts and labor.${isRefrigeration ? ` ${brand.name} refrigerator and refrigeration repairs typically run ${refrigerationPrice} depending on the part needed.` : ""} NTSZOT Appliance Repair charges an ${DIAGNOSTIC_FEE} service call fee — waived completely when you proceed with the repair. If you decide not to repair, you owe the ${DIAGNOSTIC_FEE} and nothing else.`,
     },
     {
       question: `Do you repair all ${brand.name} models?`,
@@ -201,7 +201,7 @@ export default async function BrandPage({
     },
     {
       question: `Is your technician ${brand.name}-certified?`,
-      answer: `Our technician is experienced with ${brand.name} appliances and their common failure modes. We do not claim factory or manufacturer certification — we let our diagnostics and 90-day warranty speak for themselves. Every repair is backed by a ${WARRANTY_DAYS}-day parts and labor warranty.`,
+      answer: `Our technician is experienced with ${brand.name} appliances and their common failure modes. We do not claim factory or manufacturer certification — we let our diagnostics and 60-day warranty speak for themselves. Every repair is backed by a ${WARRANTY_DAYS}-day parts and labor warranty.`,
     },
     {
       question: `What ${brand.name} appliances break down most often in San Diego?`,
@@ -222,7 +222,7 @@ export default async function BrandPage({
       {/* 1. Hero */}
       <Hero
         headline={brand.h1}
-        subheadline={`We service all ${brand.name} appliances in San Diego — ${DIAGNOSTIC_FEE} diagnostic fee waived if we repair it. ${WARRANTY_DAYS}-day warranty on every repair.`}
+        subheadline={`We service all ${brand.name} appliances in San Diego — ${DIAGNOSTIC_FEE} service call fee waived if we repair it. ${WARRANTY_DAYS}-day warranty on every repair.`}
       />
 
       {/* 2. TrustBar */}
@@ -231,14 +231,14 @@ export default async function BrandPage({
       {/* 3. Quick Answer Box */}
       <section className="py-8 bg-white">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-          <div className="quick-answer rounded-xl border-l-4 border-brand-red bg-red-50 px-6 py-5">
-            <p className="text-sm font-semibold text-brand-red uppercase tracking-wide mb-1">
+          <div className="quick-answer rounded-xl border-l-4 border-brand-blue bg-red-50 px-6 py-5">
+            <p className="text-sm font-semibold text-brand-blue uppercase tracking-wide mb-1">
               Quick Answer
             </p>
             <p className="text-gray-800 leading-relaxed">
               {brand.name} appliance repair in San Diego costs {standardPrice} for most appliances
-              {isRefrigeration ? `, or ${refrigerationPrice} for refrigeration units` : ""}. WNDW
-              Appliance Repair charges an {DIAGNOSTIC_FEE} diagnostic fee — waived completely when
+              {isRefrigeration ? `, or ${refrigerationPrice} for refrigeration units` : ""}. NTSZOT
+              Appliance Repair charges an {DIAGNOSTIC_FEE} service call fee — waived completely when
               we complete the repair.{" "}
               {isPremium
                 ? `For premium ${brand.name} appliances, you'll receive an upfront quote before any work begins and a ${WARRANTY_DAYS}-day warranty covering parts and labor.`
@@ -251,7 +251,7 @@ export default async function BrandPage({
       {/* 4. Appliances We Repair */}
       <section className="py-10 bg-gray-50">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-brand-navy mb-2">
+          <h2 className="text-2xl font-bold text-brand-slate mb-2">
             Which {brand.name} Appliances Do We Repair in San Diego?
           </h2>
           <p className="text-gray-600 mb-8">
@@ -266,11 +266,11 @@ export default async function BrandPage({
                   key={appliance}
                   className="rounded-lg border border-gray-200 bg-white p-5"
                 >
-                  <h3 className="font-semibold text-brand-navy mb-1">
+                  <h3 className="font-semibold text-brand-slate mb-1">
                     {svcSlug ? (
                       <Link
                         href={`/services/${svcSlug}/`}
-                        className="hover:text-brand-red transition-colors"
+                        className="hover:text-brand-blue transition-colors"
                       >
                         {brand.name} {appliance}
                       </Link>
@@ -289,7 +289,7 @@ export default async function BrandPage({
       {/* 5. Common Problems */}
       <section className="py-10 bg-white">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-brand-navy mb-2">
+          <h2 className="text-2xl font-bold text-brand-slate mb-2">
             Common {brand.name} Problems We Fix
           </h2>
           <p className="text-gray-600 mb-8">
@@ -298,8 +298,8 @@ export default async function BrandPage({
           </p>
           <div className="space-y-6">
             {brand.topSymptoms.map((symptom) => (
-              <div key={symptom} className="border-l-4 border-brand-red pl-5">
-                <h3 className="font-semibold text-brand-navy mb-1">{symptom}</h3>
+              <div key={symptom} className="border-l-4 border-brand-blue pl-5">
+                <h3 className="font-semibold text-brand-slate mb-1">{symptom}</h3>
                 <p className="text-sm text-gray-600 leading-relaxed">
                   {getSymptomExplanation(symptom)}
                 </p>
@@ -309,17 +309,17 @@ export default async function BrandPage({
         </div>
       </section>
 
-      {/* 6. Why Choose WNDW for This Brand */}
+      {/* 6. Why Choose NTSZOT for This Brand */}
       <section className="py-10 bg-gray-50">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-brand-navy mb-8">
-            Why Choose WNDW for {brand.name} Repair in San Diego?
+          <h2 className="text-2xl font-bold text-brand-slate mb-8">
+            Why Choose NTSZOT for {brand.name} Repair in San Diego?
           </h2>
           <div className="grid gap-4 sm:grid-cols-2">
             {isPremium ? (
               <>
                 <div className="rounded-lg bg-white border border-gray-200 p-5">
-                  <p className="font-semibold text-brand-navy text-sm mb-1">
+                  <p className="font-semibold text-brand-slate text-sm mb-1">
                     Upfront quote before any work begins
                   </p>
                   <p className="text-xs text-gray-600">
@@ -329,7 +329,7 @@ export default async function BrandPage({
                   </p>
                 </div>
                 <div className="rounded-lg bg-white border border-gray-200 p-5">
-                  <p className="font-semibold text-brand-navy text-sm mb-1">
+                  <p className="font-semibold text-brand-slate text-sm mb-1">
                     {WARRANTY_DAYS}-day parts and labor warranty
                   </p>
                   <p className="text-xs text-gray-600">
@@ -339,7 +339,7 @@ export default async function BrandPage({
                   </p>
                 </div>
                 <div className="rounded-lg bg-white border border-gray-200 p-5">
-                  <p className="font-semibold text-brand-navy text-sm mb-1">
+                  <p className="font-semibold text-brand-slate text-sm mb-1">
                     Technician experienced with {brand.name} systems
                   </p>
                   <p className="text-xs text-gray-600">
@@ -348,8 +348,8 @@ export default async function BrandPage({
                   </p>
                 </div>
                 <div className="rounded-lg bg-white border border-gray-200 p-5">
-                  <p className="font-semibold text-brand-navy text-sm mb-1">
-                    {DIAGNOSTIC_FEE} diagnostic fee — waived if we repair it
+                  <p className="font-semibold text-brand-slate text-sm mb-1">
+                    {DIAGNOSTIC_FEE} service call fee — waived if we repair it
                   </p>
                   <p className="text-xs text-gray-600">
                     You pay {DIAGNOSTIC_FEE} for the diagnostic visit. If you proceed with the
@@ -357,8 +357,8 @@ export default async function BrandPage({
                   </p>
                 </div>
                 <div className="rounded-lg bg-white border border-gray-200 p-5 sm:col-span-2">
-                  <p className="font-semibold text-brand-navy text-sm mb-1">
-                    7 days a week — available when you need us
+                  <p className="font-semibold text-brand-slate text-sm mb-1">
+                    6 days a week — available when you need us
                   </p>
                   <p className="text-xs text-gray-600">
                     {HOURS_WEEKDAY} · {HOURS_SUNDAY}. Premium appliances don&apos;t break on
@@ -369,8 +369,8 @@ export default async function BrandPage({
             ) : (
               <>
                 <div className="rounded-lg bg-white border border-gray-200 p-5">
-                  <p className="font-semibold text-brand-navy text-sm mb-1">
-                    {DIAGNOSTIC_FEE} diagnostic fee — waived if we repair it
+                  <p className="font-semibold text-brand-slate text-sm mb-1">
+                    {DIAGNOSTIC_FEE} service call fee — waived if we repair it
                   </p>
                   <p className="text-xs text-gray-600">
                     Your technician diagnoses the {brand.name} problem for {DIAGNOSTIC_FEE}. Approve
@@ -378,7 +378,7 @@ export default async function BrandPage({
                   </p>
                 </div>
                 <div className="rounded-lg bg-white border border-gray-200 p-5">
-                  <p className="font-semibold text-brand-navy text-sm mb-1">
+                  <p className="font-semibold text-brand-slate text-sm mb-1">
                     {WARRANTY_DAYS}-day warranty on every repair
                   </p>
                   <p className="text-xs text-gray-600">
@@ -387,7 +387,7 @@ export default async function BrandPage({
                   </p>
                 </div>
                 <div className="rounded-lg bg-white border border-gray-200 p-5">
-                  <p className="font-semibold text-brand-navy text-sm mb-1">
+                  <p className="font-semibold text-brand-slate text-sm mb-1">
                     Technician familiar with {brand.name} appliances
                   </p>
                   <p className="text-xs text-gray-600">
@@ -397,7 +397,7 @@ export default async function BrandPage({
                   </p>
                 </div>
                 <div className="rounded-lg bg-white border border-gray-200 p-5">
-                  <p className="font-semibold text-brand-navy text-sm mb-1">
+                  <p className="font-semibold text-brand-slate text-sm mb-1">
                     Available 7 days a week
                   </p>
                   <p className="text-xs text-gray-600">
@@ -414,21 +414,21 @@ export default async function BrandPage({
       {/* 7. Pricing */}
       <section className="py-10 bg-white">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-brand-navy mb-6">
+          <h2 className="text-2xl font-bold text-brand-slate mb-6">
             How Much Does {brand.name} Appliance Repair Cost in San Diego?
           </h2>
           <div className="space-y-4">
             <div className="rounded-lg border border-gray-200 p-5">
               <div className="flex items-start justify-between gap-4">
                 <div>
-                  <p className="font-semibold text-brand-navy">
+                  <p className="font-semibold text-brand-slate">
                     {brand.name} standard appliances
                   </p>
                   <p className="text-sm text-gray-600 mt-1">
                     Washers, dryers, dishwashers, ovens, ranges, and microwaves.
                   </p>
                 </div>
-                <p className="text-lg font-bold text-brand-red whitespace-nowrap">
+                <p className="text-lg font-bold text-brand-blue whitespace-nowrap">
                   {standardPrice}
                 </p>
               </div>
@@ -437,22 +437,22 @@ export default async function BrandPage({
               <div className="rounded-lg border border-gray-200 p-5">
                 <div className="flex items-start justify-between gap-4">
                   <div>
-                    <p className="font-semibold text-brand-navy">
+                    <p className="font-semibold text-brand-slate">
                       {brand.name} refrigeration units
                     </p>
                     <p className="text-sm text-gray-600 mt-1">
                       Refrigerators, freezers, wine coolers, and ice makers.
                     </p>
                   </div>
-                  <p className="text-lg font-bold text-brand-red whitespace-nowrap">
+                  <p className="text-lg font-bold text-brand-blue whitespace-nowrap">
                     {refrigerationPrice}
                   </p>
                 </div>
               </div>
             )}
-            <div className="rounded-lg bg-red-50 border border-brand-red/20 p-5">
-              <p className="font-semibold text-brand-navy mb-1">
-                Diagnostic fee: {DIAGNOSTIC_FEE} — waived when we repair it
+            <div className="rounded-lg bg-red-50 border border-brand-blue/20 p-5">
+              <p className="font-semibold text-brand-slate mb-1">
+                Service call fee: {DIAGNOSTIC_FEE} — waived when we repair it
               </p>
               <p className="text-sm text-gray-600">
                 Our technician visits your home and diagnoses the {brand.name} problem for{" "}
@@ -462,7 +462,7 @@ export default async function BrandPage({
               </p>
             </div>
             <div className="rounded-lg border border-gray-200 p-5">
-              <p className="font-semibold text-brand-navy mb-1">
+              <p className="font-semibold text-brand-slate mb-1">
                 {WARRANTY_DAYS}-day parts and labor warranty
               </p>
               <p className="text-sm text-gray-600">
@@ -482,7 +482,7 @@ export default async function BrandPage({
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
         <MidPageCTA
           heading={`Ready to schedule your ${brand.name} repair?`}
-          subtext={`${DIAGNOSTIC_FEE} diagnostic fee — waived completely if we fix it. ${WARRANTY_DAYS}-day warranty on every repair.`}
+          subtext={`${DIAGNOSTIC_FEE} service call fee — waived completely if we fix it. ${WARRANTY_DAYS}-day warranty on every repair.`}
         />
       </div>
 
@@ -496,13 +496,13 @@ export default async function BrandPage({
       />
 
       {/* 11. Final CTA */}
-      <section className="bg-brand-navy py-16 text-center text-white">
+      <section className="bg-brand-slate py-16 text-center text-white">
         <div className="mx-auto max-w-2xl px-4">
           <h2 className="text-3xl font-extrabold mb-3">
             {brand.name} appliance not working?
           </h2>
           <p className="text-white/70 mb-2">
-            {DIAGNOSTIC_FEE} diagnostic fee waived if we fix it. {WARRANTY_DAYS}-day parts &amp;
+            {DIAGNOSTIC_FEE} service call fee waived if we fix it. {WARRANTY_DAYS}-day parts &amp;
             labor warranty on every repair.
           </p>
           <p className="text-white/50 text-sm mb-6">
@@ -510,7 +510,7 @@ export default async function BrandPage({
           </p>
           <a
             href={COMPANY_PHONE_TEL}
-            className="inline-flex items-center gap-3 rounded-lg bg-brand-red px-8 py-4 text-xl font-extrabold text-white hover:bg-brand-red-dark transition-colors shadow-lg"
+            className="inline-flex items-center gap-3 rounded-lg bg-brand-blue px-8 py-4 text-xl font-extrabold text-white hover:bg-brand-blue-dark transition-colors shadow-lg"
           >
             <Phone className="h-6 w-6" aria-hidden="true" />
             {COMPANY_PHONE_DISPLAY}

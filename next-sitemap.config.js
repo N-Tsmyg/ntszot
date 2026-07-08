@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: "https://wndwappliancerepair.com",
+  siteUrl: "https://ntszotservice.com",
   generateRobotsTxt: false, // robots.txt is managed manually in /public
   changefreq: "monthly",
   priority: 0.7,

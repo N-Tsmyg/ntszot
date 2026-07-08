@@ -4,7 +4,7 @@
  */
 
 const KEY = "ed9c04ddec0a4dc39cde6a7db95bd35a";
-const HOST = "wndwappliancerepair.com";
+const HOST = "ntszotservice.com";
 const BASE = `https://${HOST}`;
 
 const URLS = [

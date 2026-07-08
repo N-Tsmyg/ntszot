@@ -25,9 +25,9 @@ export const LOCATIONS: Location[] = [
     landmark2: "Petco Park",
     adjacentCities: ["La Jolla", "Chula Vista", "National City"],
     localVernacular: "marine layer humidity and coastal salt air that corrode appliance coils and door seals",
-    metaTitle: "Appliance Repair San Diego | WNDW Appliance Repair | (858) 264-3138",
+    metaTitle: "Appliance Repair San Diego | NTSZOT Appliance Repair | (619) 488-4477",
     metaDescription:
-      "Appliance repair in San Diego — $85 diagnostic fee waived if we fix it. 90-day warranty. All brands. 7 days a week. Call (858) 264-3138.",
+      "Appliance repair in San Diego — $80 service call fee waived if we fix it. 60-day warranty. All brands. 6 days a week. Call (619) 488-4477.",
   },
   {
     name: "Chula Vista",
@@ -39,9 +39,9 @@ export const LOCATIONS: Location[] = [
     landmark2: "Chula Vista Bayfront",
     adjacentCities: ["National City", "San Diego", "Lemon Grove"],
     localVernacular: "hard water scale (300+ ppm) that damages dishwashers and washing machines",
-    metaTitle: "Appliance Repair Chula Vista | WNDW Appliance Repair | (858) 264-3138",
+    metaTitle: "Appliance Repair Chula Vista | NTSZOT Appliance Repair | (619) 488-4477",
     metaDescription:
-      "Appliance repair in Chula Vista — $85 diagnostic fee waived if we fix it. 90-day warranty. All brands. 7 days a week. Call (858) 264-3138.",
+      "Appliance repair in Chula Vista — $80 service call fee waived if we fix it. 60-day warranty. All brands. 6 days a week. Call (619) 488-4477.",
   },
   {
     name: "La Mesa",
@@ -53,9 +53,9 @@ export const LOCATIONS: Location[] = [
     landmark2: "Grossmont Center",
     adjacentCities: ["El Cajon", "Lemon Grove", "San Diego"],
     localVernacular: "inland heat and Santa Ana wind dust that clog dryer vents and refrigerator coils",
-    metaTitle: "Appliance Repair La Mesa | WNDW Appliance Repair | (858) 264-3138",
+    metaTitle: "Appliance Repair La Mesa | NTSZOT Appliance Repair | (619) 488-4477",
     metaDescription:
-      "Appliance repair in La Mesa — $85 diagnostic fee waived if we fix it. 90-day warranty. All brands. 7 days a week. Call (858) 264-3138.",
+      "Appliance repair in La Mesa — $80 service call fee waived if we fix it. 60-day warranty. All brands. 6 days a week. Call (619) 488-4477.",
   },
   {
     name: "El Cajon",
@@ -67,9 +67,9 @@ export const LOCATIONS: Location[] = [
     landmark2: "El Cajon Valley",
     adjacentCities: ["Santee", "La Mesa", "Lemon Grove"],
     localVernacular: "hot valley summers and Santa Ana winds that push dust into appliance vents and coils",
-    metaTitle: "Appliance Repair El Cajon | WNDW Appliance Repair | (858) 264-3138",
+    metaTitle: "Appliance Repair El Cajon | NTSZOT Appliance Repair | (619) 488-4477",
     metaDescription:
-      "Appliance repair in El Cajon — $85 diagnostic fee waived if we fix it. 90-day warranty. All brands. 7 days a week. Call (858) 264-3138.",
+      "Appliance repair in El Cajon — $80 service call fee waived if we fix it. 60-day warranty. All brands. 6 days a week. Call (619) 488-4477.",
   },
   {
     name: "Santee",
@@ -81,9 +81,9 @@ export const LOCATIONS: Location[] = [
     landmark2: "Trolley Square",
     adjacentCities: ["El Cajon", "Lakeside", "Poway"],
     localVernacular: "canyon breeze and inland dust that accelerate lint buildup in dryers",
-    metaTitle: "Appliance Repair Santee | WNDW Appliance Repair | (858) 264-3138",
+    metaTitle: "Appliance Repair Santee | NTSZOT Appliance Repair | (619) 488-4477",
     metaDescription:
-      "Appliance repair in Santee — $85 diagnostic fee waived if we fix it. 90-day warranty. All brands. 7 days a week. Call (858) 264-3138.",
+      "Appliance repair in Santee — $80 service call fee waived if we fix it. 60-day warranty. All brands. 6 days a week. Call (619) 488-4477.",
   },
   {
     name: "La Jolla",
@@ -95,9 +95,9 @@ export const LOCATIONS: Location[] = [
     landmark2: "UC San Diego",
     adjacentCities: ["San Diego", "Del Mar", "Pacific Beach"],
     localVernacular: "coastal salt air and marine layer that corrode refrigerator condenser coils and washer drums",
-    metaTitle: "Appliance Repair La Jolla | WNDW Appliance Repair | (858) 264-3138",
+    metaTitle: "Appliance Repair La Jolla | NTSZOT Appliance Repair | (619) 488-4477",
     metaDescription:
-      "Appliance repair in La Jolla — $85 diagnostic fee waived if we fix it. 90-day warranty. Sub-Zero, Miele, all brands. Call (858) 264-3138.",
+      "Appliance repair in La Jolla — $80 service call fee waived if we fix it. 60-day warranty. Sub-Zero, Miele, all brands. Call (619) 488-4477.",
   },
   {
     name: "Del Mar",
@@ -109,9 +109,9 @@ export const LOCATIONS: Location[] = [
     landmark2: "Del Mar Beach",
     adjacentCities: ["Solana Beach", "La Jolla", "Carmel Valley"],
     localVernacular: "oceanfront salt air and marine layer humidity that accelerate appliance corrosion",
-    metaTitle: "Appliance Repair Del Mar | WNDW Appliance Repair | (858) 264-3138",
+    metaTitle: "Appliance Repair Del Mar | NTSZOT Appliance Repair | (619) 488-4477",
     metaDescription:
-      "Appliance repair in Del Mar — $85 diagnostic fee waived if we fix it. 90-day warranty. All brands. 7 days a week. Call (858) 264-3138.",
+      "Appliance repair in Del Mar — $80 service call fee waived if we fix it. 60-day warranty. All brands. 6 days a week. Call (619) 488-4477.",
   },
   {
     name: "Poway",
@@ -123,9 +123,9 @@ export const LOCATIONS: Location[] = [
     landmark2: "Poway Town Center",
     adjacentCities: ["Rancho Bernardo", "Santee", "San Diego"],
     localVernacular: "inland valley heat and Santa Ana dust that clog filters and shorten appliance life",
-    metaTitle: "Appliance Repair Poway | WNDW Appliance Repair | (858) 264-3138",
+    metaTitle: "Appliance Repair Poway | NTSZOT Appliance Repair | (619) 488-4477",
     metaDescription:
-      "Appliance repair in Poway — $85 diagnostic fee waived if we fix it. 90-day warranty. All brands. 7 days a week. Call (858) 264-3138.",
+      "Appliance repair in Poway — $80 service call fee waived if we fix it. 60-day warranty. All brands. 6 days a week. Call (619) 488-4477.",
   },
   {
     name: "Rancho Bernardo",
@@ -137,9 +137,9 @@ export const LOCATIONS: Location[] = [
     landmark2: "Rancho Bernardo Community Park",
     adjacentCities: ["Poway", "Escondido", "San Marcos"],
     localVernacular: "hard water and warm inland temperatures that strain refrigerator compressors",
-    metaTitle: "Appliance Repair Rancho Bernardo | WNDW Appliance Repair | (858) 264-3138",
+    metaTitle: "Appliance Repair Rancho Bernardo | NTSZOT Appliance Repair | (619) 488-4477",
     metaDescription:
-      "Appliance repair in Rancho Bernardo — $85 diagnostic fee waived if we fix it. 90-day warranty. All brands. Call (858) 264-3138.",
+      "Appliance repair in Rancho Bernardo — $80 service call fee waived if we fix it. 60-day warranty. All brands. Call (619) 488-4477.",
   },
   {
     name: "National City",
@@ -151,9 +151,9 @@ export const LOCATIONS: Location[] = [
     landmark2: "Paradise Creek Educational Park",
     adjacentCities: ["Chula Vista", "San Diego", "Lemon Grove"],
     localVernacular: "coastal proximity and hard water that wear down dishwasher and washing machine components",
-    metaTitle: "Appliance Repair National City | WNDW Appliance Repair | (858) 264-3138",
+    metaTitle: "Appliance Repair National City | NTSZOT Appliance Repair | (619) 488-4477",
     metaDescription:
-      "Appliance repair in National City — $85 diagnostic fee waived if we fix it. 90-day warranty. All brands. Call (858) 264-3138.",
+      "Appliance repair in National City — $80 service call fee waived if we fix it. 60-day warranty. All brands. Call (619) 488-4477.",
   },
   {
     name: "Ramona",
@@ -165,9 +165,9 @@ export const LOCATIONS: Location[] = [
     landmark2: "Lake Sutherland",
     adjacentCities: ["Poway", "Santee", "Escondido"],
     localVernacular: "rural valley heat and Santa Ana winds that push fine dust into appliance motors and vents",
-    metaTitle: "Appliance Repair Ramona | WNDW Appliance Repair | (858) 264-3138",
+    metaTitle: "Appliance Repair Ramona | NTSZOT Appliance Repair | (619) 488-4477",
     metaDescription:
-      "Appliance repair in Ramona — $85 diagnostic fee waived if we fix it. 90-day warranty. All brands. 7 days a week. Call (858) 264-3138.",
+      "Appliance repair in Ramona — $80 service call fee waived if we fix it. 60-day warranty. All brands. 6 days a week. Call (619) 488-4477.",
   },
   {
     name: "Fallbrook",
@@ -179,9 +179,9 @@ export const LOCATIONS: Location[] = [
     landmark2: "Pala Mesa Golf Resort",
     adjacentCities: ["Vista", "Oceanside", "San Marcos"],
     localVernacular: "avocado grove dust and dry inland air that accelerate appliance filter and coil buildup",
-    metaTitle: "Appliance Repair Fallbrook | WNDW Appliance Repair | (858) 264-3138",
+    metaTitle: "Appliance Repair Fallbrook | NTSZOT Appliance Repair | (619) 488-4477",
     metaDescription:
-      "Appliance repair in Fallbrook — $85 diagnostic fee waived if we fix it. 90-day warranty. All brands. 7 days a week. Call (858) 264-3138.",
+      "Appliance repair in Fallbrook — $80 service call fee waived if we fix it. 60-day warranty. All brands. 6 days a week. Call (619) 488-4477.",
   },
   {
     name: "Oceanside",
@@ -193,9 +193,9 @@ export const LOCATIONS: Location[] = [
     landmark2: "Oceanside Harbor",
     adjacentCities: ["Carlsbad", "Vista", "San Marcos"],
     localVernacular: "ocean salt air and coastal humidity that corrode appliance coils and electrical connections",
-    metaTitle: "Appliance Repair Oceanside | WNDW Appliance Repair | (858) 264-3138",
+    metaTitle: "Appliance Repair Oceanside | NTSZOT Appliance Repair | (619) 488-4477",
     metaDescription:
-      "Appliance repair in Oceanside — $85 diagnostic fee waived if we fix it. 90-day warranty. All brands. 7 days a week. Call (858) 264-3138.",
+      "Appliance repair in Oceanside — $80 service call fee waived if we fix it. 60-day warranty. All brands. 6 days a week. Call (619) 488-4477.",
   },
   {
     name: "San Marcos",
@@ -207,9 +207,9 @@ export const LOCATIONS: Location[] = [
     landmark2: "San Marcos Creek District",
     adjacentCities: ["Escondido", "Vista", "Carlsbad"],
     localVernacular: "inland valley heat and hard water that degrade dishwasher filters and washing machine components",
-    metaTitle: "Appliance Repair San Marcos | WNDW Appliance Repair | (858) 264-3138",
+    metaTitle: "Appliance Repair San Marcos | NTSZOT Appliance Repair | (619) 488-4477",
     metaDescription:
-      "Appliance repair in San Marcos — $85 diagnostic fee waived if we fix it. 90-day warranty. All brands. 7 days a week. Call (858) 264-3138.",
+      "Appliance repair in San Marcos — $80 service call fee waived if we fix it. 60-day warranty. All brands. 6 days a week. Call (619) 488-4477.",
   },
   {
     name: "Encinitas",
@@ -221,9 +221,9 @@ export const LOCATIONS: Location[] = [
     landmark2: "Leucadia Blvd",
     adjacentCities: ["Carlsbad", "Del Mar", "Solana Beach"],
     localVernacular: "coastal salt air and marine layer that corrode refrigerator condenser coils and stainless steel door seals",
-    metaTitle: "Appliance Repair Encinitas | WNDW Appliance Repair | (858) 264-3138",
+    metaTitle: "Appliance Repair Encinitas | NTSZOT Appliance Repair | (619) 488-4477",
     metaDescription:
-      "Appliance repair in Encinitas — $85 diagnostic fee waived if we fix it. 90-day warranty. All brands. 7 days a week. Call (858) 264-3138.",
+      "Appliance repair in Encinitas — $80 service call fee waived if we fix it. 60-day warranty. All brands. 6 days a week. Call (619) 488-4477.",
   },
   {
     name: "Escondido",
@@ -235,9 +235,9 @@ export const LOCATIONS: Location[] = [
     landmark2: "Westfield North County",
     adjacentCities: ["San Marcos", "Rancho Bernardo", "Valley Center"],
     localVernacular: "hot inland summers and hard water that stress compressors and leave mineral deposits in appliances",
-    metaTitle: "Appliance Repair Escondido | WNDW Appliance Repair | (858) 264-3138",
+    metaTitle: "Appliance Repair Escondido | NTSZOT Appliance Repair | (619) 488-4477",
     metaDescription:
-      "Appliance repair in Escondido — $85 diagnostic fee waived if we fix it. 90-day warranty. All brands. 7 days a week. Call (858) 264-3138.",
+      "Appliance repair in Escondido — $80 service call fee waived if we fix it. 60-day warranty. All brands. 6 days a week. Call (619) 488-4477.",
   },
   {
     name: "Valley Center",
@@ -249,9 +249,9 @@ export const LOCATIONS: Location[] = [
     landmark2: "Harrah's Resort Southern California",
     adjacentCities: ["Escondido", "Ramona", "San Marcos"],
     localVernacular: "rural heat, well water, and Santa Ana dust that accelerate appliance wear",
-    metaTitle: "Appliance Repair Valley Center | WNDW Appliance Repair | (858) 264-3138",
+    metaTitle: "Appliance Repair Valley Center | NTSZOT Appliance Repair | (619) 488-4477",
     metaDescription:
-      "Appliance repair in Valley Center — $85 diagnostic fee waived if we fix it. 90-day warranty. All brands. 7 days a week. Call (858) 264-3138.",
+      "Appliance repair in Valley Center — $80 service call fee waived if we fix it. 60-day warranty. All brands. 6 days a week. Call (619) 488-4477.",
   },
   {
     name: "Lemon Grove",
@@ -263,9 +263,9 @@ export const LOCATIONS: Location[] = [
     landmark2: "Lemon Grove Town Square",
     adjacentCities: ["La Mesa", "National City", "El Cajon"],
     localVernacular: "hard water and warm inland temperatures that build mineral scale in dishwashers and washing machines",
-    metaTitle: "Appliance Repair Lemon Grove | WNDW Appliance Repair | (858) 264-3138",
+    metaTitle: "Appliance Repair Lemon Grove | NTSZOT Appliance Repair | (619) 488-4477",
     metaDescription:
-      "Appliance repair in Lemon Grove — $85 diagnostic fee waived if we fix it. 90-day warranty. All brands. 7 days a week. Call (858) 264-3138.",
+      "Appliance repair in Lemon Grove — $80 service call fee waived if we fix it. 60-day warranty. All brands. 6 days a week. Call (619) 488-4477.",
   },
   {
     name: "Carlsbad",
@@ -277,9 +277,9 @@ export const LOCATIONS: Location[] = [
     landmark2: "LEGOLAND California",
     adjacentCities: ["Oceanside", "Encinitas", "Vista"],
     localVernacular: "coastal salt air and marine layer that corrode appliance coils and accelerate wear on coastal homes",
-    metaTitle: "Appliance Repair Carlsbad | WNDW Appliance Repair | (858) 264-3138",
+    metaTitle: "Appliance Repair Carlsbad | NTSZOT Appliance Repair | (619) 488-4477",
     metaDescription:
-      "Appliance repair in Carlsbad — $85 diagnostic fee waived if we fix it. 90-day warranty. All brands. 7 days a week. Call (858) 264-3138.",
+      "Appliance repair in Carlsbad — $80 service call fee waived if we fix it. 60-day warranty. All brands. 6 days a week. Call (619) 488-4477.",
   },
   {
     name: "Vista",
@@ -291,9 +291,9 @@ export const LOCATIONS: Location[] = [
     landmark2: "Vista Village",
     adjacentCities: ["Oceanside", "San Marcos", "Fallbrook"],
     localVernacular: "inland valley heat and hard water that degrade appliance components faster than coastal areas",
-    metaTitle: "Appliance Repair Vista | WNDW Appliance Repair | (858) 264-3138",
+    metaTitle: "Appliance Repair Vista | NTSZOT Appliance Repair | (619) 488-4477",
     metaDescription:
-      "Appliance repair in Vista — $85 diagnostic fee waived if we fix it. 90-day warranty. All brands. 7 days a week. Call (858) 264-3138.",
+      "Appliance repair in Vista — $80 service call fee waived if we fix it. 60-day warranty. All brands. 6 days a week. Call (619) 488-4477.",
   },
 ]
 
