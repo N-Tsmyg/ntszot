@@ -12,7 +12,7 @@ import {
   DIAGNOSTIC_FEE,
   WARRANTY_DAYS,
   HOURS_WEEKDAY,
-  HOURS_SUNDAY,
+  HOURS_SATURDAY,
   CARD_FEE_PERCENT,
 } from "@/data/constants"
 
@@ -55,7 +55,7 @@ const PRICING_FAQS = [
 const SCHEDULING_FAQS = [
   {
     question: "Do you offer same-day appliance repair?",
-    answer: `In most cases, yes. Our technician aims to arrive within a 3-hour window and complete the repair same visit when parts are on the service vehicle. We are available ${HOURS_WEEKDAY} and ${HOURS_SUNDAY} with no surcharge for weekend or evening service.`,
+    answer: `In most cases, yes. Our technician aims to arrive within a 3-hour window and complete the repair same visit when parts are on the service vehicle. We are available ${HOURS_WEEKDAY} and ${HOURS_SATURDAY} with no surcharge for weekend or evening service.`,
   },
   {
     question: "What areas of San Diego do you serve?",
@@ -63,7 +63,7 @@ const SCHEDULING_FAQS = [
   },
   {
     question: "What are your hours?",
-    answer: `${HOURS_WEEKDAY} and ${HOURS_SUNDAY}. No surcharge for evening or weekend appointments.`,
+    answer: `${HOURS_WEEKDAY} and ${HOURS_SATURDAY}. No surcharge for evening or weekend appointments.`,
   },
   {
     question: "How do I schedule a repair?",
@@ -189,7 +189,7 @@ export default function FAQPage() {
             {COMPANY_PHONE_DISPLAY}
           </a>
           <p className="mt-4 text-sm text-white/60">
-            {HOURS_WEEKDAY} · {HOURS_SUNDAY}
+            {HOURS_WEEKDAY} · {HOURS_SATURDAY}
           </p>
         </div>
       </section>

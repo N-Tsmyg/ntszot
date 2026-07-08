@@ -23,7 +23,7 @@ import { Phone } from "lucide-react"
 export const metadata: Metadata = {
   title: "Appliance Repair San Diego",
   description:
-    "San Diego appliance repair — $80 service call fee waived if we fix it. 60-day warranty on parts & labor. All brands. 7 days a week. Call (619) 488-4477.",
+    "San Diego appliance repair — $80 service call fee waived if we fix it. 60-day warranty on parts & labor. All brands. 6 days a week. Call (619) 488-4477.",
   alternates: { canonical: `${COMPANY_WEBSITE}/` },
   openGraph: {
     title: `Appliance Repair San Diego | ${COMPANY_NAME}`,

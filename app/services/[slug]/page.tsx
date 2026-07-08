@@ -9,7 +9,6 @@ import DifferentiatorsSection from "@/components/DifferentiatorsSection"
 import FAQSection, { type FAQ } from "@/components/FAQSection"
 import BreadcrumbSchema from "@/components/BreadcrumbSchema"
 import { SERVICES, getServiceBySlug } from "@/data/services"
-import { getSubServicesForService } from "@/data/sub-services"
 import { RELATED_SERVICES_MAP } from "@/utils/internalLinks"
 import {
   COMPANY_PHONE_DISPLAY,
@@ -19,7 +18,7 @@ import {
   WARRANTY_DAYS,
   CARD_FEE_PERCENT,
   HOURS_WEEKDAY,
-  HOURS_SUNDAY,
+  HOURS_SATURDAY,
 } from "@/data/constants"
 
 // ─── Static params ────────────────────────────────────────────────────────────
@@ -215,8 +214,6 @@ export default async function ServicePage({
 
   const isGas = GAS_SLUGS.has(service.slug)
   const isInstallation = service.slug === "appliance-installation"
-  const isMaintenance = service.slug === "annual-maintenance-plan"
-  const subServices = getSubServicesForService(service.slug)
 
   // Build FAQs
   const faqs: FAQ[] = [
@@ -238,9 +235,7 @@ export default async function ServicePage({
     },
   ]
 
-  const pricingIntro = isMaintenance
-    ? `The Annual Appliance Maintenance Plan is priced at $350 per year plus any parts required during service visits. Two scheduled visits are included. This flat annual rate covers our technician's time for both visits; parts are billed at cost if replacements are needed.`
-    : isInstallation
+  const pricingIntro = isInstallation
     ? `Appliance installation in San Diego is priced at ${service.priceRange} depending on the appliance type and complexity of the connection. This covers your technician's labor for delivery placement, connections, leveling, and a full test run.`
     : `${service.name} in San Diego typically costs ${service.priceRange} including parts and labor. The exact total depends on the appliance brand, model, and the specific component that needs replacing. Your technician provides an upfront quote after diagnosing the issue — no work begins without your approval.`
 
@@ -262,7 +257,7 @@ export default async function ServicePage({
           : `${DIAGNOSTIC_FEE} service call fee waived if we fix it. ${WARRANTY_DAYS}-day parts & labor warranty. All major brands. San Diego County.`
         }
         hideDiagnosticNote={isInstallation}
-        urgencyNote={`${HOURS_WEEKDAY} · ${HOURS_SUNDAY}`}
+        urgencyNote={`${HOURS_WEEKDAY} · ${HOURS_SATURDAY}`}
       />
 
       {/* 2. TrustBar */}
@@ -271,11 +266,9 @@ export default async function ServicePage({
       {/* 3. Quick Answer Box */}
       <section className="bg-white py-8">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-          <div className="quick-answer rounded-xl border-l-4 border-brand-blue bg-red-50 p-6">
+          <div className="quick-answer rounded-xl border-l-4 border-brand-blue bg-blue-50 p-6">
             <p className="font-semibold text-brand-slate text-base leading-relaxed">
-              {isMaintenance
-                ? `The Annual Appliance Maintenance Plan costs $350 per year plus parts — two scheduled in-home visits included. The $80 service call fee is waived on any repair identified during a maintenance visit.`
-                : isInstallation
+              {isInstallation
                 ? `Appliance installation in San Diego costs ${service.priceRange} depending on the appliance type and connection complexity. The $80 service call fee does not apply to installation — the installation rate is the flat service cost.`
                 : `${service.name} in San Diego costs ${service.priceRange} in most cases, including parts and labor. The $80 service call fee is waived completely when you proceed with the repair.`}
             </p>
@@ -283,48 +276,12 @@ export default async function ServicePage({
         </div>
       </section>
 
-      {/* 4. Specific Repairs — sub-service card grid */}
-      {subServices.length > 0 && (
-        <section className="py-10 bg-white border-b border-gray-100">
-          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-            <h2 className="text-2xl font-bold text-brand-slate mb-6">
-              Specific {service.name} We Handle
-            </h2>
-            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {subServices.map((sub) => (
-                <Link
-                  key={sub.slug}
-                  href={`/services/${service.slug}/${sub.slug}/`}
-                  className="flex flex-col gap-2 rounded-xl border border-gray-200 bg-gray-50 p-5 hover:border-brand-blue hover:shadow-sm transition-all"
-                >
-                  <p className="font-semibold text-brand-slate text-sm leading-snug">{sub.name}</p>
-                  <p className="text-xs text-gray-500 leading-relaxed flex-1">{sub.shortDesc}</p>
-                  <span className="text-xs font-semibold text-brand-blue">Learn more →</span>
-                </Link>
-              ))}
-              {service.slug === "refrigerator-repair" && (
-                <Link
-                  href="/services/ice-maker-repair/"
-                  className="flex flex-col gap-2 rounded-xl border border-gray-200 bg-gray-50 p-5 hover:border-brand-blue hover:shadow-sm transition-all"
-                >
-                  <p className="font-semibold text-brand-slate text-sm leading-snug">Ice Maker Repair</p>
-                  <p className="text-xs text-gray-500 leading-relaxed flex-1">No ice or slow production — ice maker module, inlet valve, or frozen fill tube.</p>
-                  <span className="text-xs font-semibold text-brand-blue">Learn more →</span>
-                </Link>
-              )}
-            </div>
-          </div>
-        </section>
-      )}
-
-      {/* 5. What We Fix */}
+      {/* 4. What We Fix */}
       <section className="py-10 bg-white">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold text-brand-slate mb-6">
             {isInstallation
               ? "Appliances We Install in San Diego"
-              : isMaintenance
-              ? "What's Included in Your Maintenance Visit"
               : `Common ${service.name} Problems We Fix in San Diego`}
           </h2>
           <ul className="space-y-4">
@@ -454,7 +411,7 @@ export default async function ServicePage({
               ))}
               <Link
                 href="/contact/"
-                className="rounded-lg border border-brand-blue bg-red-50 px-4 py-2 text-sm font-medium text-brand-blue hover:bg-brand-blue hover:text-white transition-colors"
+                className="rounded-lg border border-brand-blue bg-blue-50 px-4 py-2 text-sm font-medium text-brand-blue hover:bg-brand-blue hover:text-white transition-colors"
               >
                 Schedule Repair →
               </Link>
@@ -472,7 +429,7 @@ export default async function ServicePage({
           <p className="text-white/70 mb-6">
             {DIAGNOSTIC_FEE} service call fee waived if we fix it. {WARRANTY_DAYS}-day parts &amp; labor warranty.
             <br />
-            {HOURS_WEEKDAY} · {HOURS_SUNDAY}
+            {HOURS_WEEKDAY} · {HOURS_SATURDAY}
           </p>
           <a
             href={COMPANY_PHONE_TEL}

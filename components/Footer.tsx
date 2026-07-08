@@ -5,7 +5,7 @@ import {
   COMPANY_PHONE_TEL,
   COMPANY_EMAIL,
   HOURS_WEEKDAY,
-  HOURS_SUNDAY,
+  HOURS_SATURDAY,
 } from "@/data/constants"
 import { SERVICES } from "@/data/services"
 import { BRANDS } from "@/data/brands"
@@ -133,7 +133,7 @@ export default function Footer() {
                 <Clock className="h-4 w-4 shrink-0 mt-0.5" aria-hidden="true" />
                 <span>
                   <span className="block">{HOURS_WEEKDAY}</span>
-                  <span className="block">{HOURS_SUNDAY}</span>
+                  <span className="block">{HOURS_SATURDAY}</span>
                 </span>
               </li>
             </ul>

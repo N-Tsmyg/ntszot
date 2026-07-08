@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     question: "Does repairing an appliance come with a warranty?",
-    answer: `Every repair by WNDW Appliance Repair includes a ${WARRANTY_DAYS}-day parts and labor warranty. If the same problem returns within ${WARRANTY_DAYS} days, our technician comes back at no additional charge.`,
+    answer: `Every repair by NTSZOT Appliance Repair includes a ${WARRANTY_DAYS}-day parts and labor warranty. If the same problem returns within ${WARRANTY_DAYS} days, our technician comes back at no additional charge.`,
   },
 ]
 
@@ -31,8 +31,8 @@ export default function RepairVsReplacePost() {
     <div className="blog-content">
 
       {/* Quick answer box */}
-      <div className="quick-answer not-prose rounded-xl border-l-4 border-brand-red bg-red-50 p-5 mb-8">
-        <p className="text-sm font-semibold text-brand-red uppercase tracking-wide mb-1">Quick Answer</p>
+      <div className="quick-answer not-prose rounded-xl border-l-4 border-brand-blue bg-blue-50 p-5 mb-8">
+        <p className="text-sm font-semibold text-brand-blue uppercase tracking-wide mb-1">Quick Answer</p>
         <p className="text-gray-800 text-base leading-relaxed">
           Repair if the cost is under 50% of replacement and the appliance is under 10–12 years old. For{" "}
           <strong>older appliances built before the mid-2000s</strong>, the calculus often favors repair even more — they were built with heavier components, simpler mechanics, and fewer plastic parts that break. A{" "}
@@ -110,7 +110,7 @@ export default function RepairVsReplacePost() {
       <h3>Oven / Range / Stove</h3>
       <p>
         <strong>Repair almost always.</strong> Gas ranges in particular are built to last 20+ years. The mechanical components — igniters, burner valves, oven thermostats — are durable, inexpensive to replace, and widely available for every major brand. Electric ovens have a bake element that burns out every 7–10 years — a $150–$250 repair that adds another decade of life.{" "}
-        <Link href="/services/oven-range-stove-repair/" className="text-brand-red hover:underline">
+        <Link href="/services/oven-range-stove-repair/" className="text-brand-blue hover:underline">
           Oven repair
         </Link>{" "}
         is one of the clearest cases where replacement almost never makes sense.
@@ -138,13 +138,13 @@ export default function RepairVsReplacePost() {
       <h2>What Our Technician Actually Tells Customers</h2>
 
       <p>
-        WNDW Appliance Repair charges a flat {DIAGNOSTIC_FEE} diagnostic fee for appliance calls throughout San Diego County. After diagnosis, our technician gives you a parts-and-labor quote and an honest recommendation — including when replacement is the better call. The {DIAGNOSTIC_FEE} is waived if you proceed with the repair. Every completed repair carries a {WARRANTY_DAYS}-day parts and labor warranty.
+        NTSZOT Appliance Repair charges a flat {DIAGNOSTIC_FEE} diagnostic fee for appliance calls throughout San Diego County. After diagnosis, our technician gives you a parts-and-labor quote and an honest recommendation — including when replacement is the better call. The {DIAGNOSTIC_FEE} is waived if you proceed with the repair. Every completed repair carries a {WARRANTY_DAYS}-day parts and labor warranty.
       </p>
 
       <p>
         If you&apos;re on the fence, the diagnostic visit itself is the right move. You get a professional assessment of exactly what failed, what it costs to fix, and a realistic estimate of remaining useful life — for {DIAGNOSTIC_FEE}. Call{" "}
-        <a href="tel:+18582643138" className="text-brand-red hover:underline">(858) 264-3138</a> to schedule, or{" "}
-        <Link href="/contact/" className="text-brand-red hover:underline">book online</Link>.
+        <a href="tel:+16194884477" className="text-brand-blue hover:underline">(619) 488-4477</a> to schedule, or{" "}
+        <Link href="/contact/" className="text-brand-blue hover:underline">book online</Link>.
       </p>
 
       <div className="not-prose">
@@ -155,28 +155,28 @@ export default function RepairVsReplacePost() {
 
       <ul>
         <li>
-          <Link href="/services/" className="text-brand-red hover:underline">
+          <Link href="/services/" className="text-brand-blue hover:underline">
             All Appliance Repair Services — San Diego County
           </Link>
         </li>
         <li>
-          <Link href="/blog/how-much-does-appliance-repair-cost-in-san-diego/" className="text-brand-red hover:underline">
+          <Link href="/blog/how-much-does-appliance-repair-cost-in-san-diego/" className="text-brand-blue hover:underline">
             How Much Does Appliance Repair Cost in San Diego?
           </Link>
         </li>
         <li>
-          <Link href="/blog/dryer-taking-too-long-san-diego/" className="text-brand-red hover:underline">
+          <Link href="/blog/dryer-taking-too-long-san-diego/" className="text-brand-blue hover:underline">
             Dryer Taking Too Long? Common Causes in San Diego
           </Link>
         </li>
         <li>
-          <Link href="/la-jolla-appliance-repair/" className="text-brand-red hover:underline">
+          <Link href="/la-jolla-appliance-repair/" className="text-brand-blue hover:underline">
             Appliance Repair in La Jolla
           </Link>
         </li>
         <li>
-          <Link href="/contact/" className="text-brand-red hover:underline">
-            Schedule a Repair — (858) 264-3138
+          <Link href="/contact/" className="text-brand-blue hover:underline">
+            Schedule a Repair — (619) 488-4477
           </Link>
         </li>
       </ul>

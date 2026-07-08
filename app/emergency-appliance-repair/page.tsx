@@ -12,7 +12,7 @@ import {
   DIAGNOSTIC_FEE,
   WARRANTY_DAYS,
   HOURS_WEEKDAY,
-  HOURS_SUNDAY,
+  HOURS_SATURDAY,
 } from "@/data/constants"
 
 export const metadata: Metadata = {
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 const EMERGENCY_FAQS = [
   {
     question: "Do you offer same-day appliance repair in San Diego?",
-    answer: `Yes. In most cases our technician can arrive the same day — typically within a 3-hour window. We are available ${HOURS_WEEKDAY} and ${HOURS_SUNDAY}, 6 days a week. Weekend and evening appointments are available at no surcharge.`,
+    answer: `Yes. In most cases our technician can arrive the same day — typically within a 3-hour window. We are available ${HOURS_WEEKDAY} and ${HOURS_SATURDAY}, 6 days a week. Weekend and evening appointments are available at no surcharge.`,
   },
   {
     question: "Is there an emergency surcharge or after-hours fee?",
@@ -112,7 +112,7 @@ export default function EmergencyPage() {
             {COMPANY_PHONE_DISPLAY}
           </a>
           <p className="mt-4 text-sm text-white/50">
-            {HOURS_WEEKDAY} · {HOURS_SUNDAY} · No surcharge for evenings or weekends
+            {HOURS_WEEKDAY} · {HOURS_SATURDAY} · No surcharge for evenings or weekends
           </p>
         </div>
       </section>
@@ -125,7 +125,7 @@ export default function EmergencyPage() {
           <div className="rounded-xl border-l-4 border-brand-blue bg-red-50 p-6">
             <p className="font-semibold text-brand-slate text-base leading-relaxed">
               In most cases, our technician arrives within a 3-hour window on the same day you call.
-              We are available {HOURS_WEEKDAY} and {HOURS_SUNDAY} with no emergency premium.
+              We are available {HOURS_WEEKDAY} and {HOURS_SATURDAY} with no emergency premium.
               The flat {DIAGNOSTIC_FEE} service call fee is waived if you proceed with the repair.
             </p>
           </div>
@@ -253,7 +253,7 @@ export default function EmergencyPage() {
             {COMPANY_PHONE_DISPLAY}
           </a>
           <p className="mt-4 text-sm text-white/60">
-            {HOURS_WEEKDAY} · {HOURS_SUNDAY}
+            {HOURS_WEEKDAY} · {HOURS_SATURDAY}
           </p>
         </div>
       </section>

@@ -27,8 +27,8 @@ export default function DishwasherNotDrainingPost() {
     <div className="blog-content">
 
       {/* Quick answer box */}
-      <div className="quick-answer not-prose rounded-xl border-l-4 border-brand-red bg-red-50 p-5 mb-8">
-        <p className="text-sm font-semibold text-brand-red uppercase tracking-wide mb-1">Quick Answer</p>
+      <div className="quick-answer not-prose rounded-xl border-l-4 border-brand-blue bg-blue-50 p-5 mb-8">
+        <p className="text-sm font-semibold text-brand-blue uppercase tracking-wide mb-1">Quick Answer</p>
         <p className="text-gray-800 text-base leading-relaxed">
           A dishwasher that won&apos;t drain is almost always caused by one of four things: a <strong>clogged filter</strong>, a <strong>blocked drain hose</strong>, a <strong>failed drain pump</strong>, or a <strong>garbage disposal knockout plug</strong> that was never removed. Start with the filter — it takes 5 minutes and solves the problem in many cases.
         </p>
@@ -117,7 +117,7 @@ export default function DishwasherNotDrainingPost() {
       </ul>
 
       <p>
-        WNDW Appliance Repair charges a flat {DIAGNOSTIC_FEE} diagnostic fee for dishwasher calls in San Diego. If we diagnose the problem and you approve the repair, the {DIAGNOSTIC_FEE} is waived. Every completed repair carries a {WARRANTY_DAYS}-day parts and labor warranty.
+        NTSZOT Appliance Repair charges a flat {DIAGNOSTIC_FEE} diagnostic fee for dishwasher calls in San Diego. If we diagnose the problem and you approve the repair, the {DIAGNOSTIC_FEE} is waived. Every completed repair carries a {WARRANTY_DAYS}-day parts and labor warranty.
       </p>
 
       <h2>Common Error Codes for Dishwasher Draining Failures</h2>
@@ -138,33 +138,33 @@ export default function DishwasherNotDrainingPost() {
 
       <ul>
         <li>
-          <Link href="/services/dishwasher-repair/" className="text-brand-red hover:underline">
+          <Link href="/services/dishwasher-repair/" className="text-brand-blue hover:underline">
             Dishwasher Repair in San Diego — full service page
           </Link>
         </li>
         <li>
-          <Link href="/brands/bosch-appliance-repair-san-diego/" className="text-brand-red hover:underline">
+          <Link href="/brands/bosch-appliance-repair-san-diego/" className="text-brand-blue hover:underline">
             Bosch Appliance Repair in San Diego
           </Link>
         </li>
         <li>
-          <Link href="/brands/samsung-appliance-repair-san-diego/" className="text-brand-red hover:underline">
+          <Link href="/brands/samsung-appliance-repair-san-diego/" className="text-brand-blue hover:underline">
             Samsung Appliance Repair in San Diego
           </Link>
         </li>
         <li>
-          <Link href="/blog/how-much-does-appliance-repair-cost-in-san-diego/" className="text-brand-red hover:underline">
+          <Link href="/blog/how-much-does-appliance-repair-cost-in-san-diego/" className="text-brand-blue hover:underline">
             How Much Does Appliance Repair Cost in San Diego?
           </Link>
         </li>
         <li>
-          <Link href="/san-diego-appliance-repair/" className="text-brand-red hover:underline">
+          <Link href="/san-diego-appliance-repair/" className="text-brand-blue hover:underline">
             Appliance Repair in San Diego — service area overview
           </Link>
         </li>
         <li>
-          <Link href="/contact/" className="text-brand-red hover:underline">
-            Schedule a Repair — (858) 264-3138
+          <Link href="/contact/" className="text-brand-blue hover:underline">
+            Schedule a Repair — (619) 488-4477
           </Link>
         </li>
       </ul>

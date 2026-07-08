@@ -31,7 +31,7 @@ export interface BlogPost {
 export const DEFAULT_AUTHOR = {
   name: "Andrei Zotolokin",
   jobTitle: "Owner & Appliance Repair Technician",
-  bio: "Andrei Zotolokin is the owner and technician at NTSZOT Appliance Repair. He started the company after years as a cleaner and Airbnb host — experiencing firsthand how a broken appliance can derail an entire day. His goal is simple: same-day repair, fair pricing, zero hassle for the client.",
+  bio: "Andrei Zotolokin is the founder and lead technician at NTSZOT Appliance Repair. He earned factory certifications from Samsung, LG, Whirlpool, GE, and other major brands while working in Las Vegas before relocating to San Diego with his family. He started NTSZOT after seeing a clear demand for professional, certified appliance repair in San Diego County.",
 }
 
 export const BLOG_POSTS: BlogPost[] = [
@@ -40,14 +40,14 @@ export const BLOG_POSTS: BlogPost[] = [
     title: "How Much Does Appliance Repair Cost in San Diego in 2026?",
     metaTitle: "Appliance Repair Cost San Diego | NTSZOT Appliance Repair",
     metaDescription:
-      "Appliance repair in San Diego costs $250–$350 for most appliances, $350–$900 for refrigeration. $80 service call fee waived if we fix it. Call (619) 488-4477.",
+      "Appliance repair in San Diego costs $300–$400 including parts and labor. $80 service call includes the diagnostic. 60-day warranty. Call (619) 488-4477.",
     primaryKeyword: "appliance repair cost san diego",
     datePublished: "2026-03-01",
     dateModified: "2026-03-01",
     authorName: DEFAULT_AUTHOR.name,
     authorJobTitle: DEFAULT_AUTHOR.jobTitle,
     excerpt:
-      "Most appliance repairs in San Diego cost $250–$350 including parts and labor. Refrigerators and freezers run $350–$900. Here is a full breakdown by appliance type, plus how the $80 service call fee works.",
+      "Most appliance repairs in San Diego cost $300–$400 including parts and labor. Here is a full breakdown by appliance type, plus how the $80 service call fee works.",
     featuredImageUrl:
       "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80",
     featuredImageAlt: "Appliance repair technician working on a dishwasher in a San Diego home",
@@ -217,7 +217,7 @@ export const BLOG_POSTS: BlogPost[] = [
     featuredImageUrl: "/images/spring-maintenance-san-diego.png",
     featuredImageAlt:
       "Open kitchen with refrigerator, range, and dishwasher — spring appliance maintenance checklist for San Diego homeowners",
-    relatedServiceSlugs: ["annual-maintenance-plan", "washer-repair", "dryer-repair", "refrigerator-repair"],
+    relatedServiceSlugs: ["washer-repair", "dryer-repair", "refrigerator-repair"],
     relatedCitySlugs: ["san-diego-appliance-repair", "la-jolla-appliance-repair"],
   },
   {

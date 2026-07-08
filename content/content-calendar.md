@@ -1,8 +1,9 @@
-# WNDW Appliance Repair — Content Calendar
+# NTSZOT Appliance Repair — Blog Content Calendar
 
 **Schedule:** Tuesdays & Fridays
-**Platforms:** Blog (website) · Instagram · Google Business Profile
-**Goal:** 2 posts/week — drive organic search traffic + local visibility + social proof
+**Platforms:** Blog (website) · Google Business Profile
+**Goal:** 2 posts/month — drive organic search traffic + local SEO visibility
+**Author:** Andrei Zotolokin, Owner & Appliance Repair Technician
 
 ---
 
@@ -12,14 +13,12 @@
 |--------|---------|
 | ✅ | Published |
 | 📅 | Planned |
-| ✏️ | Draft ready — awaiting confirmation |
-| ⏭ | Next up |
+| ✏️ | Draft ready |
 
 ## Post Types
 
 | Icon | Type |
 |------|------|
-| 🎯 | Promo / Offer |
 | 🔧 | Troubleshooting / How-To |
 | 💡 | Tips & Maintenance |
 | 🏷 | Brand-Specific |
@@ -30,28 +29,35 @@
 
 ## Calendar
 
-| # | Date | Day | Topic | Type | Status | Blog URL |
-|---|------|-----|-------|------|--------|----------|
-| 1 | 2026-03-01 | Sun | How Much Does Appliance Repair Cost in San Diego in 2026? | 📊 | ✅ Published | /blog/how-much-does-appliance-repair-cost-in-san-diego/ |
-| 2 | 2026-03-08 | Sun | Dishwasher Not Draining? Here's What to Check First | 🔧 | ✅ Published | /blog/dishwasher-not-draining-san-diego/ |
-| 3 | 2026-03-15 | Sun | Refrigerator Not Cooling? What San Diego Homeowners Should Check | 🔧 | ✅ Published | /blog/refrigerator-not-cooling-san-diego/ |
-| 4 | 2026-03-31 | Tue | Welcome Special — $40 Off Your First Repair | 🎯 | ✅ Published | GBP only |
-| 5 | 2026-04-03 | Fri | 5 Signs Your Washer Needs Repair (Before It Gets Worse) | 🔧 | ✅ Published | /blog/washer-needs-repair-signs-san-diego/ |
-| 6 | 2026-04-07 | Tue | Dryer Taking Too Long to Dry Clothes? Common Causes in San Diego | 🔧 | ✅ Published | /blog/dryer-taking-too-long-san-diego/ |
-| 7 | 2026-04-10 | Fri | Repair vs. Replace: When to Fix a Broken Appliance in San Diego | 💡 | ✅ Published | /blog/repair-vs-replace-appliance-san-diego/ |
-| 8 | 2026-04-14 | Tue | Oven Not Heating Evenly — Causes and Repair Costs in San Diego | 🔧 | ✅ Published | /blog/oven-not-heating-evenly-san-diego/ |
-| 9 | 2026-04-17 | Fri | Samsung Appliance Repair San Diego — Most Common Problems We Fix | 🏷 | ✅ Published | /blog/samsung-appliance-repair-san-diego/ |
-| 10 | 2026-04-21 | Tue | Spring Appliance Maintenance Checklist for San Diego Homeowners | 🏠 | ✅ Published | /blog/spring-appliance-maintenance-checklist-san-diego/ |
-| 11 | 2026-04-24 | Fri | LG Washing Machine Error Codes — What They Mean and What to Do | 🏷 | 📅 Planned | — |
-| 12 | 2026-04-28 | Tue | Ice Maker Not Working? What San Diego Homeowners Should Check First | 🔧 | 📅 Planned | — |
-| 13 | 2026-05-01 | Fri | Appliance Repair for Vacation Rentals in San Diego | 💡 | 📅 Planned | — |
-| 14 | 2026-05-05 | Tue | Microwave Not Heating — Is Repair Worth It in 2026? | 🔧 | 📅 Planned | — |
-| 15 | 2026-05-08 | Fri | Bosch Dishwasher Repair San Diego — Error Codes and Common Fixes | 🏷 | 📅 Planned | — |
-| 16 | 2026-05-12 | Tue | Whirlpool Refrigerator Repair San Diego — What We See Most | 🏷 | 📅 Planned | — |
-| 17 | 2026-05-15 | Fri | Maintaining Appliances in San Diego's Coastal Climate | 💡 | 📅 Planned | — |
-| 18 | 2026-05-19 | Tue | Range Hood Not Working — Repair vs. Replace in San Diego | 🔧 | 📅 Planned | — |
-| 19 | 2026-05-22 | Fri | Annual Maintenance Plan — What's Included and Is It Worth It? | 💡 | 📅 Planned | — |
-| 20 | 2026-05-26 | Tue | Freezer Not Freezing? Step-by-Step Diagnosis for San Diego Homeowners | 🔧 | 📅 Planned | — |
-| 21 | 2026-05-29 | Fri | KitchenAid Appliance Repair San Diego — Common Problems and Costs | 🏷 | 📅 Planned | — |
-| 22 | 2026-06-02 | Tue | Summer Appliance Prep for San Diego Homeowners | 🏠 | 📅 Planned | — |
-| 23 | 2026-06-05 | Fri | GE Appliance Repair San Diego — What We Fix Most | 🏷 | 📅 Planned | — |
+| # | Date | Topic | Type | Primary Keyword | Status | Blog URL |
+|---|------|-------|------|-----------------|--------|----------|
+| 1 | 2026-07-07 | How Much Does Appliance Repair Cost in San Diego in 2026? | 📊 | appliance repair cost san diego | ✅ | /blog/how-much-does-appliance-repair-cost-in-san-diego/ |
+| 2 | 2026-07-07 | Dishwasher Not Draining? Here's What to Check First | 🔧 | dishwasher not draining san diego | ✅ | /blog/dishwasher-not-draining-san-diego/ |
+| 3 | 2026-07-07 | Refrigerator Not Cooling? What San Diego Homeowners Should Check | 🔧 | refrigerator not cooling san diego | ✅ | /blog/refrigerator-not-cooling-san-diego/ |
+| 4 | 2026-07-07 | 5 Signs Your Washer Needs Repair (Before It Gets Worse) | 🔧 | washer repair san diego | ✅ | /blog/washer-needs-repair-signs-san-diego/ |
+| 5 | 2026-07-07 | Dryer Taking Too Long to Dry Clothes? Common Causes in San Diego | 🔧 | dryer taking too long san diego | ✅ | /blog/dryer-taking-too-long-san-diego/ |
+| 6 | 2026-07-07 | Repair vs. Replace: When to Fix a Broken Appliance in San Diego | 💡 | repair vs replace appliance san diego | ✅ | /blog/repair-vs-replace-appliance-san-diego/ |
+| 7 | 2026-07-07 | Oven Not Heating Evenly — Causes and Repair Costs in San Diego | 🔧 | oven not heating evenly san diego | ✅ | /blog/oven-not-heating-evenly-san-diego/ |
+| 8 | 2026-07-07 | Samsung Appliance Repair San Diego — Most Common Problems We Fix | 🏷 | samsung appliance repair san diego | ✅ | /blog/samsung-appliance-repair-san-diego/ |
+| 9 | 2026-07-07 | Spring Appliance Maintenance Checklist for San Diego Homeowners | 🏠 | appliance maintenance san diego | ✅ | /blog/spring-appliance-maintenance-checklist-san-diego/ |
+| 10 | 2026-08-05 | LG Appliance Repair San Diego — Common Problems and Error Codes | 🏷 | lg appliance repair san diego | 📅 | — |
+| 11 | 2026-08-19 | Dishwasher Not Cleaning Dishes? What's Causing It | 🔧 | dishwasher not cleaning dishes san diego | 📅 | — |
+| 12 | 2026-09-02 | Washer Leaking Water? What It Means and What to Do | 🔧 | washer leaking san diego | 📅 | — |
+| 13 | 2026-09-16 | Refrigerator Making Noise? Causes Explained | 🔧 | refrigerator making noise san diego | 📅 | — |
+| 14 | 2026-10-07 | Whirlpool Appliance Repair San Diego — Common Failures We Fix | 🏷 | whirlpool appliance repair san diego | 📅 | — |
+| 15 | 2026-10-21 | Ice Maker Not Making Ice? Step-by-Step Diagnosis | 🔧 | ice maker not making ice san diego | 📅 | — |
+| 16 | 2026-11-04 | Gas Stove Not Lighting? Causes and Repair Costs in San Diego | 🔧 | gas stove not lighting san diego | 📅 | — |
+| 17 | 2026-11-18 | Range Hood Fan Not Working — What to Check First | 🔧 | range hood repair san diego | 📅 | — |
+| 18 | 2026-12-02 | GE Appliance Repair San Diego — What We Fix Most | 🏷 | ge appliance repair san diego | 📅 | — |
+| 19 | 2026-12-16 | Winter Appliance Prep for San Diego Homeowners | 🏠 | appliance maintenance san diego winter | 📅 | — |
+
+---
+
+## SEO Checklist for Each Post
+- [ ] Author: Andrei Zotolokin, Owner & Appliance Repair Technician
+- [ ] Include local San Diego context (hard water, coastal humidity, salt air)
+- [ ] Use HowTo schema on diagnostic/troubleshooting posts
+- [ ] Link to relevant service page
+- [ ] Link to 1–2 city pages
+- [ ] Add to `data/blog-posts.ts` and `content/blog/index.ts`
+- [ ] Add to `scripts/indexnow-submit.mjs` URL list after publish

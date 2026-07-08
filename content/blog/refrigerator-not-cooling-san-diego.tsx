@@ -27,8 +27,8 @@ export default function RefrigeratorNotCoolingPost() {
     <div className="blog-content">
 
       {/* Quick answer box */}
-      <div className="quick-answer not-prose rounded-xl border-l-4 border-brand-red bg-red-50 p-5 mb-8">
-        <p className="text-sm font-semibold text-brand-red uppercase tracking-wide mb-1">Quick Answer</p>
+      <div className="quick-answer not-prose rounded-xl border-l-4 border-brand-blue bg-blue-50 p-5 mb-8">
+        <p className="text-sm font-semibold text-brand-blue uppercase tracking-wide mb-1">Quick Answer</p>
         <p className="text-gray-800 text-base leading-relaxed">
           A refrigerator that stops cooling most often has one of four causes: <strong>dirty condenser coils</strong>, a <strong>failed evaporator fan</strong>, a <strong>blocked defrost drain</strong>, or a <strong>faulty compressor start relay</strong>. Check the condenser coils first — in San Diego&apos;s coastal environment, dust and humidity clog them faster than anywhere else in California.
         </p>
@@ -157,33 +157,33 @@ export default function RefrigeratorNotCoolingPost() {
 
       <ul>
         <li>
-          <Link href="/services/refrigerator-repair/" className="text-brand-red hover:underline">
+          <Link href="/services/refrigerator-repair/" className="text-brand-blue hover:underline">
             Refrigerator Repair in San Diego — service page, pricing, brands
           </Link>
         </li>
         <li>
-          <Link href="/services/freezer-repair/" className="text-brand-red hover:underline">
+          <Link href="/services/freezer-repair/" className="text-brand-blue hover:underline">
             Freezer Repair in San Diego
           </Link>
         </li>
         <li>
-          <Link href="/services/ice-maker-repair/" className="text-brand-red hover:underline">
+          <Link href="/services/ice-maker-repair/" className="text-brand-blue hover:underline">
             Ice Maker Repair in San Diego
           </Link>
         </li>
         <li>
-          <Link href="/blog/how-much-does-appliance-repair-cost-in-san-diego/" className="text-brand-red hover:underline">
+          <Link href="/blog/how-much-does-appliance-repair-cost-in-san-diego/" className="text-brand-blue hover:underline">
             How Much Does Appliance Repair Cost in San Diego?
           </Link>
         </li>
         <li>
-          <Link href="/san-diego-appliance-repair/" className="text-brand-red hover:underline">
+          <Link href="/san-diego-appliance-repair/" className="text-brand-blue hover:underline">
             Appliance Repair in San Diego — service area overview
           </Link>
         </li>
         <li>
-          <Link href="/contact/" className="text-brand-red hover:underline">
-            Schedule a Repair — (858) 264-3138
+          <Link href="/contact/" className="text-brand-blue hover:underline">
+            Schedule a Repair — (619) 488-4477
           </Link>
         </li>
       </ul>

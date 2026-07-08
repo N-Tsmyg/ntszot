@@ -11,7 +11,7 @@ import {
   DIAGNOSTIC_FEE,
   WARRANTY_DAYS,
   HOURS_WEEKDAY,
-  HOURS_SUNDAY,
+  HOURS_SATURDAY,
   FIRST_SERVICE_DISCOUNT,
 } from "@/data/constants"
 
@@ -73,7 +73,7 @@ export default function SpecialsPage() {
             {COMPANY_PHONE_DISPLAY}
           </a>
           <p className="mt-4 text-sm text-white/50">
-            {HOURS_WEEKDAY} · {HOURS_SUNDAY}
+            {HOURS_WEEKDAY} · {HOURS_SATURDAY}
           </p>
         </div>
       </section>
@@ -197,7 +197,7 @@ export default function SpecialsPage() {
             {COMPANY_PHONE_DISPLAY}
           </a>
           <p className="mt-4 text-sm text-white/60">
-            {HOURS_WEEKDAY} · {HOURS_SUNDAY}
+            {HOURS_WEEKDAY} · {HOURS_SATURDAY}
           </p>
         </div>
       </section>

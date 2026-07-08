@@ -10,23 +10,23 @@ const faqs = [
   },
   {
     question: "What does Samsung error code 5E or SE mean on my washer?",
-    answer: `5E (sometimes displayed as SE on older models) means the washer can't drain. The most common cause is a clogged pump filter — usually lint, a sock, or coins blocking the drain. Check and clear the filter first. If the washer still won't drain, the drain pump may need replacement. Call (858) 264-3138 to schedule a same-visit diagnosis.`,
+    answer: `5E (sometimes displayed as SE on older models) means the washer can't drain. The most common cause is a clogged pump filter — usually lint, a sock, or coins blocking the drain. Check and clear the filter first. If the washer still won't drain, the drain pump may need replacement. Call (619) 488-4477 to schedule a same-visit diagnosis.`,
   },
   {
     question: "Why does my Samsung refrigerator keep displaying an error code?",
     answer: `Samsung refrigerators display error codes when a sensor, fan, or component reports an out-of-range reading. Common codes: 1E or SE (ice maker sensor), 8E or 6E (ice maker issue), OF OF or O FF (demo mode accidentally activated — hold both door alarm buttons for 3 seconds to clear). Persistent codes after a reset usually mean a failed component. Our technician can diagnose which part needs replacement on the same visit.`,
   },
   {
-    question: "Does WNDW repair Samsung refrigerators with the known ice maker problems?",
+    question: "Does NTSZOT repair Samsung refrigerators with the known ice maker problems?",
     answer: `Yes. Samsung ice maker failures — particularly on French door models from 2014–2019 — are among the most common repairs we handle. The ice maker assembly, evaporator cover, and drain tube are the usual failure points. Most of these are completed in a single visit with commonly stocked parts.`,
   },
   {
     question: "Is Samsung appliance repair covered under warranty?",
-    answer: `If your Samsung appliance is within its manufacturer warranty period, contact Samsung directly — they will dispatch an authorized repair service at no cost. Once the manufacturer warranty has expired, WNDW handles all Samsung repairs. Every completed repair comes with a ${WARRANTY_DAYS}-day parts and labor warranty from us.`,
+    answer: `If your Samsung appliance is within its manufacturer warranty period, contact Samsung directly — they will dispatch an authorized repair service at no cost. Once the manufacturer warranty has expired, NTSZOT handles all Samsung repairs. Every completed repair comes with a ${WARRANTY_DAYS}-day parts and labor warranty from us.`,
   },
   {
     question: "How quickly can you come out to repair my Samsung appliance?",
-    answer: `In most cases our technician can arrive same day. We're available Mon–Sat 7:00 AM–11:00 PM and Sun 8:00 AM–10:00 PM. Call (858) 264-3138 to confirm availability for your area.`,
+    answer: `In most cases our technician can arrive same day. We're available Mon–Sat 7:00 AM–11:00 PM and Sun 8:00 AM–10:00 PM. Call (619) 488-4477 to confirm availability for your area.`,
   },
 ]
 
@@ -35,10 +35,10 @@ export default function SamsungApplianceRepairPost() {
     <div className="blog-content">
 
       {/* Quick answer box */}
-      <div className="quick-answer not-prose rounded-xl border-l-4 border-brand-red bg-red-50 p-5 mb-8">
-        <p className="text-sm font-semibold text-brand-red uppercase tracking-wide mb-1">Quick Answer</p>
+      <div className="quick-answer not-prose rounded-xl border-l-4 border-brand-blue bg-blue-50 p-5 mb-8">
+        <p className="text-sm font-semibold text-brand-blue uppercase tracking-wide mb-1">Quick Answer</p>
         <p className="text-gray-800 text-base leading-relaxed">
-          WNDW Appliance Repair services all Samsung appliances in San Diego County — refrigerators, washers, dryers, dishwashers, and ovens. The most common Samsung problems we fix are ice maker failures, drain errors (5E/SE), and refrigerators not cooling. The {DIAGNOSTIC_FEE} diagnostic fee is waived if we repair it, and every completed repair is backed by a {WARRANTY_DAYS}-day parts and labor warranty.
+          NTSZOT Appliance Repair services all Samsung appliances in San Diego County — refrigerators, washers, dryers, dishwashers, and ovens. The most common Samsung problems we fix are ice maker failures, drain errors (5E/SE), and refrigerators not cooling. The {DIAGNOSTIC_FEE} diagnostic fee is waived if we repair it, and every completed repair is backed by a {WARRANTY_DAYS}-day parts and labor warranty.
         </p>
       </div>
 
@@ -47,7 +47,7 @@ export default function SamsungApplianceRepairPost() {
       </p>
 
       <p>
-        If you need Samsung appliance repair in San Diego today, call <strong>(858) 264-3138</strong>. In most cases our technician can arrive same day.
+        If you need Samsung appliance repair in San Diego today, call <strong>(619) 488-4477</strong>. In most cases our technician can arrive same day.
       </p>
 
       <h2>Samsung Refrigerator Problems — What We See Most</h2>
@@ -158,13 +158,13 @@ export default function SamsungApplianceRepairPost() {
       <h2>Book Samsung Appliance Repair in San Diego</h2>
 
       <p>
-        WNDW Appliance Repair services all Samsung appliances across{" "}
+        NTSZOT Appliance Repair services all Samsung appliances across{" "}
         <Link href="/san-diego-appliance-repair/">San Diego County</Link> — refrigerators, washers, dryers, dishwashers, ovens, and microwaves. Our technician arrives with commonly stocked parts for Samsung models, so most repairs are completed in a single visit.
       </p>
 
       <p>
-        Call <strong>(858) 264-3138</strong> or visit our{" "}
-        <Link href="/contact/">contact page</Link> to schedule. We&apos;re available Mon–Sat 7:00 AM–11:00 PM and Sun 8:00 AM–10:00 PM, 7 days a week.
+        Call <strong>(619) 488-4477</strong> or visit our{" "}
+        <Link href="/contact/">contact page</Link> to schedule. We&apos;re available Mon–Sat 7:00 AM–11:00 PM and Sun 8:00 AM–10:00 PM, 6 days a week.
       </p>
 
       <p>

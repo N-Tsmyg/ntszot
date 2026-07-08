@@ -27,15 +27,15 @@ export default function ApplianceRepairCostPost() {
     <div className="blog-content">
 
       {/* Quick answer box */}
-      <div className="quick-answer not-prose rounded-xl border-l-4 border-brand-red bg-red-50 p-5 mb-8">
-        <p className="text-sm font-semibold text-brand-red uppercase tracking-wide mb-1">Quick Answer</p>
+      <div className="quick-answer not-prose rounded-xl border-l-4 border-brand-blue bg-blue-50 p-5 mb-8">
+        <p className="text-sm font-semibold text-brand-blue uppercase tracking-wide mb-1">Quick Answer</p>
         <p className="text-gray-800 text-base leading-relaxed">
           Most appliance repairs in San Diego cost <strong>$250–$350</strong> including parts and labor. Refrigerator, freezer, and ice maker repairs run <strong>$350–$900</strong>. The <strong>{DIAGNOSTIC_FEE} diagnostic fee</strong> is charged per visit and waived completely when you proceed with the repair.
         </p>
       </div>
 
       <p>
-        If your appliance just stopped working and you want to know what it will cost before calling a technician, this guide gives you the specific numbers we charge at WNDW Appliance Repair — the ranges, what drives the variation, and exactly how the diagnostic fee works.
+        If your appliance just stopped working and you want to know what it will cost before calling a technician, this guide gives you the specific numbers we charge at NTSZOT Appliance Repair — the ranges, what drives the variation, and exactly how the diagnostic fee works.
       </p>
 
       <h2>Appliance Repair Cost by Appliance Type — San Diego 2026</h2>
@@ -150,7 +150,7 @@ export default function ApplianceRepairCostPost() {
       </ul>
 
       <p>
-        At WNDW Appliance Repair, we give you the diagnosis and quote first. You decide whether to repair — there is no pressure, and declining the repair means you owe only the {DIAGNOSTIC_FEE} diagnostic fee.
+        At NTSZOT Appliance Repair, we give you the diagnosis and quote first. You decide whether to repair — there is no pressure, and declining the repair means you owe only the {DIAGNOSTIC_FEE} diagnostic fee.
       </p>
 
       <h2>Payment Methods</h2>
@@ -173,33 +173,33 @@ export default function ApplianceRepairCostPost() {
 
       <ul>
         <li>
-          <Link href="/services/refrigerator-repair/" className="text-brand-red hover:underline">
+          <Link href="/services/refrigerator-repair/" className="text-brand-blue hover:underline">
             Refrigerator Repair in San Diego — pricing, common problems, brands
           </Link>
         </li>
         <li>
-          <Link href="/services/washer-repair/" className="text-brand-red hover:underline">
+          <Link href="/services/washer-repair/" className="text-brand-blue hover:underline">
             Washer Repair in San Diego — what we fix, how long it takes
           </Link>
         </li>
         <li>
-          <Link href="/services/dishwasher-repair/" className="text-brand-red hover:underline">
+          <Link href="/services/dishwasher-repair/" className="text-brand-blue hover:underline">
             Dishwasher Repair in San Diego — symptoms, pricing, brands
           </Link>
         </li>
         <li>
-          <Link href="/blog/dishwasher-not-draining-san-diego/" className="text-brand-red hover:underline">
+          <Link href="/blog/dishwasher-not-draining-san-diego/" className="text-brand-blue hover:underline">
             Dishwasher Not Draining? Here's What to Check First
           </Link>
         </li>
         <li>
-          <Link href="/san-diego-appliance-repair/" className="text-brand-red hover:underline">
+          <Link href="/san-diego-appliance-repair/" className="text-brand-blue hover:underline">
             Appliance Repair in San Diego — service area overview
           </Link>
         </li>
         <li>
-          <Link href="/contact/" className="text-brand-red hover:underline">
-            Schedule a Repair — (858) 264-3138
+          <Link href="/contact/" className="text-brand-blue hover:underline">
+            Schedule a Repair — (619) 488-4477
           </Link>
         </li>
       </ul>

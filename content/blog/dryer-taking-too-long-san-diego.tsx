@@ -31,8 +31,8 @@ export default function DryerTakingTooLongPost() {
     <div className="blog-content">
 
       {/* Quick answer box */}
-      <div className="quick-answer not-prose rounded-xl border-l-4 border-brand-red bg-red-50 p-5 mb-8">
-        <p className="text-sm font-semibold text-brand-red uppercase tracking-wide mb-1">Quick Answer</p>
+      <div className="quick-answer not-prose rounded-xl border-l-4 border-brand-blue bg-blue-50 p-5 mb-8">
+        <p className="text-sm font-semibold text-brand-blue uppercase tracking-wide mb-1">Quick Answer</p>
         <p className="text-gray-800 text-base leading-relaxed">
           A dryer that takes too long is almost always caused by <strong>restricted airflow</strong> — a clogged lint screen, a blocked exhaust duct, or both. The second most common cause is a <strong>failed heating element or thermal fuse</strong> that reduces heat output. Start by cleaning the lint screen and checking your exhaust vent before calling a technician.
         </p>
@@ -67,7 +67,7 @@ export default function DryerTakingTooLongPost() {
       </p>
 
       <p>
-        <strong>Important note:</strong> WNDW Appliance Repair performs dryer repair — including internal lint removal from the lint trap housing and drum area. External duct cleaning (the duct running through your wall) is a separate service performed by duct cleaning specialists.
+        <strong>Important note:</strong> NTSZOT Appliance Repair performs dryer repair — including internal lint removal from the lint trap housing and drum area. External duct cleaning (the duct running through your wall) is a separate service performed by duct cleaning specialists.
       </p>
 
       <h2>Cause 3: Failed Heating Element (Electric Dryers)</h2>
@@ -112,7 +112,7 @@ export default function DryerTakingTooLongPost() {
       </p>
 
       <p>
-        Gas igniter replacement is a straightforward repair. Our technician carries commonly stocked igniter assemblies for major brands — Samsung, LG, Whirlpool, GE — and can typically complete the repair in a single visit. Call <a href="tel:+18582643138" className="text-brand-red hover:underline">(858) 264-3138</a> to schedule.
+        Gas igniter replacement is a straightforward repair. Our technician carries commonly stocked igniter assemblies for major brands — Samsung, LG, Whirlpool, GE — and can typically complete the repair in a single visit. Call <a href="tel:+16194884477" className="text-brand-blue hover:underline">(619) 488-4477</a> to schedule.
       </p>
 
       <h2>How Long Should a Dryer Take?</h2>
@@ -142,7 +142,7 @@ export default function DryerTakingTooLongPost() {
       </ul>
 
       <p>
-        WNDW Appliance Repair charges a flat {DIAGNOSTIC_FEE} diagnostic fee for dryer calls throughout San Diego County. If our technician diagnoses the problem and you approve the repair, the {DIAGNOSTIC_FEE} is waived completely. Every completed repair carries a {WARRANTY_DAYS}-day parts and labor warranty — the same visit, no callbacks needed in most cases.
+        NTSZOT Appliance Repair charges a flat {DIAGNOSTIC_FEE} diagnostic fee for dryer calls throughout San Diego County. If our technician diagnoses the problem and you approve the repair, the {DIAGNOSTIC_FEE} is waived completely. Every completed repair carries a {WARRANTY_DAYS}-day parts and labor warranty — the same visit, no callbacks needed in most cases.
       </p>
 
       <div className="not-prose">
@@ -153,33 +153,33 @@ export default function DryerTakingTooLongPost() {
 
       <ul>
         <li>
-          <Link href="/services/dryer-repair/" className="text-brand-red hover:underline">
+          <Link href="/services/dryer-repair/" className="text-brand-blue hover:underline">
             Dryer Repair in San Diego — full service page
           </Link>
         </li>
         <li>
-          <Link href="/services/dryer-repair/heating-element-replacement/" className="text-brand-red hover:underline">
+          <Link href="/services/dryer-repair/heating-element-replacement/" className="text-brand-blue hover:underline">
             Dryer Heating Element Replacement in San Diego
           </Link>
         </li>
         <li>
-          <Link href="/blog/washer-needs-repair-signs-san-diego/" className="text-brand-red hover:underline">
+          <Link href="/blog/washer-needs-repair-signs-san-diego/" className="text-brand-blue hover:underline">
             5 Signs Your Washer Needs Repair — Before It Gets Worse
           </Link>
         </li>
         <li>
-          <Link href="/blog/how-much-does-appliance-repair-cost-in-san-diego/" className="text-brand-red hover:underline">
+          <Link href="/blog/how-much-does-appliance-repair-cost-in-san-diego/" className="text-brand-blue hover:underline">
             How Much Does Appliance Repair Cost in San Diego?
           </Link>
         </li>
         <li>
-          <Link href="/san-diego-appliance-repair/" className="text-brand-red hover:underline">
+          <Link href="/san-diego-appliance-repair/" className="text-brand-blue hover:underline">
             Appliance Repair in San Diego — service area overview
           </Link>
         </li>
         <li>
-          <Link href="/contact/" className="text-brand-red hover:underline">
-            Schedule a Repair — (858) 264-3138
+          <Link href="/contact/" className="text-brand-blue hover:underline">
+            Schedule a Repair — (619) 488-4477
           </Link>
         </li>
       </ul>

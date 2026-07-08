@@ -13,7 +13,7 @@ import {
   WARRANTY_DAYS,
   CARD_FEE_PERCENT,
   HOURS_WEEKDAY,
-  HOURS_SUNDAY,
+  HOURS_SATURDAY,
 } from "@/data/constants"
 import { BRAND_SERVICE_MAP, RELATED_BRANDS_MAP } from "@/utils/internalLinks"
 
@@ -361,7 +361,7 @@ export default async function BrandPage({
                     6 days a week — available when you need us
                   </p>
                   <p className="text-xs text-gray-600">
-                    {HOURS_WEEKDAY} · {HOURS_SUNDAY}. Premium appliances don&apos;t break on
+                    {HOURS_WEEKDAY} · {HOURS_SATURDAY}. Premium appliances don&apos;t break on
                     schedule — neither do we.
                   </p>
                 </div>
@@ -398,10 +398,10 @@ export default async function BrandPage({
                 </div>
                 <div className="rounded-lg bg-white border border-gray-200 p-5">
                   <p className="font-semibold text-brand-slate text-sm mb-1">
-                    Available 7 days a week
+                    Available 6 days a week
                   </p>
                   <p className="text-xs text-gray-600">
-                    {HOURS_WEEKDAY} · {HOURS_SUNDAY}. Most independent shops close on weekends.
+                    {HOURS_WEEKDAY} · {HOURS_SATURDAY}. Most independent shops close on weekends.
                     We don&apos;t.
                   </p>
                 </div>
@@ -506,7 +506,7 @@ export default async function BrandPage({
             labor warranty on every repair.
           </p>
           <p className="text-white/50 text-sm mb-6">
-            {HOURS_WEEKDAY} · {HOURS_SUNDAY}
+            {HOURS_WEEKDAY} · {HOURS_SATURDAY}
           </p>
           <a
             href={COMPANY_PHONE_TEL}

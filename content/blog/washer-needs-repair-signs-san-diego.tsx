@@ -25,7 +25,7 @@ const faqs = [
     answer: `Most washing machines last 10–14 years with regular use. Front-loaders average around 11 years; top-loaders tend to run slightly longer. In San Diego, hard water accelerates wear on seals, bearings, and inlet valves — annual maintenance can extend the life of your machine significantly.`,
   },
   {
-    question: "Can WNDW Appliance Repair fix my washer the same day?",
+    question: "Can NTSZOT Appliance Repair fix my washer the same day?",
     answer: `In most cases, we can diagnose and repair your washing machine in a single visit. Our technician carries commonly stocked parts for major brands including Samsung, LG, Whirlpool, Maytag, and GE. The ${DIAGNOSTIC_FEE} diagnostic fee is waived if we repair it, and every repair comes with a ${WARRANTY_DAYS}-day warranty on parts and labor.`,
   },
 ]
@@ -35,8 +35,8 @@ export default function WasherRepairSignsPost() {
     <div className="blog-content">
 
       {/* Quick answer box */}
-      <div className="quick-answer not-prose rounded-xl border-l-4 border-brand-red bg-red-50 p-5 mb-8">
-        <p className="text-sm font-semibold text-brand-red uppercase tracking-wide mb-1">Quick Answer</p>
+      <div className="quick-answer not-prose rounded-xl border-l-4 border-brand-blue bg-blue-50 p-5 mb-8">
+        <p className="text-sm font-semibold text-brand-blue uppercase tracking-wide mb-1">Quick Answer</p>
         <p className="text-gray-800 text-base leading-relaxed">
           The five signs your washer needs repair are: unusual loud noises during any cycle, water leaking onto the floor, clothes coming out soaking wet after spin, the machine not starting or stopping mid-cycle, and a persistent mildew smell that doesn&apos;t clear with cleaning. Catching these early prevents a small repair from turning into a full replacement.
         </p>
@@ -120,7 +120,7 @@ export default function WasherRepairSignsPost() {
         The honest answer: small repairs become large ones. A worn bearing at $400 today can become a full drum replacement at $800 if ignored. A slow leak that costs $150 to fix can cause $2,000+ in subfloor damage if left for months.
       </p>
       <p>
-        The {DIAGNOSTIC_FEE} diagnostic fee covers a full inspection of your machine. If we find the problem and repair it in the same visit, the diagnostic fee is waived entirely — you only pay for the repair. Every repair includes a {WARRANTY_DAYS}-day warranty on parts and labor. To schedule a visit, <Link href="/contact/">contact us here</Link> or call <a href="tel:+18582643138">(858) 264-3138</a>.
+        The {DIAGNOSTIC_FEE} diagnostic fee covers a full inspection of your machine. If we find the problem and repair it in the same visit, the diagnostic fee is waived entirely — you only pay for the repair. Every repair includes a {WARRANTY_DAYS}-day warranty on parts and labor. To schedule a visit, <Link href="/contact/">contact us here</Link> or call <a href="tel:+16194884477">(619) 488-4477</a>.
       </p>
 
       <h2>How to Slow Down Washer Wear in San Diego</h2>
@@ -144,33 +144,33 @@ export default function WasherRepairSignsPost() {
 
       <ul>
         <li>
-          <Link href="/services/washer-repair/" className="text-brand-red hover:underline">
+          <Link href="/services/washer-repair/" className="text-brand-blue hover:underline">
             Washer Repair in San Diego — full service page
           </Link>
         </li>
         <li>
-          <Link href="/blog/dryer-taking-too-long-san-diego/" className="text-brand-red hover:underline">
+          <Link href="/blog/dryer-taking-too-long-san-diego/" className="text-brand-blue hover:underline">
             Dryer Taking Too Long? Common Causes in San Diego
           </Link>
         </li>
         <li>
-          <Link href="/blog/dishwasher-not-draining-san-diego/" className="text-brand-red hover:underline">
+          <Link href="/blog/dishwasher-not-draining-san-diego/" className="text-brand-blue hover:underline">
             Dishwasher Not Draining? Here&apos;s What to Check First
           </Link>
         </li>
         <li>
-          <Link href="/blog/how-much-does-appliance-repair-cost-in-san-diego/" className="text-brand-red hover:underline">
+          <Link href="/blog/how-much-does-appliance-repair-cost-in-san-diego/" className="text-brand-blue hover:underline">
             How Much Does Appliance Repair Cost in San Diego?
           </Link>
         </li>
         <li>
-          <Link href="/san-diego-appliance-repair/" className="text-brand-red hover:underline">
+          <Link href="/san-diego-appliance-repair/" className="text-brand-blue hover:underline">
             Appliance Repair in San Diego — service area overview
           </Link>
         </li>
         <li>
-          <Link href="/contact/" className="text-brand-red hover:underline">
-            Schedule a Repair — (858) 264-3138
+          <Link href="/contact/" className="text-brand-blue hover:underline">
+            Schedule a Repair — (619) 488-4477
           </Link>
         </li>
       </ul>

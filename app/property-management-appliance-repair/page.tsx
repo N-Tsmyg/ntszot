@@ -12,7 +12,7 @@ import {
   DIAGNOSTIC_FEE,
   WARRANTY_DAYS,
   HOURS_WEEKDAY,
-  HOURS_SUNDAY,
+  HOURS_SATURDAY,
   COMPANY_EMAIL,
 } from "@/data/constants"
 
@@ -36,7 +36,7 @@ const PM_FAQS = [
   },
   {
     question: "How quickly can you get to a unit after a tenant reports an issue?",
-    answer: `In most cases same day, with a 3-hour arrival window. We are available ${HOURS_WEEKDAY} and ${HOURS_SUNDAY}, so weekend tenant calls don't wait until Monday. Fast turnaround protects your tenants, your reviews, and your lease renewals.`,
+    answer: `In most cases same day, with a 3-hour arrival window. We are available ${HOURS_WEEKDAY} and ${HOURS_SATURDAY}, so weekend tenant calls don't wait until Monday. Fast turnaround protects your tenants, your reviews, and your lease renewals.`,
   },
   {
     question: "Do you offer a warranty on repairs?",
@@ -60,7 +60,7 @@ const PM_BENEFITS = [
   },
   {
     heading: "7-day availability — weekend calls covered",
-    detail: `${HOURS_WEEKDAY} and ${HOURS_SUNDAY}. Tenant emergencies don't happen on a Monday at 10 AM — and your maintenance line no longer has to wait until the next business day.`,
+    detail: `${HOURS_WEEKDAY} and ${HOURS_SATURDAY}. Tenant emergencies don't happen on a Monday at 10 AM — and your maintenance line no longer has to wait until the next business day.`,
   },
   {
     heading: `${WARRANTY_DAYS}-day warranty reduces callbacks`,
@@ -114,7 +114,7 @@ export default function PropertyManagementPage() {
             {COMPANY_PHONE_DISPLAY}
           </a>
           <p className="mt-4 text-sm text-white/50">
-            {HOURS_WEEKDAY} · {HOURS_SUNDAY}
+            {HOURS_WEEKDAY} · {HOURS_SATURDAY}
           </p>
         </div>
       </section>
@@ -230,8 +230,8 @@ export default function PropertyManagementPage() {
             <Link href="/vacation-rental-appliance-repair/" className="rounded-lg border border-gray-200 bg-gray-50 px-4 py-2 text-sm text-brand-slate hover:border-brand-blue transition-colors">
               Vacation Rental Repair
             </Link>
-            <Link href="/services/annual-maintenance-plan/" className="rounded-lg border border-gray-200 bg-gray-50 px-4 py-2 text-sm text-brand-slate hover:border-brand-blue transition-colors">
-              Annual Maintenance Plan
+            <Link href="/services/appliance-installation/" className="rounded-lg border border-gray-200 bg-gray-50 px-4 py-2 text-sm text-brand-slate hover:border-brand-blue transition-colors">
+              Appliance Installation
             </Link>
             <Link href="/services/appliance-installation/" className="rounded-lg border border-gray-200 bg-gray-50 px-4 py-2 text-sm text-brand-slate hover:border-brand-blue transition-colors">
               Appliance Installation
@@ -264,7 +264,7 @@ export default function PropertyManagementPage() {
             {COMPANY_PHONE_DISPLAY}
           </a>
           <p className="mt-4 text-sm text-white/60">
-            {HOURS_WEEKDAY} · {HOURS_SUNDAY}
+            {HOURS_WEEKDAY} · {HOURS_SATURDAY}
           </p>
         </div>
       </section>

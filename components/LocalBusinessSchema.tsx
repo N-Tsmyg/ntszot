@@ -18,12 +18,13 @@ export default function LocalBusinessSchema() {
     telephone: COMPANY_PHONE_SCHEMA,
     email: COMPANY_EMAIL,
     url: COMPANY_WEBSITE,
+    // TODO: Replace with NTSZOT's actual business address before launch
     address: {
       "@type": "PostalAddress",
-      streetAddress: "3712 Mt Abbey Ave",
+      streetAddress: "", // Add real street address
       addressLocality: "San Diego",
       addressRegion: "CA",
-      postalCode: "92111",
+      postalCode: "", // Add real ZIP code
       addressCountry: "US",
     },
     geo: {

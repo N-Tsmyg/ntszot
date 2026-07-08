@@ -15,7 +15,7 @@ import {
   DIAGNOSTIC_FEE,
   WARRANTY_DAYS,
   HOURS_WEEKDAY,
-  HOURS_SUNDAY,
+  HOURS_SATURDAY,
 } from "@/data/constants"
 import { POST_CONTENT_MAP } from "@/content/blog"
 
@@ -284,7 +284,7 @@ export default async function BlogPostPage({
           <p className="text-white/70 mb-6">
             {DIAGNOSTIC_FEE} diagnostic fee waived if we fix it. {WARRANTY_DAYS}-day parts &amp; labor warranty.
             <br />
-            {HOURS_WEEKDAY} · {HOURS_SUNDAY}
+            {HOURS_WEEKDAY} · {HOURS_SATURDAY}
           </p>
           <a
             href={COMPANY_PHONE_TEL}

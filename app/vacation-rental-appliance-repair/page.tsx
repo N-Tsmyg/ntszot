@@ -12,7 +12,7 @@ import {
   DIAGNOSTIC_FEE,
   WARRANTY_DAYS,
   HOURS_WEEKDAY,
-  HOURS_SUNDAY,
+  HOURS_SATURDAY,
   COMPANY_EMAIL,
 } from "@/data/constants"
 
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
 const VR_FAQS = [
   {
     question: "Can you repair an appliance between two guest bookings?",
-    answer: `Yes. We are available ${HOURS_WEEKDAY} and ${HOURS_SUNDAY} — 6 days a week. If you have a 24-48 hour turnover window between guests, call us immediately after the departure and we will try to get our technician there before the next check-in. Same-day service is available in most cases.`,
+    answer: `Yes. We are available ${HOURS_WEEKDAY} and ${HOURS_SATURDAY} — 6 days a week. If you have a 24-48 hour turnover window between guests, call us immediately after the departure and we will try to get our technician there before the next check-in. Same-day service is available in most cases.`,
   },
   {
     question: "Do you offer same-day service for vacation rentals?",
@@ -61,7 +61,7 @@ const VR_BENEFITS = [
   },
   {
     heading: "No surcharge for weekend or evening service",
-    detail: `${HOURS_WEEKDAY} and ${HOURS_SUNDAY}. Guests check in on Friday afternoons and Saturday mornings — that is when appliances get reported broken. Our rates do not change based on the day.`,
+    detail: `${HOURS_WEEKDAY} and ${HOURS_SATURDAY}. Guests check in on Friday afternoons and Saturday mornings — that is when appliances get reported broken. Our rates do not change based on the day.`,
   },
   {
     heading: "Upfront quote before any work begins",
@@ -111,7 +111,7 @@ export default function VacationRentalPage() {
             {COMPANY_PHONE_DISPLAY}
           </a>
           <p className="mt-4 text-sm text-white/50">
-            {HOURS_WEEKDAY} · {HOURS_SUNDAY} · No weekend surcharge
+            {HOURS_WEEKDAY} · {HOURS_SATURDAY} · No weekend surcharge
           </p>
         </div>
       </section>
@@ -230,8 +230,8 @@ export default function VacationRentalPage() {
             <Link href="/property-management-appliance-repair/" className="rounded-lg border border-gray-200 bg-gray-50 px-4 py-2 text-sm text-brand-slate hover:border-brand-blue transition-colors">
               Property Management Repair
             </Link>
-            <Link href="/services/annual-maintenance-plan/" className="rounded-lg border border-gray-200 bg-gray-50 px-4 py-2 text-sm text-brand-slate hover:border-brand-blue transition-colors">
-              Annual Maintenance Plan
+            <Link href="/services/appliance-installation/" className="rounded-lg border border-gray-200 bg-gray-50 px-4 py-2 text-sm text-brand-slate hover:border-brand-blue transition-colors">
+              Appliance Installation
             </Link>
             <Link href="/emergency-appliance-repair/" className="rounded-lg border border-gray-200 bg-gray-50 px-4 py-2 text-sm text-brand-slate hover:border-brand-blue transition-colors">
               Emergency Repair
@@ -264,7 +264,7 @@ export default function VacationRentalPage() {
             {COMPANY_PHONE_DISPLAY}
           </a>
           <p className="mt-4 text-sm text-white/60">
-            {HOURS_WEEKDAY} · {HOURS_SUNDAY}
+            {HOURS_WEEKDAY} · {HOURS_SATURDAY}
           </p>
         </div>
       </section>

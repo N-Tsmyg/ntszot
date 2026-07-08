@@ -31,8 +31,8 @@ export default function OvenNotHeatingEvenlyPost() {
     <div className="blog-content">
 
       {/* Quick answer box */}
-      <div className="quick-answer not-prose rounded-xl border-l-4 border-brand-red bg-red-50 p-5 mb-8">
-        <p className="text-sm font-semibold text-brand-red uppercase tracking-wide mb-1">Quick Answer</p>
+      <div className="quick-answer not-prose rounded-xl border-l-4 border-brand-blue bg-blue-50 p-5 mb-8">
+        <p className="text-sm font-semibold text-brand-blue uppercase tracking-wide mb-1">Quick Answer</p>
         <p className="text-gray-800 text-base leading-relaxed">
           An oven that doesn&apos;t heat evenly is almost always caused by a <strong>partially failed bake element</strong> (electric) or a <strong>weak igniter</strong> (gas). A faulty temperature sensor or a miscalibrated thermostat can also produce hot and cold spots. In most cases, our technician can diagnose and repair the problem in a single visit anywhere in San Diego County.
         </p>
@@ -136,7 +136,7 @@ export default function OvenNotHeatingEvenlyPost() {
       </p>
 
       <p>
-        To schedule a service call anywhere in San Diego County, call <a href="tel:+18582643138" className="text-brand-red hover:underline">(858) 264-3138</a>. We are available Monday through Saturday 7:00 AM–11:00 PM and Sunday 8:00 AM–10:00 PM.
+        To schedule a service call anywhere in San Diego County, call <a href="tel:+16194884477" className="text-brand-blue hover:underline">(619) 488-4477</a>. We are available Monday through Saturday 7:00 AM–11:00 PM and Sunday 8:00 AM–10:00 PM.
       </p>
 
       <div className="not-prose">
@@ -147,38 +147,38 @@ export default function OvenNotHeatingEvenlyPost() {
 
       <ul>
         <li>
-          <Link href="/services/oven-range-stove-repair/" className="text-brand-red hover:underline">
+          <Link href="/services/oven-range-stove-repair/" className="text-brand-blue hover:underline">
             Oven, Range & Stove Repair in San Diego — full service page
           </Link>
         </li>
         <li>
-          <Link href="/services/oven-range-stove-repair/not-heating-repair/" className="text-brand-red hover:underline">
+          <Link href="/services/oven-range-stove-repair/not-heating-repair/" className="text-brand-blue hover:underline">
             Oven Not Heating Repair — component-level repair page
           </Link>
         </li>
         <li>
-          <Link href="/services/oven-range-stove-repair/igniter-replacement/" className="text-brand-red hover:underline">
+          <Link href="/services/oven-range-stove-repair/igniter-replacement/" className="text-brand-blue hover:underline">
             Gas Oven Igniter Replacement in San Diego
           </Link>
         </li>
         <li>
-          <Link href="/blog/repair-vs-replace-appliance-san-diego/" className="text-brand-red hover:underline">
+          <Link href="/blog/repair-vs-replace-appliance-san-diego/" className="text-brand-blue hover:underline">
             Repair vs. Replace: When to Fix a Broken Appliance in San Diego
           </Link>
         </li>
         <li>
-          <Link href="/blog/how-much-does-appliance-repair-cost-in-san-diego/" className="text-brand-red hover:underline">
+          <Link href="/blog/how-much-does-appliance-repair-cost-in-san-diego/" className="text-brand-blue hover:underline">
             How Much Does Appliance Repair Cost in San Diego?
           </Link>
         </li>
         <li>
-          <Link href="/la-jolla-appliance-repair/" className="text-brand-red hover:underline">
+          <Link href="/la-jolla-appliance-repair/" className="text-brand-blue hover:underline">
             Appliance Repair in La Jolla
           </Link>
         </li>
         <li>
-          <Link href="/contact/" className="text-brand-red hover:underline">
-            Schedule a Repair — (858) 264-3138
+          <Link href="/contact/" className="text-brand-blue hover:underline">
+            Schedule a Repair — (619) 488-4477
           </Link>
         </li>
       </ul>

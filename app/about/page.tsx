@@ -4,6 +4,7 @@ import { Phone, CheckCircle2 } from "lucide-react"
 import FAQSection from "@/components/FAQSection"
 import BreadcrumbSchema from "@/components/BreadcrumbSchema"
 import TrustBar from "@/components/TrustBar"
+import CertificatesSection from "@/components/CertificatesSection"
 import {
   COMPANY_NAME,
   COMPANY_PHONE_DISPLAY,
@@ -12,19 +13,19 @@ import {
   DIAGNOSTIC_FEE,
   WARRANTY_DAYS,
   HOURS_WEEKDAY,
-  HOURS_SUNDAY,
+  HOURS_SATURDAY,
   COMPANY_EMAIL,
 } from "@/data/constants"
 
 export const metadata: Metadata = {
   title: "About NTSZOT Appliance Repair — San Diego",
   description:
-    "About NTSZOT Appliance Repair — in-home appliance repair across San Diego County. $80 service call fee waived if we fix it. 60-day warranty. 6 days a week. Call (619) 488-4477.",
+    "About NTSZOT Appliance Repair — 15 factory-certified technicians serving San Diego County. $80 service call includes diagnostic. 60-day warranty. Call (619) 488-4477.",
   alternates: { canonical: `${COMPANY_WEBSITE}/about/` },
   openGraph: {
     title: `About NTSZOT Appliance Repair — San Diego`,
     description:
-      "In-home appliance repair across San Diego County. $80 service call fee waived if we fix it. 60-day warranty on every repair.",
+      "15 factory-certified technicians serving San Diego County. $80 service call includes diagnostic. 60-day warranty on every repair.",
     url: `${COMPANY_WEBSITE}/about/`,
   },
 }
@@ -32,29 +33,34 @@ export const metadata: Metadata = {
 const ABOUT_FAQS = [
   {
     question: "Is NTSZOT Appliance Repair licensed and insured?",
-    answer: `Yes. ${COMPANY_NAME} operates as a licensed appliance repair service in San Diego County. Our technician carries liability insurance and is qualified to service all major home appliances.`,
+    answer: `Yes. ${COMPANY_NAME} is a fully licensed appliance repair company operating in San Diego County. All of our technicians carry liability insurance and hold factory certifications from major appliance brands.`,
   },
   {
     question: "How do I know what the repair will cost before agreeing?",
-    answer: `Your technician diagnoses the appliance, identifies the failed component, and provides an upfront, itemized quote — before any repair work begins. You approve or decline. No work proceeds without your explicit approval.`,
+    answer: `Your technician diagnoses the appliance, identifies the failed component, and provides a clear, itemized quote — before any repair work begins. You approve or decline. Nothing happens without your explicit go-ahead.`,
   },
   {
     question: "What is your service area?",
-    answer: `We serve all of San Diego County — including San Diego, Chula Vista, La Mesa, El Cajon, Santee, La Jolla, Del Mar, Poway, Rancho Bernardo, National City, Oceanside, Carlsbad, Escondido, Encinitas, San Marcos, and more. 20 cities in total.`,
+    answer: `We serve all of San Diego County — including San Diego, Chula Vista, La Mesa, El Cajon, Santee, La Jolla, Del Mar, Poway, Rancho Bernardo, National City, Oceanside, Carlsbad, Escondido, Encinitas, San Marcos, and more.`,
   },
   {
     question: "What payment methods do you accept?",
     answer: `Cash, check, Zelle, and Venmo are accepted with no processing fee. Credit and debit cards are accepted with a 3.5% processing fee, which is disclosed before payment is taken.`,
   },
+  {
+    question: "Do you service Sacramento and Portland?",
+    answer: `Not yet — but we are expanding. NTSZOT currently serves San Diego County. Sacramento and Portland locations are planned for the future. Stay tuned.`,
+  },
 ]
 
-const DIFFERENTIATORS = [
-  `${DIAGNOSTIC_FEE} service call fee — waived completely if we repair it`,
+const WHY_NTSZOT = [
+  `${DIAGNOSTIC_FEE} service call includes diagnostic and repair estimate`,
   `${WARRANTY_DAYS}-day parts and labor warranty on every completed repair`,
-  "Available 6 days a week — Mon–Fri 9:00 AM–6:00 PM, Sat 10:00 AM–5:00 PM",
-  "All major brands — Samsung, LG, Whirlpool, GE, KitchenAid, Bosch, Sub-Zero, Thermador, and more",
+  `Available Mon–Fri 9AM–6PM and Sat 10AM–5PM`,
+  "15 factory-certified technicians — trained and certified by the brands they repair",
+  "All major appliance brands — Samsung, LG, Whirlpool, GE, KitchenAid, Bosch, and more",
   "In-home service — we come to you, no hauling appliances to a shop",
-  "Upfront quote before any work begins — no surprises on your invoice",
+  "Upfront quote before any work begins — no surprise charges",
   "Cash, check, Zelle, Venmo accepted (no fee); card with 3.5% fee, disclosed upfront",
 ]
 
@@ -75,7 +81,7 @@ export default function AboutPage() {
             About {COMPANY_NAME}
           </h1>
           <p className="text-lg sm:text-xl text-white/80 max-w-2xl mx-auto">
-            In-home appliance repair across San Diego County. {DIAGNOSTIC_FEE} service call fee waived if we fix it. {WARRANTY_DAYS}-day warranty on every repair.
+            15 factory-certified technicians serving all of San Diego County. {DIAGNOSTIC_FEE} service call. {WARRANTY_DAYS}-day warranty on every repair.
           </p>
         </div>
       </section>
@@ -86,36 +92,36 @@ export default function AboutPage() {
       <section className="py-12 bg-white">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold text-brand-slate mb-6">
-            San Diego&apos;s In-Home Appliance Repair Service
+            San Diego&apos;s Factory-Certified Appliance Repair Team
           </h2>
           <div className="prose prose-gray text-sm leading-relaxed space-y-4 text-gray-700">
             <p>
-              {COMPANY_NAME} provides in-home appliance repair across San Diego County. When a household appliance breaks down, we send our technician directly to your home — no hauling appliances to a shop, no waiting weeks for a service window.
+              {COMPANY_NAME} provides in-home appliance repair across San Diego County. When a household appliance breaks, we send a factory-certified technician directly to your home — no hauling to a shop, no long waits, no uncertainty.
             </p>
             <p>
-              Every service call begins with a flat {DIAGNOSTIC_FEE} service call fee. Our technician inspects the appliance, identifies the failed component, and provides an upfront quote before any repair work begins. If you proceed with the repair, the service call fee is waived in full — you pay only for parts and labor. If you decide not to repair, you owe {DIAGNOSTIC_FEE} and nothing more.
+              Every service call begins with a flat {DIAGNOSTIC_FEE} fee that covers the diagnostic and a full repair estimate. Your technician arrives, inspects the appliance, identifies the problem, and tells you exactly what it will cost to fix — before touching anything. If you proceed with the repair, the {DIAGNOSTIC_FEE} fee is applied toward your total. If you decline, you owe {DIAGNOSTIC_FEE} and nothing more.
             </p>
             <p>
-              Every completed repair is backed by a {WARRANTY_DAYS}-day parts and labor warranty. If the same problem returns within {WARRANTY_DAYS} days, our technician returns and resolves it at no additional charge.
+              Every completed repair is backed by a {WARRANTY_DAYS}-day parts and labor warranty. If the same problem returns within {WARRANTY_DAYS} days, your technician comes back and resolves it at no additional charge.
             </p>
             <p>
-              We service all major appliance brands — Samsung, LG, Whirlpool, GE, KitchenAid, Kenmore, Bosch, Electrolux, Miele, Sub-Zero, Thermador, Speed Queen, and more. No brand restrictions. One call, one technician.
+              Our team of 15 factory-certified technicians services all major appliance brands — Samsung, LG, Whirlpool, GE, KitchenAid, Kenmore, Bosch, Electrolux, Miele, Sub-Zero, Thermador, and more. One call covers everything.
             </p>
             <p>
-              We are available {HOURS_WEEKDAY} and {HOURS_SUNDAY} — seven days a week with no evening or weekend surcharge. We cover all 20 cities across San Diego County.
+              We are available {HOURS_WEEKDAY} and {HOURS_SATURDAY}, and we serve 20+ cities across San Diego County with no evening or Saturday surcharge.
             </p>
           </div>
         </div>
       </section>
 
-      {/* What makes us different */}
+      {/* Why NTSZOT */}
       <section className="py-10 bg-gray-50 border-y border-gray-200">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold text-brand-slate mb-8">
-            Why San Diego Homeowners Call NTSZOT
+            Why San Diego Homeowners Choose NTSZOT
           </h2>
           <ul className="space-y-4">
-            {DIFFERENTIATORS.map((d) => (
+            {WHY_NTSZOT.map((d) => (
               <li key={d} className="flex items-start gap-3">
                 <CheckCircle2
                   className="h-5 w-5 text-brand-blue shrink-0 mt-0.5"
@@ -131,29 +137,32 @@ export default function AboutPage() {
       {/* Founder story */}
       <section className="py-10 bg-white">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-brand-slate mb-6">Why I Started NTSZOT</h2>
+          <h2 className="text-2xl font-bold text-brand-slate mb-6">How NTSZOT Started</h2>
           <div className="space-y-4 text-gray-700 text-sm leading-relaxed">
             <p>
-              My name is Andrei Zotolokin. Before I started NTSZOT, I spent years as a professional cleaner and Airbnb host managing multiple units across San Diego. I know what it feels like when an appliance breaks at the worst possible moment — right before a turnover, in the middle of a clean, with guests arriving in two hours.
+              My name is Andrei Zotolokin. I launched my appliance repair career in Las Vegas in 2022, where I earned factory certifications from Samsung, LG, Whirlpool, GE, and several other major appliance brands. Certification wasn&apos;t just a credential — it meant learning directly from the manufacturers how their products fail, what causes those failures, and how to fix them correctly the first time.
             </p>
             <p>
-              Every time a washer stopped mid-cycle or a refrigerator quit overnight, I had the same problem: finding a same-day technician was nearly impossible, and when I did find one, I had no idea what they were going to charge until after the work was done. The repair would drag on, the clean couldn&apos;t finish, the unit couldn&apos;t be set up, and guests were at risk. It derailed the entire day — every time.
+              After relocating to San Diego with my family, I noticed something that surprised me: a city this size, with this many homeowners and renters, had a real shortage of professional, certified appliance repair. Too many technicians were either unavailable, uncertified, or gave customers surprise bills after the work was done. I knew I could do better.
             </p>
             <p>
-              So I became a technician myself. And once I started doing repairs, I discovered something that surprised me: most appliance problems are not complicated. A refrigerator that stops cooling usually has dirty condenser coils or a failed fan motor. A washer that won&apos;t drain has a clogged pump filter or a worn belt. The parts are affordable. The labor is fast. A good technician can turn what feels like a catastrophe into a 45-minute repair.
+              I started NTSZOT with a simple goal: give San Diego homeowners a repair service they could trust — certified technicians, honest pricing, and a clear warranty on every job. We&apos;ve grown from a one-person operation to a team of 15 factory-certified technicians, all serving the same San Diego community we live in.
             </p>
             <p>
-              What I found was that the system was broken — not the appliances. Homeowners were paying more than they should, waiting longer than they had to, and getting less transparency than they deserved. I built NTSZOT around one promise: when your appliance breaks, you don&apos;t have to worry or hustle. One call, same day, fair price, done.
+              When you call NTSZOT, your technician will arrive on time, tell you exactly what is wrong, give you the price before starting, and back the repair with a {WARRANTY_DAYS}-day warranty. No runaround. No surprises. Just the repair done right.
             </p>
             <p>
-              I still personally handle every service call. When you call NTSZOT, I am the person who will be at your door. I will tell you exactly what is wrong, exactly what it costs to fix, and exactly what to expect — before I touch anything.
+              We currently serve all of San Diego County. Expansion to Sacramento and Portland is planned for the future — but San Diego is and always will be home.
             </p>
           </div>
         </div>
       </section>
 
+      {/* Certificates */}
+      <CertificatesSection />
+
       {/* Contact callout */}
-      <section className="py-10 bg-gray-50 border-y border-gray-200">
+      <section className="py-10 bg-white">
         <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-xl font-bold text-brand-slate mb-4">Get in Touch</h2>
           <p className="text-gray-600 text-sm leading-relaxed mb-6">
@@ -201,10 +210,7 @@ export default function AboutPage() {
             <Link href="/property-management-appliance-repair/" className="rounded-lg border border-gray-200 bg-gray-50 px-4 py-2 text-sm text-brand-slate hover:border-brand-blue transition-colors">
               Property Management
             </Link>
-            <Link href="/specials/" className="rounded-lg border border-gray-200 bg-gray-50 px-4 py-2 text-sm text-brand-slate hover:border-brand-blue transition-colors">
-              Current Specials
-            </Link>
-            <Link href="/contact/" className="rounded-lg border border-brand-blue bg-red-50 px-4 py-2 text-sm font-medium text-brand-blue hover:bg-brand-blue hover:text-white transition-colors">
+            <Link href="/contact/" className="rounded-lg border border-brand-blue bg-blue-50 px-4 py-2 text-sm font-medium text-brand-blue hover:bg-brand-blue hover:text-white transition-colors">
               Contact Us →
             </Link>
           </div>
@@ -218,7 +224,7 @@ export default function AboutPage() {
             Ready to schedule your appliance repair?
           </h2>
           <p className="text-white/70 mb-6">
-            {DIAGNOSTIC_FEE} service call fee waived if we fix it. {WARRANTY_DAYS}-day parts &amp; labor warranty.
+            {DIAGNOSTIC_FEE} service call includes diagnostic. {WARRANTY_DAYS}-day parts &amp; labor warranty.
           </p>
           <a
             href={COMPANY_PHONE_TEL}
@@ -228,7 +234,7 @@ export default function AboutPage() {
             {COMPANY_PHONE_DISPLAY}
           </a>
           <p className="mt-4 text-sm text-white/60">
-            {HOURS_WEEKDAY} · {HOURS_SUNDAY}
+            {HOURS_WEEKDAY} · {HOURS_SATURDAY} · Sun closed
           </p>
         </div>
       </section>

@@ -18,7 +18,7 @@ import {
   WARRANTY_DAYS,
   CARD_FEE_PERCENT,
   HOURS_WEEKDAY,
-  HOURS_SUNDAY,
+  HOURS_SATURDAY,
 } from "@/data/constants"
 import { RELATED_CITIES_MAP } from "@/utils/internalLinks"
 
@@ -64,8 +64,8 @@ function getOpeningParagraph(location: Location): string {
       `In ${name}, every refrigerator, washer, and dishwasher works harder than the manufacturer's warranty table assumes. ` +
       `NTSZOT Appliance Repair sends a technician directly to your ${name} home — no hauling appliances to a shop, no waiting weeks for a service window. ` +
       `We charge a flat ${DIAGNOSTIC_FEE} service call fee that is waived entirely if you proceed with the repair. ` +
-      `Every completed repair carries a ${WARRANTY_DAYS}-day parts and labor warranty, and we are available seven days a week: ` +
-      `${HOURS_WEEKDAY} and ${HOURS_SUNDAY}. ` +
+      `Every completed repair carries a ${WARRANTY_DAYS}-day parts and labor warranty, and we are available 6 days a week: ` +
+      `${HOURS_WEEKDAY} and ${HOURS_SATURDAY}. ` +
       `From homes near ${landmark1} to neighborhoods around ${landmark2}, we cover all of ${name}.`
     )
   }
@@ -74,7 +74,7 @@ function getOpeningParagraph(location: Location): string {
     return (
       `A broken appliance in ${name} does not wait for a convenient time. ` +
       `When the washer stops mid-cycle or the refrigerator quits overnight, every hour matters — laundry piles up, food spoils, and your day falls apart. ` +
-      `NTSZOT Appliance Repair is available seven days a week so ${name} residents do not have to wait for Monday morning. ` +
+      `NTSZOT Appliance Repair is available 6 days a week so ${name} residents do not have to wait for Monday morning. ` +
       `Our technician arrives at your home with a flat ${DIAGNOSTIC_FEE} service call fee that is waived entirely when you proceed with the repair. ` +
       `Every repair is backed by a ${WARRANTY_DAYS}-day parts and labor warranty. ` +
       `We service all major brands and handle the full range of home appliances — from washers and dryers to refrigerators, ovens, and dishwashers. ` +
@@ -87,7 +87,7 @@ function getOpeningParagraph(location: Location): string {
     `Your ${name} home deserves appliances that perform as well as the property itself. ` +
     `Whether you own near ${landmark1} or close to ${landmark2}, well-maintained appliances protect your home's value and prevent the costly emergency replacements that cut into your investment. ` +
     `NTSZOT Appliance Repair serves ${name} with in-home service, a flat ${DIAGNOSTIC_FEE} service call fee waived if we repair it, and a ${WARRANTY_DAYS}-day parts and labor warranty on every completed job. ` +
-    `We are available ${HOURS_WEEKDAY} and ${HOURS_SUNDAY} — seven days a week, no weekend markup. ` +
+    `We are available ${HOURS_WEEKDAY} and ${HOURS_SATURDAY} — 6 days a week, no weekend markup. ` +
     `All major brands are covered: Samsung, LG, Whirlpool, GE, KitchenAid, Bosch, Sub-Zero, Thermador, and more. ` +
     `One call handles it, and your technician works in your kitchen rather than asking you to haul a 300-pound refrigerator anywhere.`
   )
@@ -113,7 +113,7 @@ function getCityFAQs(location: Location): FAQ[] {
     },
     {
       question: `Do you offer same-day appliance repair in ${name}?`,
-      answer: `In most cases, yes. Our technician aims to arrive within a 3-hour window and complete the repair same visit when parts are available on the service vehicle. If a specific part needs to be ordered, it typically arrives within 1–3 business days. We are available ${HOURS_WEEKDAY} and ${HOURS_SUNDAY}.`,
+      answer: `In most cases, yes. Our technician aims to arrive within a 3-hour window and complete the repair same visit when parts are available on the service vehicle. If a specific part needs to be ordered, it typically arrives within 1–3 business days. We are available ${HOURS_WEEKDAY} and ${HOURS_SATURDAY}.`,
     },
     {
       question: `What appliance brands do you repair in ${name}?`,
@@ -121,7 +121,7 @@ function getCityFAQs(location: Location): FAQ[] {
     },
     {
       question: `Are you available on weekends in ${name}?`,
-      answer: `Yes. We are available ${HOURS_WEEKDAY} and ${HOURS_SUNDAY}. Most independent repair shops are closed on weekends. When a refrigerator stops cooling on a Saturday in ${name}, we can be there.`,
+      answer: `Yes. We are available ${HOURS_WEEKDAY} and ${HOURS_SATURDAY}. Most independent repair shops are closed on weekends. When a refrigerator stops cooling on a Saturday in ${name}, we can be there.`,
     },
   ]
 }
@@ -204,7 +204,7 @@ export default async function CityPage({
             {COMPANY_PHONE_DISPLAY}
           </a>
           <p className="mt-4 text-sm text-white/50">
-            {HOURS_WEEKDAY} · {HOURS_SUNDAY}
+            {HOURS_WEEKDAY} · {HOURS_SATURDAY}
           </p>
           <div className="mt-5 inline-flex items-center gap-2 rounded-full bg-white/10 border border-white/20 px-4 py-2 text-sm text-white/90">
             <ShieldCheck className="h-4 w-4 text-white/70 shrink-0" aria-hidden="true" />
@@ -378,7 +378,7 @@ export default async function CityPage({
           <p className="text-white/70 mb-6">
             {DIAGNOSTIC_FEE} service call fee waived if we fix it. {WARRANTY_DAYS}-day
             parts &amp; labor warranty on every repair. Available{" "}
-            {HOURS_WEEKDAY.toLowerCase()} and {HOURS_SUNDAY.toLowerCase()}.
+            {HOURS_WEEKDAY.toLowerCase()} and {HOURS_SATURDAY.toLowerCase()}.
           </p>
           <a
             href={COMPANY_PHONE_TEL}
@@ -388,7 +388,7 @@ export default async function CityPage({
             {COMPANY_PHONE_DISPLAY}
           </a>
           <p className="mt-4 text-sm text-white/60">
-            {HOURS_WEEKDAY} · {HOURS_SUNDAY}
+            {HOURS_WEEKDAY} · {HOURS_SATURDAY}
           </p>
         </div>
       </section>

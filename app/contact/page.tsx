@@ -13,7 +13,7 @@ import {
   DIAGNOSTIC_FEE,
   WARRANTY_DAYS,
   HOURS_WEEKDAY,
-  HOURS_SUNDAY,
+  HOURS_SATURDAY,
   COMPANY_EMAIL,
 } from "@/data/constants"
 
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
 const CONTACT_FAQS = [
   {
     question: "What is the fastest way to schedule a repair?",
-    answer: `Call us at ${COMPANY_PHONE_DISPLAY}. We can confirm availability and book your appointment on the same call. We are available ${HOURS_WEEKDAY} and ${HOURS_SUNDAY}.`,
+    answer: `Call us at ${COMPANY_PHONE_DISPLAY}. We can confirm availability and book your appointment on the same call. We are available ${HOURS_WEEKDAY} and ${HOURS_SATURDAY}.`,
   },
   {
     question: "What happens when I call?",
@@ -75,7 +75,7 @@ export default function ContactPage() {
             {COMPANY_PHONE_DISPLAY}
           </a>
           <p className="mt-4 text-sm text-white/50">
-            {HOURS_WEEKDAY} · {HOURS_SUNDAY}
+            {HOURS_WEEKDAY} · {HOURS_SATURDAY} · Sun closed
           </p>
         </div>
       </section>
@@ -125,7 +125,8 @@ export default function ContactPage() {
                   <div>
                     <p className="font-semibold text-brand-slate text-sm">Hours</p>
                     <p className="text-sm text-gray-700">{HOURS_WEEKDAY}</p>
-                    <p className="text-sm text-gray-700">{HOURS_SUNDAY}</p>
+                    <p className="text-sm text-gray-700">{HOURS_SATURDAY}</p>
+                    <p className="text-sm text-gray-700">Sun closed</p>
                     <p className="text-xs text-gray-500 mt-0.5">No surcharge for evenings or weekends</p>
                   </div>
                 </div>
@@ -145,16 +146,16 @@ export default function ContactPage() {
                 <p className="font-semibold text-brand-slate mb-3">Quick Pricing Reference</p>
                 <ul className="space-y-2 text-gray-600">
                   <li className="flex justify-between">
-                    <span>Diagnostic fee</span>
-                    <span className="font-semibold text-brand-slate">{DIAGNOSTIC_FEE} (waived if repaired)</span>
+                    <span>Service call (incl. diagnostic)</span>
+                    <span className="font-semibold text-brand-slate">{DIAGNOSTIC_FEE}</span>
                   </li>
                   <li className="flex justify-between">
-                    <span>Standard appliances</span>
+                    <span>All appliance repairs</span>
+                    <span className="font-semibold text-brand-slate">$300–$400</span>
+                  </li>
+                  <li className="flex justify-between">
+                    <span>Appliance installation</span>
                     <span className="font-semibold text-brand-slate">$250–$350</span>
-                  </li>
-                  <li className="flex justify-between">
-                    <span>Refrigeration</span>
-                    <span className="font-semibold text-brand-slate">$350–$900</span>
                   </li>
                   <li className="flex justify-between">
                     <span>Warranty</span>
@@ -298,7 +299,7 @@ export default function ContactPage() {
             {COMPANY_PHONE_DISPLAY}
           </a>
           <p className="mt-4 text-sm text-white/60">
-            {HOURS_WEEKDAY} · {HOURS_SUNDAY}
+            {HOURS_WEEKDAY} · {HOURS_SATURDAY} · Sun closed
           </p>
         </div>
       </section>

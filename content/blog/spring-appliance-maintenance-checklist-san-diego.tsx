@@ -6,7 +6,7 @@ import { DIAGNOSTIC_FEE, WARRANTY_DAYS } from "@/data/constants"
 const faqs = [
   {
     question: "How often should I have my appliances serviced in San Diego?",
-    answer: `Most appliances benefit from an annual check — refrigerator coils cleaned, dryer vent cleared, washer drum and filter inspected. In San Diego's coastal areas, marine layer humidity and saltair accelerate wear on coils and seals, so twice-yearly checks are worthwhile for refrigerators in La Jolla, Del Mar, or Ocean Beach. WNDW's Annual Maintenance Plan covers 2 visits per year for $350 plus parts and filters.`,
+    answer: `Most appliances benefit from an annual check — refrigerator coils cleaned, dryer vent cleared, washer drum and filter inspected. In San Diego's coastal areas, marine layer humidity and salt air accelerate wear on coils and seals, so twice-yearly checks are worthwhile for refrigerators in La Jolla, Del Mar, or Ocean Beach. Call NTSZOT at (619) 488-4477 to schedule a professional inspection.`,
   },
   {
     question: "What is the most important appliance maintenance task I can do myself?",
@@ -17,8 +17,8 @@ const faqs = [
     answer: `Yes. San Diego's tap water runs 300+ ppm in hardness — among the hardest water in California. Scale deposits build up in dishwasher spray arms, washing machine inlet valves, and ice maker water lines over time. Running a monthly descaling cycle in your dishwasher and using a HE detergent formulated for hard water in your washer are the two most effective countermeasures.`,
   },
   {
-    question: "What does WNDW's Annual Maintenance Plan include?",
-    answer: `The plan covers 2 in-home maintenance visits per year for $350. At each visit our technician inspects your appliances, cleans accessible components (refrigerator coils, dryer lint trap and drum interior, dishwasher filter), and checks for early signs of failure. Parts and filters needed during the visit are quoted separately — they are not included in the $350 plan fee.`,
+    question: "What does NTSZOT check during an appliance service visit?",
+    answer: `Our factory-certified technician inspects the appliance, cleans accessible components (refrigerator condenser coils, dryer lint trap and drum area, dishwasher filter), and checks for early signs of failure. If anything needs repair, you get an upfront quote before any work begins. The ${DIAGNOSTIC_FEE} service call covers the full diagnostic.`,
   },
   {
     question: "Should I repair an appliance that's been poorly maintained, or just replace it?",
@@ -31,8 +31,8 @@ export default function SpringMaintenanceChecklistPost() {
     <div className="blog-content">
 
       {/* Quick answer box */}
-      <div className="quick-answer not-prose rounded-xl border-l-4 border-brand-red bg-red-50 p-5 mb-8">
-        <p className="text-sm font-semibold text-brand-red uppercase tracking-wide mb-1">Quick Answer</p>
+      <div className="quick-answer not-prose rounded-xl border-l-4 border-brand-blue bg-blue-50 p-5 mb-8">
+        <p className="text-sm font-semibold text-brand-blue uppercase tracking-wide mb-1">Quick Answer</p>
         <p className="text-gray-800 text-base leading-relaxed">
           Spring is the best time to service your appliances in San Diego. The five tasks that matter most: clean refrigerator condenser coils, clear the dryer vent, descale your dishwasher, inspect washer door seals and filters, and check oven igniter performance. Done once a year, these tasks prevent the most common repairs we see — and most take under 30 minutes.
         </p>
@@ -43,7 +43,7 @@ export default function SpringMaintenanceChecklistPost() {
       </p>
 
       <p>
-        This checklist covers every major home appliance. Work through it once in spring and once in fall, and you will catch the problems that become expensive repairs in the middle of summer or the holidays. If you find something wrong or want a professional inspection, call <strong>(858) 264-3138</strong> — our technician is available 7 days a week.
+        This checklist covers every major home appliance. Work through it once in spring and once in fall, and you will catch the problems that become expensive repairs in the middle of summer or the holidays. If you find something wrong or want a professional inspection, call <strong>(619) 488-4477</strong> — our technician is available 6 days a week.
       </p>
 
       <h2>Refrigerator — Clean Coils and Check the Seals</h2>
@@ -143,11 +143,11 @@ export default function SpringMaintenanceChecklistPost() {
       </p>
 
       <p>
-        WNDW Appliance Repair offers an <Link href="/services/annual-maintenance-plan/">Annual Maintenance Plan</Link> — 2 in-home visits per year for $350. Our technician inspects all your major appliances, cleans accessible components, and flags anything that&apos;s showing early signs of failure before it becomes an emergency repair.
+        NTSZOT Appliance Repair is available for any appliance issue you discover during your inspection. Our factory-certified technicians can diagnose, repair, and follow up — all in a single visit for most repairs.
       </p>
 
       <p>
-        For any repair, the {DIAGNOSTIC_FEE} diagnostic fee is waived completely if you proceed with the repair, and every completed repair comes with a {WARRANTY_DAYS}-day parts and labor warranty. We cover all of <Link href="/san-diego-appliance-repair/">San Diego County</Link> — call <strong>(858) 264-3138</strong> or visit our <Link href="/contact/">contact page</Link> to schedule.
+        The {DIAGNOSTIC_FEE} service call covers your diagnostic and repair estimate. Every completed repair is backed by a {WARRANTY_DAYS}-day parts and labor warranty. We cover all of <Link href="/san-diego-appliance-repair/">San Diego County</Link> — call <strong>(619) 488-4477</strong> or visit our <Link href="/contact/">contact page</Link> to schedule.
       </p>
 
       <p>
