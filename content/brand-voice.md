@@ -18,7 +18,7 @@ NTSZOT is a team of 15 factory-certified appliance repair technicians serving Sa
 6. **In-home service** — we come to you
 
 ## What to Avoid
-- Do NOT copy WNDW Appliance Repair's exact phrasing (different company)
+- Do NOT reuse phrasing from competitor websites
 - Do NOT use hype language ("best in San Diego", "top-rated", "amazing")
 - Do NOT make promises that aren't in the service agreement
 - Do NOT use vague superlatives without specific backing

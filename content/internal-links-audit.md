@@ -1,4 +1,4 @@
-# WNDW Appliance Repair — Internal Links Audit
+# NTSZOT Appliance Repair — Internal Links Audit
 **Updated:** 2026-04-22
 **Rule:** Every page should have at least 3 inbound links from other pages on the site.
 

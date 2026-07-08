@@ -63,8 +63,7 @@ export default function Header() {
               className="flex items-center gap-2 rounded-md bg-brand-blue px-4 py-2.5 text-sm font-bold text-white hover:bg-brand-blue-dark transition-colors"
             >
               <Phone className="h-4 w-4" aria-hidden="true" />
-              <span className="hidden sm:inline">{COMPANY_PHONE_DISPLAY}</span>
-              <span className="sm:hidden">Call Now</span>
+              <span>{COMPANY_PHONE_DISPLAY}</span>
             </a>
           </div>
         </div>
