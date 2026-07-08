@@ -186,14 +186,13 @@ export default async function BrandPage({
   const relatedBrand = relatedBrandSlug ? BRANDS.find((b) => b.slug === relatedBrandSlug) : undefined
 
   // Price copy
-  const standardPrice = "$250–$350"
-  const refrigerationPrice = "$350–$900"
+  const standardPrice = "$300–$400"
 
   // FAQs
   const faqs: FAQ[] = [
     {
       question: `How much does ${brand.name} appliance repair cost in San Diego?`,
-      answer: `Most ${brand.name} appliance repairs in San Diego cost ${standardPrice}, including parts and labor.${isRefrigeration ? ` ${brand.name} refrigerator and refrigeration repairs typically run ${refrigerationPrice} depending on the part needed.` : ""} NTSZOT Appliance Repair charges an ${DIAGNOSTIC_FEE} service call fee — waived completely when you proceed with the repair. If you decide not to repair, you owe the ${DIAGNOSTIC_FEE} and nothing else.`,
+      answer: `Most ${brand.name} appliance repairs in San Diego cost ${standardPrice} including parts and labor. NTSZOT Appliance Repair charges an ${DIAGNOSTIC_FEE} service call fee — waived completely when you proceed with the repair. If you decide not to repair, you owe the ${DIAGNOSTIC_FEE} and nothing else.`,
     },
     {
       question: `Do you repair all ${brand.name} models?`,
@@ -236,8 +235,7 @@ export default async function BrandPage({
               Quick Answer
             </p>
             <p className="text-gray-800 leading-relaxed">
-              {brand.name} appliance repair in San Diego costs {standardPrice} for most appliances
-              {isRefrigeration ? `, or ${refrigerationPrice} for refrigeration units` : ""}. NTSZOT
+              {brand.name} appliance repair in San Diego costs {standardPrice} including parts and labor. NTSZOT
               Appliance Repair charges an {DIAGNOSTIC_FEE} service call fee — waived completely when
               we complete the repair.{" "}
               {isPremium
@@ -433,23 +431,6 @@ export default async function BrandPage({
                 </p>
               </div>
             </div>
-            {isRefrigeration && (
-              <div className="rounded-lg border border-gray-200 p-5">
-                <div className="flex items-start justify-between gap-4">
-                  <div>
-                    <p className="font-semibold text-brand-slate">
-                      {brand.name} refrigeration units
-                    </p>
-                    <p className="text-sm text-gray-600 mt-1">
-                      Refrigerators, freezers, wine coolers, and ice makers.
-                    </p>
-                  </div>
-                  <p className="text-lg font-bold text-brand-blue whitespace-nowrap">
-                    {refrigerationPrice}
-                  </p>
-                </div>
-              </div>
-            )}
             <div className="rounded-lg bg-red-50 border border-brand-blue/20 p-5">
               <p className="font-semibold text-brand-slate mb-1">
                 Service call fee: {DIAGNOSTIC_FEE} — waived when we repair it

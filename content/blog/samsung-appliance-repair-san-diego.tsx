@@ -6,7 +6,7 @@ import { DIAGNOSTIC_FEE, WARRANTY_DAYS } from "@/data/constants"
 const faqs = [
   {
     question: "How much does Samsung appliance repair cost in San Diego?",
-    answer: `Most Samsung washer, dryer, dishwasher, and oven repairs fall between $250–$350 including parts and labor. Samsung refrigerator repairs typically run $350–$900 depending on the component — compressors and ice maker assemblies are at the higher end. The ${DIAGNOSTIC_FEE} diagnostic fee is waived completely when you proceed with the repair.`,
+    answer: `Most Samsung washer, dryer, dishwasher, and oven repairs fall between $300–$400 including parts and labor. Samsung refrigerator repairs typically run $300–$400 depending on the component — compressors and ice maker assemblies are at the higher end. The ${DIAGNOSTIC_FEE} diagnostic fee is waived completely when you proceed with the repair.`,
   },
   {
     question: "What does Samsung error code 5E or SE mean on my washer?",
@@ -140,10 +140,10 @@ export default function SamsungApplianceRepairPost() {
       </p>
 
       <ul>
-        <li><strong>Samsung washer repair</strong> — $250–$350 for most repairs (drain pump, door latch, suspension rods)</li>
-        <li><strong>Samsung dryer repair</strong> — $250–$350 (heating element, thermistor, drum belt)</li>
-        <li><strong>Samsung dishwasher repair</strong> — $250–$350 (drain pump, inlet valve, door latch)</li>
-        <li><strong>Samsung refrigerator repair</strong> — $350–$900 (ice maker assembly $350–$500; compressor $600–$900; fan motor $350–$450)</li>
+        <li><strong>Samsung washer repair</strong> — $300–$400 for most repairs (drain pump, door latch, suspension rods)</li>
+        <li><strong>Samsung dryer repair</strong> — $300–$400 (heating element, thermistor, drum belt)</li>
+        <li><strong>Samsung dishwasher repair</strong> — $300–$400 (drain pump, inlet valve, door latch)</li>
+        <li><strong>Samsung refrigerator repair</strong> — $300–$400 (ice maker assembly $350–$500; compressor $600–$900; fan motor $350–$450)</li>
       </ul>
 
       <p>

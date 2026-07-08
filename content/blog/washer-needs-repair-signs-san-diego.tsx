@@ -6,11 +6,11 @@ import { DIAGNOSTIC_FEE, WARRANTY_DAYS } from "@/data/constants"
 const faqs = [
   {
     question: "How much does washer repair cost in San Diego?",
-    answer: `Most washing machine repairs in San Diego cost $250–$350 including parts and labor. The ${DIAGNOSTIC_FEE} diagnostic fee is waived completely if we repair it, so you only pay for the fix.`,
+    answer: `Most washing machine repairs in San Diego cost $300–$400 including parts and labor. The ${DIAGNOSTIC_FEE} diagnostic fee is waived completely if we repair it, so you only pay for the fix.`,
   },
   {
     question: "Is it worth repairing a washing machine or should I replace it?",
-    answer: `If your washer is under 8 years old and the repair cost is less than half the price of a new machine, repair almost always makes more sense. A new washer costs $600–$1,400 installed. A repair at $250–$350 with a ${WARRANTY_DAYS}-day warranty is the better value in most cases.`,
+    answer: `If your washer is under 8 years old and the repair cost is less than half the price of a new machine, repair almost always makes more sense. A new washer costs $600–$1,400 installed. A repair at $300–$400 with a ${WARRANTY_DAYS}-day warranty is the better value in most cases.`,
   },
   {
     question: "Why is my washing machine shaking violently during the spin cycle?",

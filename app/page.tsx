@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 const HOME_FAQS = [
   {
     question: "How much does appliance repair cost in San Diego?",
-    answer: `Most appliance repairs in San Diego cost $250–$350, including parts and labor. Refrigerator, freezer, and ice maker repairs typically run $350–$900 depending on the part and brand. ${COMPANY_NAME} charges an $80 service call fee — waived completely when you proceed with the repair.`,
+    answer: `Most appliance repairs in San Diego cost $300–$400, including parts and labor. That covers washers, dryers, dishwashers, ovens, microwaves, range hoods, refrigerators, and freezers. ${COMPANY_NAME} charges an $80 service call fee — waived completely when you proceed with the repair.`,
   },
   {
     question: "Do you offer same-day appliance repair in San Diego?",

@@ -32,7 +32,7 @@ export const metadata: Metadata = {
 const PRICING_FAQS = [
   {
     question: "How much does appliance repair cost in San Diego?",
-    answer: `Most appliance repairs in San Diego — washers, dryers, dishwashers, ovens, microwaves, and range hoods — cost $250–$350 including parts and labor. Refrigerator, freezer, and ice maker repairs typically run $350–$900 depending on the component and brand. The ${DIAGNOSTIC_FEE} service call fee is waived completely when you proceed with the repair.`,
+    answer: `Most appliance repairs in San Diego cost $300–$400 including parts and labor — washers, dryers, dishwashers, ovens, microwaves, range hoods, refrigerators, freezers, and ice makers. The ${DIAGNOSTIC_FEE} service call fee is waived completely when you proceed with the repair.`,
   },
   {
     question: "What is the $80 service call fee?",
@@ -40,7 +40,7 @@ const PRICING_FAQS = [
   },
   {
     question: "Does the service call fee apply to installations?",
-    answer: `No. The ${DIAGNOSTIC_FEE} service call fee applies to repair calls. Appliance installation is priced at $220–$350 depending on the appliance type and connection complexity. The installation rate is the flat service cost — there is no separate diagnostic fee for installation.`,
+    answer: `No. The ${DIAGNOSTIC_FEE} service call fee applies to repair calls. Appliance installation is priced at $250–$350 depending on the appliance type and connection complexity. The installation rate is the flat service cost — there is no separate diagnostic fee for installation.`,
   },
   {
     question: "What does the Annual Maintenance Plan cost?",

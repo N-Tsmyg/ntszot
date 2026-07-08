@@ -167,21 +167,21 @@ export default function PropertyManagementPage() {
                 <p className="font-semibold text-brand-slate text-sm">Standard appliances</p>
                 <p className="text-xs text-gray-500 mt-0.5">Washers, dryers, dishwashers, ovens, microwaves, range hoods</p>
               </div>
-              <p className="font-bold text-brand-blue text-sm whitespace-nowrap">$250–$350</p>
+              <p className="font-bold text-brand-blue text-sm whitespace-nowrap">$300–$400</p>
             </div>
             <div className="rounded-lg border border-gray-200 bg-white p-5 flex justify-between items-center">
               <div>
                 <p className="font-semibold text-brand-slate text-sm">Refrigeration units</p>
                 <p className="text-xs text-gray-500 mt-0.5">Refrigerators, freezers, ice makers</p>
               </div>
-              <p className="font-bold text-brand-blue text-sm whitespace-nowrap">$350–$900</p>
+              <p className="font-bold text-brand-blue text-sm whitespace-nowrap">$300–$400</p>
             </div>
             <div className="rounded-lg border border-gray-200 bg-white p-5 flex justify-between items-center">
               <div>
                 <p className="font-semibold text-brand-slate text-sm">Appliance installation</p>
                 <p className="text-xs text-gray-500 mt-0.5">Turnover units, replacements between tenants</p>
               </div>
-              <p className="font-bold text-brand-blue text-sm whitespace-nowrap">$220–$350</p>
+              <p className="font-bold text-brand-blue text-sm whitespace-nowrap">$250–$350</p>
             </div>
             <div className="rounded-lg bg-red-50 border border-brand-blue/20 p-5">
               <p className="font-semibold text-brand-slate text-sm mb-1">

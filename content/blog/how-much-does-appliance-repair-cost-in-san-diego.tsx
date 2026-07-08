@@ -6,10 +6,10 @@ import { DIAGNOSTIC_FEE, WARRANTY_DAYS, COMPANY_PHONE_DISPLAY, COMPANY_PHONE_TEL
 const faqs = [
   {
     question: "How much does appliance repair cost in San Diego?",
-    answer: `Most appliance repairs in San Diego cost $250–$350 including parts and labor. Refrigerator, freezer, and ice maker repairs run $350–$900. The ${DIAGNOSTIC_FEE} diagnostic fee is waived when you proceed with the repair.`,
+    answer: `Most appliance repairs in San Diego cost $300–$400 including parts and labor — washers, dryers, dishwashers, ovens, microwaves, range hoods, refrigerators, freezers, and ice makers. The ${DIAGNOSTIC_FEE} diagnostic fee is waived when you proceed with the repair.`,
   },
   {
-    question: "What is the $85 diagnostic fee?",
+    question: "What is the $80 diagnostic fee?",
     answer: `The ${DIAGNOSTIC_FEE} fee covers the technician's visit and full diagnosis. If you approve the repair, the fee is waived entirely. If you decline, you owe ${DIAGNOSTIC_FEE} and nothing more.`,
   },
   {
@@ -30,7 +30,7 @@ export default function ApplianceRepairCostPost() {
       <div className="quick-answer not-prose rounded-xl border-l-4 border-brand-blue bg-blue-50 p-5 mb-8">
         <p className="text-sm font-semibold text-brand-blue uppercase tracking-wide mb-1">Quick Answer</p>
         <p className="text-gray-800 text-base leading-relaxed">
-          Most appliance repairs in San Diego cost <strong>$250–$350</strong> including parts and labor. Refrigerator, freezer, and ice maker repairs run <strong>$350–$900</strong>. The <strong>{DIAGNOSTIC_FEE} diagnostic fee</strong> is charged per visit and waived completely when you proceed with the repair.
+          Most appliance repairs in San Diego cost <strong>$300–$400</strong> including parts and labor — washers, dryers, dishwashers, ovens, microwaves, range hoods, refrigerators, freezers, and ice makers. The <strong>{DIAGNOSTIC_FEE} diagnostic fee</strong> is charged per visit and waived completely when you proceed with the repair.
         </p>
       </div>
 
@@ -46,7 +46,7 @@ export default function ApplianceRepairCostPost() {
 
       <div className="not-prose overflow-hidden rounded-xl border border-gray-200 my-6">
         <table className="w-full text-sm">
-          <thead className="bg-brand-navy text-white">
+          <thead className="bg-brand-slate text-white">
             <tr>
               <th className="text-left px-4 py-3 font-semibold">Appliance</th>
               <th className="text-left px-4 py-3 font-semibold">Typical Range</th>
@@ -55,20 +55,19 @@ export default function ApplianceRepairCostPost() {
           </thead>
           <tbody className="divide-y divide-gray-100">
             {[
-              { appliance: "Washer", range: "$250–$350", note: "Belt, pump, bearing, door switch" },
-              { appliance: "Dryer", range: "$250–$350", note: "Thermal fuse, element, belt, rollers" },
-              { appliance: "Dishwasher", range: "$250–$350", note: "Pump, door latch, inlet valve, control board" },
-              { appliance: "Oven / Range / Stove", range: "$250–$350", note: "Igniter, bake element, sensor" },
-              { appliance: "Microwave", range: "$250–$350", note: "Magnetron, diode, turntable motor" },
-              { appliance: "Range Hood", range: "$250–$350", note: "Fan motor, switch, capacitor" },
-              { appliance: "Refrigerator", range: "$350–$900", note: "Compressor, evap fan, condenser, refrigerant" },
-              { appliance: "Freezer", range: "$350–$900", note: "Defrost heater, thermostat, compressor" },
-              { appliance: "Ice Maker", range: "$350–$900", note: "Water inlet valve, ice maker module, fill tube" },
-              { appliance: "Appliance Installation", range: "$220–$350", note: "Connection, leveling, test run" },
-              { appliance: "Annual Maintenance Plan", range: "$350/year + parts", note: "Two visits, coils, filter, drain cleaning" },
+              { appliance: "Washer", range: "$300–$400", note: "Belt, pump, bearing, door switch" },
+              { appliance: "Dryer", range: "$300–$400", note: "Thermal fuse, element, belt, rollers" },
+              { appliance: "Dishwasher", range: "$300–$400", note: "Pump, door latch, inlet valve, control board" },
+              { appliance: "Oven / Range / Stove", range: "$300–$400", note: "Igniter, bake element, sensor" },
+              { appliance: "Microwave", range: "$300–$400", note: "Magnetron, diode, turntable motor" },
+              { appliance: "Range Hood", range: "$300–$400", note: "Fan motor, switch, capacitor" },
+              { appliance: "Refrigerator", range: "$300–$400", note: "Compressor, evap fan, condenser, refrigerant" },
+              { appliance: "Freezer", range: "$300–$400", note: "Defrost heater, thermostat, compressor" },
+              { appliance: "Ice Maker", range: "$300–$400", note: "Water inlet valve, ice maker module, fill tube" },
+              { appliance: "Appliance Installation", range: "$250–$350", note: "Connection, leveling, test run" },
             ].map((row, i) => (
               <tr key={row.appliance} className={i % 2 === 0 ? "bg-white" : "bg-gray-50"}>
-                <td className="px-4 py-3 font-medium text-brand-navy">{row.appliance}</td>
+                <td className="px-4 py-3 font-medium text-brand-slate">{row.appliance}</td>
                 <td className="px-4 py-3 text-gray-700">{row.range}</td>
                 <td className="px-4 py-3 text-gray-500 hidden sm:table-cell text-xs">{row.note}</td>
               </tr>
@@ -103,7 +102,7 @@ export default function ApplianceRepairCostPost() {
       <h2>What Drives the Variation Within Each Range?</h2>
 
       <p>
-        The $250–$350 range for standard appliances and $350–$900 range for refrigeration are real-world ranges, not rough estimates. Here is what pushes a repair toward the high or low end:
+        The $300–$400 range covers all appliance types — standard and refrigeration. Here is what pushes a repair toward the high or low end within that range:
       </p>
 
       <h3>Part cost</h3>

@@ -109,7 +109,7 @@ function getCityFAQs(location: Location): FAQ[] {
   return [
     {
       question: `How much does appliance repair cost in ${name}?`,
-      answer: `Most appliance repairs in ${name} cost $250–$350 including parts and labor — that covers washers, dryers, dishwashers, ovens, microwaves, and range hoods. Refrigerator, freezer, and ice maker repairs typically run $350–$900 depending on the component and brand. The ${DIAGNOSTIC_FEE} service call fee is waived completely when you proceed with the repair. A ${CARD_FEE_PERCENT}% processing fee applies to card payments; no fee on cash, check, Zelle, or Venmo.`,
+      answer: `Most appliance repairs in ${name} cost $300–$400 including parts and labor — washers, dryers, dishwashers, ovens, microwaves, range hoods, refrigerators, freezers, and ice makers. The ${DIAGNOSTIC_FEE} service call fee is waived completely when you proceed with the repair. A ${CARD_FEE_PERCENT}% processing fee applies to card payments; no fee on cash, check, Zelle, or Venmo.`,
     },
     {
       question: `Do you offer same-day appliance repair in ${name}?`,
@@ -129,16 +129,15 @@ function getCityFAQs(location: Location): FAQ[] {
 // ─── Pricing table data ──────────────────────────────────────────────────────
 
 const PRICING_ROWS = [
-  { type: "Washer / Dryer", range: "$250–$350", note: "Parts + labor" },
-  { type: "Dishwasher", range: "$250–$350", note: "Parts + labor" },
-  { type: "Oven / Range / Stove", range: "$250–$350", note: "Parts + labor" },
-  { type: "Microwave", range: "$250–$350", note: "Parts + labor" },
-  { type: "Range Hood", range: "$250–$350", note: "Parts + labor" },
-  { type: "Refrigerator", range: "$350–$900", note: "Parts + labor" },
-  { type: "Freezer", range: "$350–$900", note: "Parts + labor" },
-  { type: "Ice Maker", range: "$350–$900", note: "Parts + labor" },
-  { type: "Appliance Installation", range: "$220–$350", note: "Connection, leveling & testing" },
-  { type: "Annual Maintenance Plan", range: "$350/year + parts", note: "Two visits · filters, coils, drains" },
+  { type: "Washer / Dryer", range: "$300–$400", note: "Parts + labor" },
+  { type: "Dishwasher", range: "$300–$400", note: "Parts + labor" },
+  { type: "Oven / Range / Stove", range: "$300–$400", note: "Parts + labor" },
+  { type: "Microwave", range: "$300–$400", note: "Parts + labor" },
+  { type: "Range Hood", range: "$300–$400", note: "Parts + labor" },
+  { type: "Refrigerator", range: "$300–$400", note: "Parts + labor" },
+  { type: "Freezer", range: "$300–$400", note: "Parts + labor" },
+  { type: "Ice Maker", range: "$300–$400", note: "Parts + labor" },
+  { type: "Appliance Installation", range: "$250–$350", note: "Connection, leveling & testing" },
 ]
 
 const WHY_CHOOSE = [

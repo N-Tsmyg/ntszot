@@ -14,7 +14,7 @@ const faqs = [
   },
   {
     question: "How much does refrigerator repair cost in San Diego?",
-    answer: `Refrigerator repair in San Diego typically costs $350–$900 including parts and labor. The range is wide because it depends heavily on the failed component — a fan motor is $150–$250 in parts, a compressor repair runs $650–$1,200. The ${DIAGNOSTIC_FEE} diagnostic fee is waived when you proceed with the repair.`,
+    answer: `Refrigerator repair in San Diego typically costs $300–$400 including parts and labor. The range is wide because it depends heavily on the failed component — a fan motor is $150–$250 in parts, a compressor repair runs $650–$1,200. The ${DIAGNOSTIC_FEE} diagnostic fee is waived when you proceed with the repair.`,
   },
   {
     question: "My refrigerator is running but not cooling — is it the compressor?",

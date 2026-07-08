@@ -14,7 +14,7 @@ const faqs = [
   },
   {
     question: "How much does oven repair cost in San Diego?",
-    answer: `Oven repair in San Diego typically costs $250–$350 for most failures — bake element replacement, igniter replacement, or thermostat recalibration. The ${DIAGNOSTIC_FEE} diagnostic fee is waived if you approve the repair. Every completed repair includes a ${WARRANTY_DAYS}-day warranty on parts and labor.`,
+    answer: `Oven repair in San Diego typically costs $300–$400 for most failures — bake element replacement, igniter replacement, or thermostat recalibration. The ${DIAGNOSTIC_FEE} diagnostic fee is waived if you approve the repair. Every completed repair includes a ${WARRANTY_DAYS}-day warranty on parts and labor.`,
   },
   {
     question: "Can I still use my oven if it's not heating evenly?",
@@ -53,7 +53,7 @@ export default function OvenNotHeatingEvenlyPost() {
       </p>
 
       <p>
-        <strong>What you will notice:</strong> Food burns on one side or cooks faster near the back. The oven may reach temperature (the preheat indicator turns off) but cooking results are inconsistent. A bake element replacement is one of the most cost-effective oven repairs — typically within the $250–$350 range including parts and labor.
+        <strong>What you will notice:</strong> Food burns on one side or cooks faster near the back. The oven may reach temperature (the preheat indicator turns off) but cooking results are inconsistent. A bake element replacement is one of the most cost-effective oven repairs — typically within the $300–$400 range including parts and labor.
       </p>
 
       <h2>Cause 2: Failed Broil Element (Electric Ovens)</h2>
@@ -124,7 +124,7 @@ export default function OvenNotHeatingEvenlyPost() {
       <h2>What Oven Repair Typically Costs in San Diego</h2>
 
       <ul>
-        <li><strong>Bake element replacement:</strong> $250–$350 including parts and labor</li>
+        <li><strong>Bake element replacement:</strong> $300–$400 including parts and labor</li>
         <li><strong>Broil element replacement:</strong> $250–$320 including parts and labor</li>
         <li><strong>Gas igniter replacement:</strong> $250–$340 including parts and labor</li>
         <li><strong>Temperature sensor replacement:</strong> $220–$300 including parts and labor</li>

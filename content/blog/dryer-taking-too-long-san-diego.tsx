@@ -18,7 +18,7 @@ const faqs = [
   },
   {
     question: "How much does dryer repair cost in San Diego?",
-    answer: `Dryer repair in San Diego typically costs $250–$350 including parts and labor, depending on the component that failed. Heating element replacement and thermal fuse replacement are common fixes in that range. The ${DIAGNOSTIC_FEE} diagnostic fee is waived if you proceed with the repair. Every repair includes a ${WARRANTY_DAYS}-day warranty on parts and labor.`,
+    answer: `Dryer repair in San Diego typically costs $300–$400 including parts and labor, depending on the component that failed. Heating element replacement and thermal fuse replacement are common fixes in that range. The ${DIAGNOSTIC_FEE} diagnostic fee is waived if you proceed with the repair. Every repair includes a ${WARRANTY_DAYS}-day warranty on parts and labor.`,
   },
   {
     question: "Should I repair my dryer or replace it?",

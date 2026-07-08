@@ -14,7 +14,7 @@ const faqs = [
   },
   {
     question: "How much does it cost to fix a dishwasher that won't drain in San Diego?",
-    answer: `Dishwasher repair in San Diego typically costs $250–$350 including parts and labor. A drain pump replacement is the most common fix for persistent draining failures. The ${DIAGNOSTIC_FEE} diagnostic fee is waived if you proceed with the repair.`,
+    answer: `Dishwasher repair in San Diego typically costs $300–$400 including parts and labor. A drain pump replacement is the most common fix for persistent draining failures. The ${DIAGNOSTIC_FEE} diagnostic fee is waived if you proceed with the repair.`,
   },
   {
     question: "My dishwasher drains sometimes but not always — what causes that?",
@@ -89,7 +89,7 @@ export default function DishwasherNotDrainingPost() {
       </ul>
 
       <p>
-        Drain pump replacement requires removing the dishwasher, accessing the pump assembly from below or from inside the tub, and testing the motor with a multimeter. This is the most common repair we perform for San Diego dishwashers that won&apos;t drain — parts and labor typically fall in the $250–$350 range.
+        Drain pump replacement requires removing the dishwasher, accessing the pump assembly from below or from inside the tub, and testing the motor with a multimeter. This is the most common repair we perform for San Diego dishwashers that won&apos;t drain — parts and labor typically fall in the $300–$400 range.
       </p>
 
       <h2>Step 5: Consider a Control Board or Timer Issue</h2>
