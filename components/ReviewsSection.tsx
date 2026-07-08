@@ -1,29 +1,23 @@
 import { Star, ExternalLink } from "lucide-react"
 
-// TODO: Replace placeholder reviews below with real NTSZOT Google reviews.
-// Real reviews link: https://share.google/W6qtceRXWmVWXIE88
-// Once you have the review texts, paste them here replacing the placeholder content.
 const REVIEWS = [
   {
-    name: "Placeholder — Add Real Review",
+    name: "Steven Jew",
     location: "San Diego, CA",
-    text: "Real Google review text goes here. Ask the business owner to share 3–5 top reviews from their Google Business Profile to display in this section.",
+    text: "First American warranty connected me with this company when my dishwasher screen went blank. Diagnosis was the next day and after a 10 minute consult, a part was ordered and installed a week later in 20 minutes. I'd probably contact them directly in the future if I had another appliance that wasn't covered under warranty.",
     rating: 5,
-    isPlaceholder: true,
   },
   {
-    name: "Placeholder — Add Real Review",
-    location: "Chula Vista, CA",
-    text: "Real Google review text goes here. Once real reviews are available, replace this placeholder text with the actual customer review.",
+    name: "Ming Lao",
+    location: "San Diego, CA",
+    text: "Hard working team who will keep at it until the work is done. We have Andrew and his team fixing the dryer, which is not an easy task. They did not give up and we are happy with the final result. THANK YOU NTSZOT.",
     rating: 5,
-    isPlaceholder: true,
   },
   {
-    name: "Placeholder — Add Real Review",
-    location: "La Mesa, CA",
-    text: "Real Google review text goes here. Each review card needs a customer name, city, and their actual review text from Google.",
+    name: "Paula Maglione",
+    location: "San Diego, CA",
+    text: "NTS ZOT, Inc. and specifically Amantai were great. Appointments timely, DW diagnosed, part ordered and installed with no issue. Amantai was efficient and courteous. Would use this vendor again.",
     rating: 5,
-    isPlaceholder: true,
   },
 ]
 
