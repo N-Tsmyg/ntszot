@@ -139,9 +139,14 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="mt-10 border-t border-white/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/50">
-          <p>© {new Date().getFullYear()} {COMPANY_NAME}. All rights reserved.</p>
-          <p>San Diego County, CA</p>
+        <div className="mt-10 border-t border-white/10 pt-6 flex flex-col gap-4 text-xs text-white/50">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>© {new Date().getFullYear()} {COMPANY_NAME}. All rights reserved.</p>
+            <p>San Diego County, CA</p>
+          </div>
+          <p className="text-white/35 leading-relaxed">
+            Privacy Policy: No mobile information will be shared with third parties/affiliates for marketing/promotional purposes. All other categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties.
+          </p>
         </div>
       </div>
     </footer>
