@@ -36,17 +36,17 @@ const TRUST_ITEMS = [
 
 export default function TrustBar() {
   return (
-    <div className="bg-white border-b border-gray-200">
+    <div className="bg-brand-blue">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 gap-4 py-4 sm:grid-cols-3 lg:grid-cols-6">
           {TRUST_ITEMS.map((item) => (
             <div key={item.label} className="flex items-center gap-3">
-              <div className="shrink-0 rounded-full bg-brand-blue/10 p-2">
-                <item.icon className="h-5 w-5 text-brand-blue" aria-hidden="true" />
+              <div className="shrink-0 rounded-full bg-white/20 p-2">
+                <item.icon className="h-5 w-5 text-white" aria-hidden="true" />
               </div>
               <div>
-                <p className="text-sm font-semibold text-brand-slate">{item.label}</p>
-                <p className="text-xs text-gray-500">{item.sublabel}</p>
+                <p className="text-sm font-semibold text-white">{item.label}</p>
+                <p className="text-xs text-white/70">{item.sublabel}</p>
               </div>
             </div>
           ))}

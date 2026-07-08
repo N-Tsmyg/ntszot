@@ -11,12 +11,12 @@ export default function MidPageCTA({
   subtext = `${DIAGNOSTIC_FEE} diagnostic fee — waived completely if we fix it.`,
 }: MidPageCTAProps) {
   return (
-    <div className="my-10 rounded-xl bg-brand-slate px-6 py-8 text-center text-white">
+    <div className="my-10 rounded-2xl bg-brand-slate px-6 py-8 text-center text-white">
       <p className="text-lg font-bold mb-1">{heading}</p>
       <p className="text-sm text-white/70 mb-5">{subtext}</p>
       <a
         href={COMPANY_PHONE_TEL}
-        className="inline-flex items-center gap-2 rounded-md bg-brand-blue px-6 py-3 text-base font-bold text-white hover:bg-brand-blue-dark transition-colors"
+        className="inline-flex items-center gap-2 rounded-full bg-brand-blue px-6 py-3 text-base font-bold text-white hover:bg-brand-blue-dark transition-colors"
       >
         <Phone className="h-5 w-5" aria-hidden="true" />
         Call {COMPANY_PHONE_DISPLAY}

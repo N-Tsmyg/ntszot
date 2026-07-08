@@ -17,7 +17,7 @@ const MAINSTREAM_BRANDS = BRANDS.filter((b) => b.tier === "mainstream")
 
 export default function Footer() {
   return (
-    <footer className="bg-brand-slate text-white/80">
+    <footer className="bg-gray-900 text-white/80">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-5">
 

@@ -30,7 +30,7 @@ const STEPS = [
 
 export default function RepairProcess() {
   return (
-    <section className="py-14 bg-white border-y border-gray-100">
+    <section className="py-14 bg-blue-50 border-y border-blue-100">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <h2 className="text-2xl font-bold text-brand-slate text-center mb-10">
           How It Works

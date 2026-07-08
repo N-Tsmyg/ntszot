@@ -171,7 +171,7 @@ export default function AboutPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href={COMPANY_PHONE_TEL}
-              className="inline-flex items-center justify-center gap-2 rounded-lg bg-brand-blue px-6 py-3 font-extrabold text-white hover:bg-brand-blue-dark transition-colors"
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-brand-blue px-6 py-3 font-extrabold text-white hover:bg-brand-blue-dark transition-colors"
             >
               <Phone className="h-5 w-5" aria-hidden="true" />
               {COMPANY_PHONE_DISPLAY}
@@ -222,7 +222,7 @@ export default function AboutPage() {
           </p>
           <a
             href={COMPANY_PHONE_TEL}
-            className="inline-flex items-center gap-3 rounded-lg bg-brand-blue px-8 py-4 text-xl font-extrabold text-white hover:bg-brand-blue-dark transition-colors shadow-lg"
+            className="inline-flex items-center gap-3 rounded-full bg-brand-blue px-8 py-4 text-xl font-extrabold text-white hover:bg-brand-blue-dark transition-colors shadow-lg"
           >
             <Phone className="h-6 w-6" aria-hidden="true" />
             {COMPANY_PHONE_DISPLAY}

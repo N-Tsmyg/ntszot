@@ -439,7 +439,7 @@ export default async function ServicePage({
           </p>
           <a
             href={COMPANY_PHONE_TEL}
-            className="inline-flex items-center gap-3 rounded-lg bg-brand-blue px-8 py-4 text-xl font-extrabold text-white hover:bg-brand-blue-dark transition-colors shadow-lg"
+            className="inline-flex items-center gap-3 rounded-full bg-brand-blue px-8 py-4 text-xl font-extrabold text-white hover:bg-brand-blue-dark transition-colors shadow-lg"
           >
             <Phone className="h-6 w-6" aria-hidden="true" />
             {COMPANY_PHONE_DISPLAY}

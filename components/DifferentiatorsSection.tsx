@@ -1,5 +1,5 @@
 import { DIFFERENTIATORS } from "@/data/constants"
-import { CheckCircle2 } from "lucide-react"
+import { ShieldCheck } from "lucide-react"
 
 export default function DifferentiatorsSection() {
   return (
@@ -10,8 +10,8 @@ export default function DifferentiatorsSection() {
         </h2>
         <div className="grid gap-5 sm:grid-cols-2">
           {DIFFERENTIATORS.map((d) => (
-            <div key={d.id} className="flex gap-4 rounded-lg border border-gray-100 bg-gray-50 p-5">
-              <CheckCircle2
+            <div key={d.id} className="flex gap-4 rounded-2xl bg-white shadow-sm hover:shadow-md transition-shadow p-5">
+              <ShieldCheck
                 className="mt-0.5 h-5 w-5 shrink-0 text-brand-blue"
                 aria-hidden="true"
               />

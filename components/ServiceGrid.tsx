@@ -17,9 +17,9 @@ export default function ServiceGrid() {
             <Link
               key={s.slug}
               href={`/services/${s.slug}/`}
-              className="group flex flex-col items-center gap-3 rounded-xl border border-gray-200 bg-gray-50 p-5 text-center hover:border-brand-blue hover:bg-red-50 transition-colors"
+              className="group flex flex-col items-center gap-3 rounded-2xl bg-white shadow-md hover:shadow-xl p-5 text-center ring-1 ring-gray-100 hover:ring-brand-blue transition-all duration-200"
             >
-              <div className="rounded-full bg-brand-blue/10 p-3 group-hover:bg-brand-blue/20 transition-colors">
+              <div className="rounded-full bg-brand-blue/10 p-4 group-hover:bg-brand-blue/20 transition-colors">
                 <Wrench className="h-6 w-6 text-brand-blue" aria-hidden="true" />
               </div>
               <div>
